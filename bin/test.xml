@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<feed xmlns:idx="urn:atom-extension:indexing" xmlns:gr="http://www.google.com/schemas/reader/atom/" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom" idx:index="no">
+
+<!--
+Content-type: Preventing XSRF in IE.
+-->
+
+<generator uri="http://www.google.com/reader">Google Reader</generator>
+
+<id>tag:google.com,2005:reader/user/15483461753948633089/state/com.google/reading-list</id>
+<title>Genron's reading list in Google Reader</title>
+<gr:continuation>CJ-mwML_0JkC</gr:continuation>
+<link rel="self" href="http://www.google.com/reader/atom/?n=2"/>
+<author><name>Genron</name></author>
+<updated>2009-04-02T02:48:32Z</updated>
+	
+<entry gr:crawl-timestamp-msec="1238640512668">
+	<id gr:original-id="http://scienceblogs.com/pharyngula/2009/04/grody_to_the_max.php">tag:google.com,2005:reader/item/6d576cf3deb22724</id>
+	<category term="user/15483461753948633089/state/com.google/reading-list"
+			scheme="http://www.google.com/reader/" label="reading-list"/>
+	<category term="user/15483461753948633089/state/com.google/fresh"
+			scheme="http://www.google.com/reader/" label="fresh"/>
+	<category term="Religion"/>
+	<title type="html">Grody to the max</title>
+	<published>2009-04-02T03:36:29Z</published>
+	<updated>2009-04-02T03:36:29Z</updated>
+	<link rel="alternate" href="http://feedproxy.google.com/~r/scienceblogs/pharyngula/~3/irHbJi-7oR8/grody_to_the_max.php" type="text/html"/>
+	<summary xml:base="http://scienceblogs.com/pharyngula/" type="html">
+		&lt;p&gt;I just have to say that if you're worshipping a &lt;a href="http://www.silive.com/news/index.ssf/2009/04/hundreds_at_staten_island_fria.html"&gt;scrap of skin from an 800-year-old corpse&lt;/a&gt;, there is something wrong with you. Something sick, perverse, and warped.&lt;/p&gt; &lt;a href="http://scienceblogs.com/pharyngula/2009/04/grody_to_the_max.php#commentsArea"&gt;Read the comments on this post...&lt;/a&gt;&lt;img src="http://feeds2.feedburner.com/~r/scienceblogs/pharyngula/~4/irHbJi-7oR8" height="1" width="1"&gt;
+	</summary>
+	<author gr:unknown-author="true"><name>(author unknown)</name></author>
+	<source gr:stream-id="feed/http://scienceblogs.com/pharyngula/atom.xml">
+		<id>tag:google.com,2005:reader/feed/http://scienceblogs.com/pharyngula/atom.xml</id>
+		<title type="html">Pharyngula</title>
+		<link rel="alternate" href="http://scienceblogs.com/pharyngula/" type="text/html"/>
+	</source>
+</entry>
+
+<entry gr:crawl-timestamp-msec="1238639540159">
+	<id gr:original-id="http://blogs.discovermagazine.com/badastronomy/2009/04/01/carnival-of-space-96/">
+	`	tag:google.com,2005:reader/item/ae46d4c51dd81d72</id>
+			<category term="user/15483461753948633089/state/com.google/reading-list" scheme="http://www.google.com/reader/" label="reading-list"/>
+			<category term="user/15483461753948633089/state/com.google/fresh" scheme="http://www.google.com/reader/" label="fresh"/><category term="Astronomy"/>
+			<category term="Space"/>
+	<title type="html">Carnival of Space #96</title>
+	<published>2009-04-02T02:00:11Z</published>
+	<updated>2009-04-02T02:00:11Z</updated>
+	<link rel="alternate" href="http://blogs.discovermagazine.com/badastronomy/2009/04/01/carnival-of-space-96/" type="text/html"/>
+	<content xml:base="http://blogs.discovermagazine.com/badastronomy" type="html">
+		&lt;p&gt;The CoS #96 — the Q&amp;amp;A edition — &lt;a href="http://www.astroengine.com/?p=4453"&gt;is now up at Astroengine&lt;/a&gt;. As always, there’s lots of cool astronomy stuff to distract you with shiny objects and pretty baubles.&lt;/p&gt;
+	</content>
+	<author><name>Phil Plait</name></author>
+	<source gr:stream-id="feed/http://blogs.discovermagazine.com/badastronomy/feed/">
+		<id>tag:google.com,2005:reader/feed/http://blogs.discovermagazine.com/badastronomy/feed/</id>
+		<title type="html">Bad Astronomy</title>
+		<link rel="alternate" href="http://blogs.discovermagazine.com/badastronomy" type="text/html"/>
+	</source>
+</entry>
+
+</feed>

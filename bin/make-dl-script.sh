@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./bs-rss "$1" | 
+./MacOSX/i386/bs-rss "$1" | 
 tr -d \" | 
 awk '
 {
@@ -8,6 +8,6 @@ awk '
     file = $2
 
     printf "mkdir -p `dirname %s` && \\\n", file
-    printf "    wget %s -O %s.html\n", url, file
-    printf "    htmlfmt < %s.html > %s.txt\n\n", file, file
+    printf "    curl -o \"%s.html\" \"%s\"\n", file, url
+    printf "    htmlfmt < \"%s.html\" > \"%s.txt\"\n\n", file, file
 }'
