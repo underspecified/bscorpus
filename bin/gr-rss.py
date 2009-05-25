@@ -41,16 +41,15 @@ def gr_print_feeds(url,header,FILE):
 		return cont_url
 	return None
 
-if (len(sys.argv)>3):
+fs = "gr-feeds"
+posts = 1000
+iters = 10
+if (len(sys.argv)>2):
 	fs = sys.argv[1]
+if (len(sys.argv)>3):
 	posts = int(sys.argv[2])
-	iters = int(sys.argv[3])
-else:
-	fs = "gr-feeds"
-	posts = 10000
-	iters = 10
 
-fmt = "%%s.%%0%dd.xml" % len(str(iters-1))
+fmt = "%%s.%%0%dd.xml" % 2
 header = gr_mk_header(gr_auth('genronmappu@gmail.com','matsumoto'))
 base_url = 'http://www.google.com/reader/atom/?n=%d' % posts
 
