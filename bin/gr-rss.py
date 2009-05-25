@@ -1,6 +1,7 @@
 #!/usr/bin/python2.5
 
 #from __future__ import with_statement
+import re
 import sys
 import urllib
 import urllib2
@@ -22,11 +23,23 @@ def gr_mk_header(SID):
 	header['Cookie'] = 'Name=SID;SID=%s;Domain=.google.com;Path=/;Expires=160000000000' % SID
 	return header
 
+def get_cont(content):
+	m = re.search(r'<gr:continuation>(.+)</gr:continuation>',content)
+	if m:
+		return m.group(1)
+	return None
+
 def gr_print_feeds(url,header,FILE):
 	reader_req = urllib2.Request(url,None,header)
 	reader_resp = urllib2.urlopen(reader_req)
 	reader_resp_content = reader_resp.read()
 	print >>FILE, reader_resp_content
+	cont = get_cont(reader_resp_content)
+	if cont:
+		cont_url = "%s&c=%s" % (base_url,cont)
+		print >>sys.stderr, "\tcont_url: %s" % cont_url
+		return cont_url
+	return None
 
 if (len(sys.argv)>3):
 	fs = sys.argv[1]
@@ -40,21 +53,24 @@ else:
 fmt = "%%s.%%0%dd.xml" % len(str(iters-1))
 header = gr_mk_header(gr_auth('genronmappu@gmail.com','matsumoto'))
 base_url = 'http://www.google.com/reader/atom/?n=%d' % posts
-cont_url = base_url + '&c'
 
+i = 0
 try:
-	file = fmt % (fs,0)
+	file = fmt % (fs,i)
 	print >>sys.stderr, "Making file %s ..." % file
 	FH = open(file,"w")
-	gr_print_feeds(base_url,header,FH)
+	cont_url = gr_print_feeds(base_url,header,FH)
+	i = i+1
 finally:
 	FH.close()
 
-for i in range(1,iters):
+#for i in range(1,iters):
+while(cont_url):
 	try:
 		file = fmt % (fs,i)
 		print >>sys.stderr, "Making file %s ..." % file
 		FH = open(file,"w")
-		gr_print_feeds(cont_url,header,FH)
+		cont_url = gr_print_feeds(cont_url,header,FH)
+		i = i+1
 	finally:
 		FH.close()
