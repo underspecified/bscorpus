@@ -6,8 +6,6 @@ POSTS   := 1000
 
 all:	stats
 
-stats:	gr-cats.stats.txt gr-entries.stats.txt gr-blogs.stats.txt gr-titles.stats.txt gr-urls.stats.txt 
-
 clean:	clean.txt
 
 cleanall: clean.txt clean.xml
@@ -17,6 +15,8 @@ clean.txt:
 
 clean.xml:
 	rm -f *.xml
+
+stats:	gr-cats.stats.txt gr-entries.stats.txt gr-blogs.stats.txt gr-titles.stats.txt gr-urls.stats.txt
 
 %.stats.txt:	%.txt
 	tr A-Z a-z < $< | \
