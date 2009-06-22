@@ -44,9 +44,9 @@ def gr_print_feeds(url,header,FILE):
 fs = "gr-feeds"
 posts = 1000
 iters = 10
-if (len(sys.argv)>2):
+if (len(sys.argv)>=1):
 	fs = sys.argv[1]
-if (len(sys.argv)>3):
+if (len(sys.argv)>2):
 	posts = int(sys.argv[2])
 
 fmt = "%%s.%%0%dd.xml" % 2
