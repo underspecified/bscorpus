@@ -22,14 +22,22 @@ def get_links(x):
 	d = feedparser.parse(x)
 	for e in d.entries:
 		try:
-			l = e.link
-			b = e.source.link
-			
+			l = e.link # link to blog post
+			b = e.source.link # blog source
+
+			# try to get permalink by following redirects
 			try:
+				if b not in l:
+					l = urllib2.urlopen(l).geturl()
+			except Exception, err:
+				pass
+	
+			try:	
 				blogs.setdefault(l, set())
 				blogs[l].add(b)
 				links.setdefault(l, [])
 
+				# get blog post summary by trying several RSS aliases
 				p = None
 				if 'summary' in e:
 					p = e.summary
@@ -39,6 +47,8 @@ def get_links(x):
 					p = e.content.value
 #				else:
 #					p = urllib2.urlopen(l)
+
+				# parse the html
 				s = BeautifulSoup(p, parseOnlyThese=t)
 #				print >>sys.stderr, s.prettify()
 
@@ -62,6 +72,7 @@ def get_links(x):
 def fmt_rlinks():
 	'''Throw away link spam and self-referential links.'''
 	for l in rlinks:
+		# only keep non-self-referential reverse links that are from different blogs
 		rlinks[l] = set([x for x in rlinks[l] if blogs[x]!=blogs[l] and x!=l])
 
 def print_rlinks():
