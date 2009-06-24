@@ -3,12 +3,19 @@
 BSHOME	?= $(HOME)/bscorpus
 FS      := gr-feeds
 POSTS   := 1000
+stats	:= gr-cats.stats.txt gr-entries.stats.txt gr-blogs.stats.txt gr-titles.stats.txt gr-urls.stats.txt
+links	:= gr-links.txt
+all:	xml txt $(stats) $(links)
 
-all:	stats
+clean:	clean.stats clean.links
 
-clean:	clean.txt
+cleanall: clean.*
 
-cleanall: clean.txt clean.xml
+clean.links:
+	rm -f $(links)
+
+clean.stats:
+	rm -f $(stats)
 
 clean.txt:
 	rm -f *.txt
@@ -16,16 +23,14 @@ clean.txt:
 clean.xml:
 	rm -f *.xml
 
-stats:	gr-cats.stats.txt gr-entries.stats.txt gr-blogs.stats.txt gr-titles.stats.txt gr-urls.stats.txt gr-links.txt
-
 %.stats.txt:	%.txt
 	tr A-Z a-z < $< | \
 	sort -t'	' | \
 	uniq -c | \
 	sort -t'	' -nr > $@
 
-gr-links.txt:	xml
-	python $(BSHOME)/bin/gr-links.py $(FS).*.xml > $@ 2| tee gr-links.log
+gr-links.txt:
+	python $(BSHOME)/bin/gr-links.py $(FS).*.xml > $@ \&| tee gr-links.log
 
 gr-blogs.txt:	gr-entries.txt
 	cut -f1 < $< > $@
@@ -42,7 +47,7 @@ gr-cats.txt:	gr-feeds.txt $(BSHOME)/bin/gr2cats.awk
 gr-entries.txt:	gr-feeds.txt $(BSHOME)/bin/gr2blogs.awk
 	awk -f $(BSHOME)/bin/gr2blogs.awk < $< > $@
 
-gr-feeds.txt:	txt
+gr-feeds.txt:
 	cat $(FS).*.txt > $@
 
 txt:	xml

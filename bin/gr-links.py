@@ -5,7 +5,6 @@ import feedparser
 from BeautifulSoup import BeautifulSoup, SoupStrainer
 import urllib2
 import re
-import os
 
 # utf-8 i/o plz!
 import sys
@@ -59,7 +58,6 @@ def get_links(x):
 	
 		except Exception, err:
 			print >>sys.stderr, "EPIC FAIL! Orz", err, e.id
-
 
 def fmt_rlinks():
 	'''Throw away link spam and self-referential links.'''
