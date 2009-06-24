@@ -24,8 +24,8 @@ stats:	gr-cats.stats.txt gr-entries.stats.txt gr-blogs.stats.txt gr-titles.stats
 	uniq -c | \
 	sort -t'	' -nr > $@
 
-gr-links.txt:	txt
-	python $(BSHOME)/bin/gr-links.py $(FS).*.txt > $@ 2| tee gr-links.log
+gr-links.txt:	xml
+	python $(BSHOME)/bin/gr-links.py $(FS).*.xml > $@ 2| tee gr-links.log
 
 gr-blogs.txt:	gr-entries.txt
 	cut -f1 < $< > $@
