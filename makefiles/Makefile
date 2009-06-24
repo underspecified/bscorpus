@@ -23,13 +23,17 @@ clean.txt:
 clean.xml:
 	rm -f *.xml
 
+stats:	$(stats)
+
+links:	$(links)
+
 %.stats.txt:	%.txt
 	tr A-Z a-z < $< | \
 	sort -t'	' | \
 	uniq -c | \
 	sort -t'	' -nr > $@
 
-gr-links.txt:
+gr-links.txt:	$(BSHOME)/bin/gr-rss.py
 	python $(BSHOME)/bin/gr-links.py $(FS).*.xml > $@ \&| tee gr-links.log
 
 gr-blogs.txt:	gr-entries.txt
@@ -54,10 +58,10 @@ txt:	xml
 	make $(shell echo $(FS).*.xml | sed 's/xml/txt/g')
 
 xml: $(BSHOME)/bin/gr-rss.py
-	$(BSHOME)/bin/gr-rss.py $(FS) $(POSTS)
+	python $(BSHOME)/bin/gr-rss.py $(FS) $(POSTS)
 
 %.txt:	%.xml $(BSHOME)/xslt/gr.xslt
 	xsltproc $(BSHOME)/xslt/gr.xslt $< | \
 	grep -v 'com.google' > $@
 
-.PHONY:	all clean* stats xml
+.PHONY:	all clean* stats links txt xml
