@@ -5,17 +5,21 @@ FS      := gr-feeds
 POSTS   := 1000
 stats	:= gr-cats.stats.txt gr-entries.stats.txt gr-blogs.stats.txt gr-titles.stats.txt gr-urls.stats.txt
 links	:= gr-links.txt
+
 all:	xml txt $(stats) $(links)
 
-clean:	clean.stats clean.links
+clean:	clean.stats clean.links clean.log
 
-cleanall: clean.*
+cleanall: clean.xml clean.txt clean.log clean.stats clean.links
 
 clean.links:
 	rm -f $(links)
 
 clean.stats:
 	rm -f $(stats)
+
+clean.log:
+	rm -f *.log
 
 clean.txt:
 	rm -f *.txt
@@ -34,7 +38,7 @@ links:	$(links)
 	sort -t'	' -nr > $@
 
 gr-links.txt:	$(BSHOME)/bin/gr-rss.py
-	python $(BSHOME)/bin/gr-links.py $(FS).*.xml > $@ \&| tee gr-links.log
+	python $(BSHOME)/bin/gr-links.py $(shell echo $(FS).*.xml) > $@ \&| tee gr-links.log
 
 gr-blogs.txt:	gr-entries.txt
 	cut -f1 < $< > $@
