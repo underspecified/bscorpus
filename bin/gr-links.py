@@ -56,7 +56,7 @@ def get_links(x):
 					links[l].append(h)
 					rlinks.setdefault(h, [])
 					rlinks[h].append(l)
-					blogs.setdefault(h, '')
+					blog.setdefault(h, '')
 #					print >>sys.stderr, h
 
 				print >>sys.stderr, "WIN! \(^o^)/", l
