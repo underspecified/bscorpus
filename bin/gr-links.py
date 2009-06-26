@@ -14,7 +14,7 @@ sys.stdin = codecs.getwriter('utf-8')(sys.stdin)
 
 links = {}
 rlinks = {}
-blogs = {}
+blog = {}
 
 t = SoupStrainer('a', href=re.compile('http'))
 def get_links(x):
@@ -33,8 +33,7 @@ def get_links(x):
 				pass
 	
 			try:	
-				blogs.setdefault(l, set())
-				blogs[l].add(b)
+				blog[l] = b
 				links.setdefault(l, [])
 
 				# get blog post summary by trying several RSS aliases
@@ -57,8 +56,7 @@ def get_links(x):
 					links[l].append(h)
 					rlinks.setdefault(h, [])
 					rlinks[h].append(l)
-					blogs.setdefault(h, set())
-					blogs[h].add(b)
+					blogs.setdefault(h, '')
 #					print >>sys.stderr, h
 
 				print >>sys.stderr, "WIN! \(^o^)/", l
@@ -73,11 +71,11 @@ def fmt_rlinks():
 	'''Throw away link spam and self-referential links.'''
 	for l in rlinks:
 		# only keep non-self-referential reverse links that are from different blogs
-		rlinks[l] = set([x for x in rlinks[l] if x not in l and l not in x])
+		rlinks[l] = set([x for x in rlinks[l] if x!=l and blog[x]!=blog[l]])
 
 def print_rlinks():
 	'''Print reverse links if they aren't self-refererential.'''
-	for l in sorted(set(rlinks), key=lambda x: len(rlinks[x]), reverse=True):
+	for l in sorted(rlinks, key=lambda x: len(rlinks[x]), reverse=True):
 		d = rlinks[l]
 		if len(d) > 0:
 			print >>sys.stdout, len(d), l, d
