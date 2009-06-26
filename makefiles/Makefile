@@ -6,7 +6,7 @@ POSTS   := 1000
 stats	:= gr-cats.stats.txt gr-entries.stats.txt gr-blogs.stats.txt gr-titles.stats.txt gr-urls.stats.txt
 links	:= gr-links.txt
 
-all:	xml txt $(stats) $(links)
+all:	xml txt stats links
 
 clean:	clean.stats clean.links clean.log
 
@@ -37,8 +37,8 @@ links:	$(links)
 	uniq -c | \
 	sort -t'	' -nr > $@
 
-gr-links.txt:	$(BSHOME)/bin/gr-rss.py
-	python $(BSHOME)/bin/gr-links.py $(shell echo $(FS).*.xml) > $@ \&| tee gr-links.log
+gr-links.txt:	$(BSHOME)/bin/gr-links.py
+	(python $(BSHOME)/bin/gr-links.py $(shell echo $(FS).*.xml) | tee $@) 2>&1 | tee gr-links.log
 
 gr-blogs.txt:	gr-entries.txt
 	cut -f1 < $< > $@
