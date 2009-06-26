@@ -15,8 +15,11 @@ sys.stdin = codecs.getwriter('utf-8')(sys.stdin)
 links = {}
 rlinks = {}
 blog = {}
+tags = {}
+rtags = {}
+title = {}
 
-t = SoupStrainer('a', href=re.compile('http'))
+anchors = SoupStrainer('a', href=re.compile('http'))
 def get_links(x):
 	'''Retrieve links from blog posts in XML file.'''
 	d = feedparser.parse(x)
@@ -24,6 +27,7 @@ def get_links(x):
 		try:
 			l = e.link # link to blog post
 			b = e.source.link # blog source
+			i = e.title # blog post title
 
 			# try to get permalink by following redirects
 			try:
@@ -34,6 +38,13 @@ def get_links(x):
 	
 			try:	
 				blog[l] = b
+				title[l] = i
+				tags[l] = set([t.label or t.term for t in e.tags if t.label or t.term]) 
+				tags[l] -= set([u'fresh', u'reading-list'])
+#				print >>sys.stderr, tags[l]
+				for t in tags[l]:
+					rtags.setdefault(t, set())
+					rtags[t].add(l)
 				links.setdefault(l, [])
 
 				# get blog post summary by trying several RSS aliases
@@ -48,7 +59,7 @@ def get_links(x):
 #					p = urllib2.urlopen(l)
 
 				# parse the html
-				s = BeautifulSoup(p, parseOnlyThese=t)
+				s = BeautifulSoup(p, parseOnlyThese=anchors)
 #				print >>sys.stderr, s.prettify()
 
 				for a in s.findAll('a'):
@@ -57,6 +68,7 @@ def get_links(x):
 					rlinks.setdefault(h, [])
 					rlinks[h].append(l)
 					blog.setdefault(h, '')
+					tags.setdefault(h, set())
 #					print >>sys.stderr, h
 
 				print >>sys.stderr, "WIN! \(^o^)/", l
@@ -77,8 +89,10 @@ def print_rlinks():
 	'''Print reverse links if they aren't self-refererential.'''
 	for l in sorted(rlinks, key=lambda x: len(rlinks[x]), reverse=True):
 		d = rlinks[l]
-		if len(d) > 0:
-			print >>sys.stdout, len(d), l, d
+		i = [title[i] for i in d if i in title]
+		t = sorted(reduce(set.union, [tags[l]]+[tags[z] for z in d if z in tags]))
+		if len(d) > 1:
+			print >>sys.stdout, len(d), l, d, i, t
 
 if len(sys.argv) > 1:
 	for x in sys.argv[1:]:
