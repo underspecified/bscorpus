@@ -3,8 +3,12 @@
 
 import feedparser
 from BeautifulSoup import BeautifulSoup, SoupStrainer
-import urllib2
+import socket, urllib2
 import re
+
+# timeout in seconds
+timeout = 3
+socket.setdefaulttimeout(timeout)
 
 # utf-8 i/o plz!
 import sys
@@ -17,7 +21,7 @@ def get_title(h):
 	'''Retrieve title of a web page.'''
 	try:
 		s = BeautifulSoup(urllib2.urlopen(h), parseOnlyThese=titles)
-		return s.title.string
+		return s.title.string.strip()
 	except Exception, err:
 		return ''
 
