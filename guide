@@ -1,6 +1,8 @@
-hg commit -u eric-n@is.naist.jp -m 'gr-links.py: collect and count links and reverse links in blog posts' && \
-	hg push && \
-	ssh eric-n@pine2.naist.jp -t 'hg -R $HOME/hg/bscorpus update'
+hg commit -u eric-n@is.naist.jp -m 'Added guide.'
+win hg push
+ssh eric-n@pine2.naist.jp -t 'hg -R $HOME/hg/bscorpus update'
 hg pull && hg update
 hg status
 hg diff
+
+python bin/gr-links.py data/test/gr-test-250.xml
