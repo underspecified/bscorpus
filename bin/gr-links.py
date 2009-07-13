@@ -25,19 +25,18 @@ def get_title(h):
 	except Exception, err:
 		return ''
 
-global blog, links, rlinks, tags, rtags, title, google_tags, anchors
-
+global blog, links, rlinks, tags, rtags, title
 blog = {}
 links = {}
 rlinks = {}
 tags = {}
 rtags = {}
 title = {}
-google_tags = set([u'fresh', u'read', u'reading-list'])
-anchors = SoupStrainer('a', href=re.compile('http'))
 
 def get_links(x):
 	'''Retrieve links from blog posts in XML file.'''
+	google_tags = set([u'fresh', u'read', u'reading-list'])
+	anchors = SoupStrainer('a', href=re.compile('http'))
 	d = feedparser.parse(x)
 	for e in d.entries:
 		try:
@@ -97,16 +96,13 @@ def get_links(x):
 
 def get_blogs(_links):
 	'''Return the blogs each link in a set is from, if it is identifiable.'''
-#	for l in _links:
-#		print >>sys.stderr, l
-#		for b in set([b for b in blog.values() if b]):
-#			print >>sys.stderr, "\t", b, b in l
 	all_blogs = frozenset([b for b in blog.values() if b])
 #	s = [b for b in all_blogs for l in _links if b in l]
 #	print >>sys.stderr, s
 	s = {}
 	for l in _links:
-		s[l] = frozenset([b for b in all_blogs if b in l])
+		x = [b for b in all_blogs if b in l]
+		s[l] = x[0] if x else ''
 #	print >>sys.stderr, s
 	return s
 
@@ -114,25 +110,25 @@ def has_many_blogs(_links):
 	'''Check if a set of links point to more than one known blogs.'''
 	if len(_links) < 2:
 		return False
-	v = get_blogs(_links).values()
+	v = frozenset(get_blogs(_links).values())
 #	print >>sys.stderr, v, len(frozenset(v))
-	return v == [frozenset([])] or len(frozenset(v)) > 1
+	return v == frozenset([]) or len(v) > 1
 
-def filter_rlinks(rlinks):
+def filter_rlinks(_rlinks):
 	'''Throw away link spam and self-referential links.'''
 	clinks = {}
-	for l in rlinks.keys():
+	for l in _rlinks:
 		# only keep non-self-referential reverse links that are from different blogs
-		c = frozenset(rlinks[l])
+		c = frozenset(_rlinks[l])
 #		print >>sys.stderr, has_many_blogs(c), c
 		if has_many_blogs(c):
 			clinks[l] = frozenset([x for x in c if x!=l and x not in blog.values()])
 	return clinks
 
-def print_rlinks(flinks):
+def print_rlinks(_rlinks):
 	'''Print reverse links if they aren't self-refererential.'''
-	for l in sorted(flinks, key=lambda x: len(flinks[x]), reverse=True):
-		d = frozenset(rlinks[l])
+	for l in sorted(_rlinks, key=lambda x: len(frozenset(_rlinks[x])), reverse=True):
+		d = frozenset(_rlinks[l])
 		i = [title[i] for i in d if i in title]
 		t = sorted(reduce(set.union, [tags[l]]+[tags[z] for z in d if z in tags]))
 		print >>sys.stdout, len(d), get_title(l), l, i, t, d, frozenset(get_blogs(d).values()), has_many_blogs(d)
