@@ -1,0 +1,5 @@
+digraph G {
+	ratio = compress;
+	rank = source;
+	size = "4.0,5.0";
+}

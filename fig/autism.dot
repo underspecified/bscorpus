@@ -1,0 +1,37 @@
+digraph G {
+	ratio = compress;
+	rank = source;
+	size = "4.0,5.0";
+	anti_vaccine_lunacy [label="anti-vaccine lunacy"];
+	autism -> anti_vaccine_lunacy [label="31"];
+	autism -> autism_lit [label="14"];
+	autism -> family [label="18"];
+	autism -> health [label="15"];
+	autism -> jenny_mccarthy [label="17"];
+	autism [label="autism"];
+	autism_lit [label="autism lit"];
+	autism -> parenting [label="23"];
+	autism -> vaccines [label="38"];
+	cam [label="cam"];
+	family [label="family"];
+	health -> cam [label="14"];
+	health_fraud [label="health fraud"];
+	health -> health_fraud [label="16"];
+	health [label="health"];
+	health -> politics_and_regulation [label="15"];
+	health -> public_health [label="21"];
+	health -> science_and_medicine [label="22"];
+	health -> science_and_the_media [label="15"];
+	health -> vaccines [label="13"];
+	jenny_mccarthy [label="jenny mccarthy"];
+	parenting -> autism_lit [label="13"];
+	parenting -> family [label="22"];
+	parenting [label="parenting"];
+	politics_and_regulation [label="politics and regulation"];
+	public_health [label="public health"];
+	science_and_medicine [label="science and medicine"];
+	science_and_the_media [label="science and the media"];
+	vaccines -> anti_vaccine_lunacy [label="35"];
+	vaccines -> jenny_mccarthy [label="15"];
+	vaccines [label="vaccines"];
+}

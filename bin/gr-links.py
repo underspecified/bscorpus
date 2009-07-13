@@ -25,14 +25,15 @@ def get_title(h):
 	except Exception, err:
 		return ''
 
+global blog, links, rlinks, tags, rtags, title, google_tags, anchors
+
 blog = {}
 links = {}
 rlinks = {}
 tags = {}
 rtags = {}
 title = {}
-
-google_tags = frozenset([u'fresh', u'read', u'reading-list'])
+google_tags = set([u'fresh', u'read', u'reading-list'])
 anchors = SoupStrainer('a', href=re.compile('http'))
 
 def get_links(x):
@@ -52,7 +53,7 @@ def get_links(x):
 
 			try:	
 				blog[l] = b
-				tags[l] = frozenset([t.label or t.term for t in e.tags if t.label or t.term]) - google_tags
+				tags[l] = set([t.label or t.term for t in e.tags if t.label or t.term]) - google_tags
 #				print >>sys.stderr, tags[l]
 				for t in tags[l]:
 					rtags.setdefault(t, set())
@@ -115,33 +116,31 @@ def has_many_blogs(_links):
 		return False
 	v = get_blogs(_links).values()
 #	print >>sys.stderr, v, len(frozenset(v))
-	return v == [frozenset([])] or len(frozenset(v))>1
+	return v == [frozenset([])] or len(frozenset(v)) > 1
 
-def filter_rlinks():
+def filter_rlinks(rlinks):
 	'''Throw away link spam and self-referential links.'''
-	clinks = dict(rlinks)
-	for l in clinks:
+	clinks = {}
+	for l in rlinks.keys():
 		# only keep non-self-referential reverse links that are from different blogs
-		c = frozenset(clinks[l])
+		c = frozenset(rlinks[l])
 #		print >>sys.stderr, has_many_blogs(c), c
 		if has_many_blogs(c):
-			rlinks[l] = frozenset([x for x in c if x!=l])
-		else:
-			del rlinks[l]
+			clinks[l] = frozenset([x for x in c if x!=l and x not in blog.values()])
+	return clinks
 
-def print_rlinks():
+def print_rlinks(flinks):
 	'''Print reverse links if they aren't self-refererential.'''
-	for l in sorted([l for l in rlinks if l not in blog.values()],
-					key=lambda x: len(rlinks[x]), reverse=True):
+	for l in sorted(flinks, key=lambda x: len(flinks[x]), reverse=True):
 		d = frozenset(rlinks[l])
 		i = [title[i] for i in d if i in title]
 		t = sorted(reduce(set.union, [tags[l]]+[tags[z] for z in d if z in tags]))
-		print >>sys.stdout, len(d), get_title(l), l, i, t, d
+		print >>sys.stdout, len(d), get_title(l), l, i, t, d, frozenset(get_blogs(d).values()), has_many_blogs(d)
 
 if len(sys.argv) > 1:
 	for x in sys.argv[1:]:
 		get_links(x)
-	filter_rlinks()
-	print_rlinks()
+	flinks = filter_rlinks(rlinks)
+	print_rlinks(flinks)
 else:
 	print >>sys.stderr, 'usage: pr-links.py <rss-feed.xml> [<rss-feed.xml> ...]'

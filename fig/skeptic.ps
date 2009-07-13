@@ -1,0 +1,1311 @@
+%!PS-Adobe-2.0
+%%Creator: Graphviz version 2.16 (Fri Feb  8 12:54:58 UTC 2008)
+%%For: (eric-n) Eric=Nichols
+%%Title: G
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+save
+%%BeginProlog
+/DotDict 200 dict def
+DotDict begin
+
+/setupLatin1 {
+mark
+/EncodingVector 256 array def
+ EncodingVector 0
+
+ISOLatin1Encoding 0 255 getinterval putinterval
+EncodingVector 45 /hyphen put
+
+% Set up ISO Latin 1 character encoding
+/starnetISO {
+        dup dup findfont dup length dict begin
+        { 1 index /FID ne { def }{ pop pop } ifelse
+        } forall
+        /Encoding EncodingVector def
+        currentdict end definefont
+} def
+/Times-Roman starnetISO def
+/Times-Italic starnetISO def
+/Times-Bold starnetISO def
+/Times-BoldItalic starnetISO def
+/Helvetica starnetISO def
+/Helvetica-Oblique starnetISO def
+/Helvetica-Bold starnetISO def
+/Helvetica-BoldOblique starnetISO def
+/Courier starnetISO def
+/Courier-Oblique starnetISO def
+/Courier-Bold starnetISO def
+/Courier-BoldOblique starnetISO def
+cleartomark
+} bind def
+
+%%BeginResource: procset graphviz 0 0
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+       dup 1 exch div /InvScaleFactor exch def
+       scale
+} bind def
+
+% styles
+/solid { [] 0 setdash } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw text fitted to its expected width
+/alignedtext {			% width text
+	/text exch def
+	/width exch def
+	gsave
+		width 0 gt {
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
+		} if
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+/showpage { } def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/layerlen layercolorseq length def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer 1 sub layerlen mod get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+1 setmiterlimit
+% /arrowlength 10 def
+% /arrowwidth 5 def
+
+% make sure pdfmark is harmless for PS-interpreters other than Distiller
+/pdfmark where {pop} {userdict /pdfmark /cleartomark load put} ifelse
+% make '<<' and '>>' safe on PS Level 1 devices
+/languagelevel where {pop languagelevel}{1} ifelse
+2 lt {
+    userdict (<<) cvn ([) cvn load put
+    userdict (>>) cvn ([) cvn load put
+} if
+
+%%EndSetup
+setupLatin1
+%%Page: 1 1
+%%PageBoundingBox: 36 36 324 91
+%%PageOrientation: Portrait
+0 0 1 beginpage
+gsave
+36 36 288 55 boxprim clip newpath
+0.114059 0.114059 set_scale 0 rotate 319.625 319.625 translate
+% alternative_medicine
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+2211 282 70.0741 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+2154 277.65 moveto 114 (alternative medicine) alignedtext
+grestore
+% anti_science
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+2345 282 46.0741 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+2312 277.65 moveto 66 (anti-science) alignedtext
+grestore
+% antiscience
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+350 194 43.8241 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+319.25 189.65 moveto 61.5 (antiscience) alignedtext
+grestore
+% piece_of_mind
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+269 106 51.9496 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+229.625 101.65 moveto 78.75 (piece of mind) alignedtext
+grestore
+% antiscience->piece_of_mind
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 334 177 moveto
+322 163 305 145 292 130 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 294.546 127.596 moveto
+285 123 lineto
+289.596 132.546 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 294.546 127.596 moveto
+285 123 lineto
+289.596 132.546 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+318.5 145.65 moveto 15 (90) alignedtext
+grestore
+% politics
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+357 18 33.1961 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+336.375 13.65 moveto 41.25 (politics) alignedtext
+grestore
+% antiscience->politics
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 351 176 moveto
+353 145 355 83 356 46 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 359.5 46 moveto
+356 36 lineto
+352.5 46 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 359.5 46 moveto
+356 36 lineto
+352.5 46 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+355.5 101.65 moveto 15 (37) alignedtext
+grestore
+% religion
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+2467 18 35.1991 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+2444.88 13.65 moveto 44.25 (religion) alignedtext
+grestore
+% antiscience->religion
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 394 194 moveto
+680 192 2253 178 2435 70 curveto
+2444 64 2451 55 2457 45 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 2460.14 46.5596 moveto
+2461 36 lineto
+2453.74 43.7166 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 2460.14 46.5596 moveto
+2461 36 lineto
+2453.74 43.7166 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+2371.5 101.65 moveto 15 (41) alignedtext
+grestore
+% piece_of_mind->politics
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 286 89 moveto
+300 75 319 56 334 41 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 336.404 43.546 moveto
+341 34 lineto
+331.454 38.5962 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 336.404 43.546 moveto
+341 34 lineto
+331.454 38.5962 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+319.5 57.65 moveto 15 (55) alignedtext
+grestore
+% piece_of_mind->religion
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 307 94 moveto
+316 91 326 89 335 88 curveto
+548 55 2133 24 2422 19 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 2422 22.5001 moveto
+2432 19 lineto
+2422 15.5001 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 2422 22.5001 moveto
+2432 19 lineto
+2422 15.5001 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+954.5 57.65 moveto 15 (36) alignedtext
+grestore
+% assault_on_science
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+360 282 62.8255 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+309.75 277.65 moveto 100.5 (assault on science) alignedtext
+grestore
+% astronomy
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+484 282 42.9497 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+453.625 277.65 moveto 60.75 (astronomy) alignedtext
+grestore
+% bad_science
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+590 282 45.1969 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+557.375 277.65 moveto 65.25 (bad science) alignedtext
+grestore
+% badscience
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+697 282 43.8241 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+666.25 277.65 moveto 61.5 (badscience) alignedtext
+grestore
+% cam
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+786 282 27 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+774.375 277.65 moveto 23.25 (cam) alignedtext
+grestore
+% climate_science
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+886 282 54.9496 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+843.625 277.65 moveto 84.75 (climate science) alignedtext
+grestore
+% cool_stuff
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+999 282 40.0741 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+972 277.65 moveto 54 (cool stuff) alignedtext
+grestore
+% debunking
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+77 282 44.1991 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+45.875 277.65 moveto 62.25 (debunking) alignedtext
+grestore
+% debunking->antiscience
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 111 270 moveto
+119 268 127 266 135 264 curveto
+204 249 228 274 291 246 curveto
+298 242 313 229 325 218 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 327.779 220.219 moveto
+333 211 lineto
+323.169 214.951 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 327.779 220.219 moveto
+333 211 lineto
+323.169 214.951 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+312.5 233.65 moveto 15 (86) alignedtext
+grestore
+% debunking->piece_of_mind
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 95 265 moveto
+130 234 204 166 244 130 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 246.404 132.546 moveto
+251 123 lineto
+241.454 127.596 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 246.404 132.546 moveto
+251 123 lineto
+241.454 127.596 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+190.5 189.65 moveto 15 (59) alignedtext
+grestore
+% general_science
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1113 282 55.8241 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+1070.25 277.65 moveto 85.5 (general science) alignedtext
+grestore
+% homeopathy
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1236 282 49.0741 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+1200 277.65 moveto 72 (homeopathy) alignedtext
+grestore
+% humor
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+209 282 32.1991 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+189.875 277.65 moveto 38.25 (humor) alignedtext
+grestore
+% neuroscience
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1353 282 49.8241 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+1316.25 277.65 moveto 73.5 (neuroscience) alignedtext
+grestore
+% pseudoscience
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1475 282 53.9491 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+1434.12 277.65 moveto 81.75 (pseudoscience) alignedtext
+grestore
+% religion_and_spirituality
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1244 370 79.8241 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+1177.25 365.65 moveto 133.5 (religion and spirituality) alignedtext
+grestore
+% science
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1113 370 32.8267 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+1092.75 365.65 moveto 40.5 (science) alignedtext
+grestore
+% science->alternative_medicine
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1137 358 moveto
+1143 355 1149 353 1155 352 curveto
+1325 315 1765 351 1939 334 curveto
+2012 326 2095 309 2150 296 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 2150.88 299.393 moveto
+2160 294 lineto
+2149.51 292.529 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 2150.88 299.393 moveto
+2160 294 lineto
+2149.51 292.529 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+2034.5 321.65 moveto 15 (48) alignedtext
+grestore
+% science->anti_science
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1137 358 moveto
+1143 355 1149 353 1155 352 curveto
+1252 330 1954 342 2054 334 curveto
+2159 325 2186 324 2290 300 curveto
+2294 299 2297 298 2301 297 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 2302.43 300.226 moveto
+2311 294 lineto
+2300.42 293.521 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 2302.43 300.226 moveto
+2311 294 lineto
+2300.42 293.521 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+2194.5 321.65 moveto 15 (56) alignedtext
+grestore
+% science->antiscience
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1137 358 moveto
+1143 355 1149 353 1155 352 curveto
+1270 327 2096 345 2214 334 curveto
+2301 325 2461 327 2400 264 curveto
+2364 227 726 200 404 195 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 404 191.5 moveto
+394 195 lineto
+404 198.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 404 191.5 moveto
+394 195 lineto
+404 198.5 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+2412.75 277.65 moveto 22.5 (197) alignedtext
+grestore
+% science->piece_of_mind
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1080 369 moveto
+933 366 353 348 288 300 curveto
+238 262 251 178 261 134 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 264.479 134.584 moveto
+264 124 lineto
+257.774 132.573 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 264.479 134.584 moveto
+264 124 lineto
+257.774 132.573 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+258.125 233.65 moveto 21.75 (112) alignedtext
+grestore
+% science->politics
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1137 358 moveto
+1143 355 1149 353 1155 352 curveto
+1276 325 2153 347 2277 334 curveto
+2354 325 2490 323 2439 264 curveto
+2300 103 686 31 400 19 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 400 15.5001 moveto
+390 19 lineto
+400 22.5001 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 400 15.5001 moveto
+390 19 lineto
+400 22.5001 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+2332.5 189.65 moveto 15 (72) alignedtext
+grestore
+% science->religion
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1137 358 moveto
+1143 355 1149 353 1155 352 curveto
+1282 324 2200 351 2330 334 curveto
+2388 325 2421 346 2458 300 curveto
+2517 225 2492 100 2476 46 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 2479.23 44.5725 moveto
+2473 36 lineto
+2472.52 46.584 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 2479.23 44.5725 moveto
+2473 36 lineto
+2472.52 46.584 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+2493.5 189.65 moveto 15 (63) alignedtext
+grestore
+% science->assault_on_science
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1080 369 moveto
+998 367 778 359 597 334 curveto
+534 326 464 308 416 296 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 416.492 292.529 moveto
+406 294 lineto
+415.119 299.393 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 416.492 292.529 moveto
+406 294 lineto
+415.119 299.393 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+612.5 321.65 moveto 15 (39) alignedtext
+grestore
+% science->astronomy
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1080 368 moveto
+1009 365 840 355 698 334 curveto
+626 323 607 319 536 300 curveto
+533 299 530 298 527 297 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 527.584 293.521 moveto
+517 294 lineto
+525.573 300.226 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 527.584 293.521 moveto
+517 294 lineto
+525.573 300.226 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+710.5 321.65 moveto 15 (80) alignedtext
+grestore
+% science->bad_science
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1080 368 moveto
+1021 363 894 352 789 334 curveto
+724 322 708 318 644 300 curveto
+641 299 637 298 634 297 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 634.584 293.521 moveto
+624 294 lineto
+632.573 300.226 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 634.584 293.521 moveto
+624 294 lineto
+632.573 300.226 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+807.5 321.65 moveto 15 (99) alignedtext
+grestore
+% science->badscience
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1080 367 moveto
+1033 361 941 350 865 334 curveto
+813 322 801 316 750 300 curveto
+747 299 744 298 741 297 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 741.584 293.521 moveto
+731 294 lineto
+739.573 300.226 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 741.584 293.521 moveto
+731 294 lineto
+739.573 300.226 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+880.5 321.65 moveto 15 (48) alignedtext
+grestore
+% science->cam
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1081 365 moveto
+1027 355 913 333 822 300 curveto
+820 299 818 298 816 297 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 817.56 293.863 moveto
+807 293 lineto
+814.717 300.26 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 817.56 293.863 moveto
+807 293 lineto
+814.717 300.26 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+938.5 321.65 moveto 15 (40) alignedtext
+grestore
+% science->climate_science
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1086 360 moveto
+1048 345 977 318 931 300 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 932.56 296.863 moveto
+922 296 lineto
+929.717 303.26 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 932.56 296.863 moveto
+922 296 lineto
+929.717 303.26 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+1018.5 321.65 moveto 15 (56) alignedtext
+grestore
+% science->cool_stuff
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1094 355 moveto
+1076 341 1048 320 1027 304 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 1029.1 301.2 moveto
+1019 298 lineto
+1024.9 306.8 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 1029.1 301.2 moveto
+1019 298 lineto
+1024.9 306.8 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+1064.5 321.65 moveto 15 (86) alignedtext
+grestore
+% science->debunking
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1080 370 moveto
+940 369 398 364 230 334 curveto
+191 326 148 310 117 299 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 118.56 295.863 moveto
+108 295 lineto
+115.717 302.26 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 118.56 295.863 moveto
+108 295 lineto
+115.717 302.26 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+244.5 321.65 moveto 15 (91) alignedtext
+grestore
+% science->general_science
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1113 352 moveto
+1113 340 1113 324 1113 310 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 1116.5 310 moveto
+1113 300 lineto
+1109.5 310 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 1116.5 310 moveto
+1113 300 lineto
+1109.5 310 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+1112.5 321.65 moveto 15 (71) alignedtext
+grestore
+% science->homeopathy
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1133 356 moveto
+1153 342 1183 321 1205 304 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 1207.1 306.8 moveto
+1213 298 lineto
+1202.9 301.2 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 1207.1 306.8 moveto
+1213 298 lineto
+1202.9 301.2 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+1179.5 321.65 moveto 15 (38) alignedtext
+grestore
+% science->humor
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1080 370 moveto
+933 369 344 365 267 334 curveto
+259 331 244 318 231 305 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 233.546 302.596 moveto
+224 298 lineto
+228.596 307.546 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 233.546 302.596 moveto
+224 298 lineto
+228.596 307.546 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+275.5 321.65 moveto 15 (44) alignedtext
+grestore
+% science->neuroscience
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1139 359 moveto
+1144 356 1150 354 1155 352 curveto
+1206 332 1266 311 1306 297 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 1307.43 300.226 moveto
+1316 294 lineto
+1305.42 293.521 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 1307.43 300.226 moveto
+1316 294 lineto
+1305.42 293.521 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+1239.5 321.65 moveto 15 (45) alignedtext
+grestore
+% science->pseudoscience
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1138 358 moveto
+1143 356 1149 353 1155 352 curveto
+1199 338 1212 343 1259 334 curveto
+1327 320 1344 317 1412 300 curveto
+1416 299 1420 298 1424 297 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 1425.43 300.226 moveto
+1434 294 lineto
+1423.42 293.521 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 1425.43 300.226 moveto
+1434 294 lineto
+1423.42 293.521 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+1325.5 321.65 moveto 15 (36) alignedtext
+grestore
+% science_and_medicine
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1620 282 72.9495 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+1559.62 277.65 moveto 120.75 (science and medicine) alignedtext
+grestore
+% science->science_and_medicine
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1138 358 moveto
+1143 356 1149 353 1155 352 curveto
+1237 331 1260 345 1345 334 curveto
+1431 322 1452 316 1538 300 curveto
+1544 299 1549 298 1555 296 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 1555.88 299.393 moveto
+1565 294 lineto
+1554.51 292.529 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 1555.88 299.393 moveto
+1565 294 lineto
+1554.51 292.529 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+1440.12 321.65 moveto 21.75 (118) alignedtext
+grestore
+% science_and_the_media
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1786 282 74.8253 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+1723.75 277.65 moveto 124.5 (science and the media) alignedtext
+grestore
+% science->science_and_the_media
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1137 358 moveto
+1143 355 1149 353 1155 352 curveto
+1289 320 1328 347 1466 334 curveto
+1571 323 1597 318 1702 300 curveto
+1708 299 1715 297 1721 296 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 1721.88 299.393 moveto
+1731 294 lineto
+1720.51 292.529 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 1721.88 299.393 moveto
+1731 294 lineto
+1720.51 292.529 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+1582.5 321.65 moveto 15 (61) alignedtext
+grestore
+% science_education
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1942 282 62.9491 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+1892.12 277.65 moveto 99.75 (science education) alignedtext
+grestore
+% science->science_education
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1137 358 moveto
+1143 355 1149 353 1155 352 curveto
+1251 330 1502 342 1602 334 curveto
+1721 324 1751 322 1870 300 curveto
+1875 299 1880 298 1885 296 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 1885.88 299.393 moveto
+1895 294 lineto
+1884.51 292.529 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 1885.88 299.393 moveto
+1895 294 lineto
+1884.51 292.529 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+1752.5 321.65 moveto 15 (54) alignedtext
+grestore
+% science_news
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+2073 282 49.8241 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+2036.25 277.65 moveto 73.5 (science news) alignedtext
+grestore
+% science->science_news
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 1137 358 moveto
+1143 355 1149 353 1155 352 curveto
+1288 322 1635 345 1772 334 curveto
+1880 324 1907 323 2014 300 curveto
+2018 299 2022 298 2026 297 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 2027.43 300.226 moveto
+2036 294 lineto
+2025.42 293.521 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 2027.43 300.226 moveto
+2036 294 lineto
+2025.42 293.521 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+1912.75 321.65 moveto 22.5 (161) alignedtext
+grestore
+% skepticism
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+172 458 43.0741 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+142 453.65 moveto 60 (skepticism) alignedtext
+grestore
+% skepticism->antiscience
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 165 440 moveto
+150 402 124 314 168 264 curveto
+193 237 301 267 329 246 curveto
+337 240 342 231 345 222 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 348.471 222.492 moveto
+347 212 lineto
+341.607 221.119 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 348.471 222.492 moveto
+347 212 lineto
+341.607 221.119 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+147.5 321.65 moveto 15 (60) alignedtext
+grestore
+% skepticism->piece_of_mind
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 129 454 moveto
+79 447 0 427 0 370 curveto
+0 370 0 370 0 194 curveto
+0 150 131 125 210 113 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 210.398 116.478 moveto
+220 112 lineto
+209.701 109.512 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 210.398 116.478 moveto
+220 112 lineto
+209.701 109.512 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+0.5 277.65 moveto 15 (39) alignedtext
+grestore
+% skepticism->debunking
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 153 442 moveto
+147 436 140 429 135 422 curveto
+111 386 94 339 85 310 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 88.2259 308.573 moveto
+82 300 lineto
+81.5212 310.584 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 88.2259 308.573 moveto
+82 300 lineto
+81.5212 310.584 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+117.5 365.65 moveto 15 (60) alignedtext
+grestore
+% skepticism->humor
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 176 440 moveto
+182 409 195 347 203 310 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 206.471 310.492 moveto
+205 300 lineto
+199.607 309.119 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 206.471 310.492 moveto
+205 300 lineto
+199.607 309.119 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+194.5 365.65 moveto 15 (42) alignedtext
+grestore
+% skepticism->religion_and_spirituality
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 215 457 moveto
+353 453 795 438 1155 388 curveto
+1162 387 1169 386 1176 384 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 1176.88 387.393 moveto
+1186 382 lineto
+1175.51 380.529 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 1176.88 387.393 moveto
+1186 382 lineto
+1175.51 380.529 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+993.5 409.65 moveto 15 (36) alignedtext
+grestore
+% skepticism->science
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 214 454 moveto
+370 439 914 388 1070 374 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 1070.4 377.478 moveto
+1080 373 lineto
+1069.7 370.512 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 1070.4 377.478 moveto
+1080 373 lineto
+1069.7 370.512 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+700.5 409.65 moveto 15 (79) alignedtext
+grestore
+endpage
+showpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+%%BoundingBox: 36 36 324 91
+end
+restore
+%%EOF

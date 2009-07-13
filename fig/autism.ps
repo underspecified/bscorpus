@@ -1,0 +1,747 @@
+%!PS-Adobe-2.0
+%%Creator: Graphviz version 2.16 (Fri Feb  8 12:54:58 UTC 2008)
+%%For: (eric-n) Eric=Nichols
+%%Title: G
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+save
+%%BeginProlog
+/DotDict 200 dict def
+DotDict begin
+
+/setupLatin1 {
+mark
+/EncodingVector 256 array def
+ EncodingVector 0
+
+ISOLatin1Encoding 0 255 getinterval putinterval
+EncodingVector 45 /hyphen put
+
+% Set up ISO Latin 1 character encoding
+/starnetISO {
+        dup dup findfont dup length dict begin
+        { 1 index /FID ne { def }{ pop pop } ifelse
+        } forall
+        /Encoding EncodingVector def
+        currentdict end definefont
+} def
+/Times-Roman starnetISO def
+/Times-Italic starnetISO def
+/Times-Bold starnetISO def
+/Times-BoldItalic starnetISO def
+/Helvetica starnetISO def
+/Helvetica-Oblique starnetISO def
+/Helvetica-Bold starnetISO def
+/Helvetica-BoldOblique starnetISO def
+/Courier starnetISO def
+/Courier-Oblique starnetISO def
+/Courier-Bold starnetISO def
+/Courier-BoldOblique starnetISO def
+cleartomark
+} bind def
+
+%%BeginResource: procset graphviz 0 0
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+       dup 1 exch div /InvScaleFactor exch def
+       scale
+} bind def
+
+% styles
+/solid { [] 0 setdash } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw text fitted to its expected width
+/alignedtext {			% width text
+	/text exch def
+	/width exch def
+	gsave
+		width 0 gt {
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
+		} if
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+/showpage { } def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/layerlen layercolorseq length def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer 1 sub layerlen mod get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+1 setmiterlimit
+% /arrowlength 10 def
+% /arrowwidth 5 def
+
+% make sure pdfmark is harmless for PS-interpreters other than Distiller
+/pdfmark where {pop} {userdict /pdfmark /cleartomark load put} ifelse
+% make '<<' and '>>' safe on PS Level 1 devices
+/languagelevel where {pop languagelevel}{1} ifelse
+2 lt {
+    userdict (<<) cvn ([) cvn load put
+    userdict (>>) cvn ([) cvn load put
+} if
+
+%%EndSetup
+setupLatin1
+%%Page: 1 1
+%%PageBoundingBox: 36 36 324 114
+%%PageOrientation: Portrait
+0 0 1 beginpage
+gsave
+36 36 288 78 boxprim clip newpath
+0.253744 0.253744 set_scale 0 rotate 145.875 145.875 translate
+% anti_vaccine_lunacy
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+107 18 68.1991 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+51.875 13.65 moveto 110.25 (anti-vaccine lunacy) alignedtext
+grestore
+% autism
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+213 282 31.8241 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+194.25 277.65 moveto 37.5 (autism) alignedtext
+grestore
+% autism->anti_vaccine_lunacy
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 182 278 moveto
+155 274 116 264 87 246 curveto
+71 235 69 228 59 212 curveto
+30 162 0 139 24 88 curveto
+33 68 51 52 68 40 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 70.6209 42.4592 moveto
+77 34 lineto
+66.738 36.6349 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 70.6209 42.4592 moveto
+77 34 lineto
+66.738 36.6349 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+27.5 145.65 moveto 15 (31) alignedtext
+grestore
+% autism_lit
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+72 106 38.8263 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+45.75 101.65 moveto 52.5 (autism lit) alignedtext
+grestore
+% autism->autism_lit
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 182 276 moveto
+149 268 97 250 73 212 curveto
+59 189 61 157 65 134 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 68.4708 134.492 moveto
+67 124 lineto
+61.6067 133.119 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 68.4708 134.492 moveto
+67 124 lineto
+61.6067 133.119 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+76.5 189.65 moveto 15 (14) alignedtext
+grestore
+% family
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+160 106 30.9499 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+141.625 101.65 moveto 36.75 (family) alignedtext
+grestore
+% autism->family
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 209 264 moveto
+204 243 196 206 186 176 curveto
+182 162 176 146 171 134 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 173.964 131.985 moveto
+167 124 lineto
+167.464 134.585 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 173.964 131.985 moveto
+167 124 lineto
+167.464 134.585 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+198.5 189.65 moveto 15 (18) alignedtext
+grestore
+% health
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+529 194 29.827 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+511.75 189.65 moveto 34.5 (health) alignedtext
+grestore
+% autism->health
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 242 274 moveto
+300 258 428 222 492 205 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 493.427 208.226 moveto
+502 202 lineto
+491.416 201.521 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 493.427 208.226 moveto
+502 202 lineto
+491.416 201.521 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+391.5 233.65 moveto 15 (15) alignedtext
+grestore
+% jenny_mccarthy
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+294 18 56.8256 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+249.75 13.65 moveto 88.5 (jenny mccarthy) alignedtext
+grestore
+% autism->jenny_mccarthy
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 228 266 moveto
+234 260 240 253 244 246 curveto
+276 197 282 181 292 124 curveto
+297 98 297 68 296 46 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 299.5 46 moveto
+296 36 lineto
+292.5 46 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 299.5 46 moveto
+296 36 lineto
+292.5 46 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+289.5 145.65 moveto 15 (17) alignedtext
+grestore
+% parenting
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+137 194 40.0741 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+110 189.65 moveto 54 (parenting) alignedtext
+grestore
+% autism->parenting
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 199 265 moveto
+188 252 171 233 159 219 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 161.219 216.221 moveto
+152 211 lineto
+155.951 220.831 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 161.219 216.221 moveto
+152 211 lineto
+155.951 220.831 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+183.5 233.65 moveto 15 (23) alignedtext
+grestore
+% vaccines
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+246 106 37.0741 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+222 101.65 moveto 48 (vaccines) alignedtext
+grestore
+% autism->vaccines
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 221 264 moveto
+223 259 225 252 227 246 curveto
+238 208 242 163 244 134 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 247.488 134.299 moveto
+245 124 lineto
+240.522 133.602 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 247.488 134.299 moveto
+245 124 lineto
+240.522 133.602 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+241.5 189.65 moveto 15 (38) alignedtext
+grestore
+% health->vaccines
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 502 186 moveto
+452 171 345 137 287 119 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 287.584 115.521 moveto
+277 116 lineto
+285.573 122.226 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 287.584 115.521 moveto
+277 116 lineto
+285.573 122.226 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+414.5 145.65 moveto 15 (13) alignedtext
+grestore
+% cam
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+366 106 27 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+354.375 101.65 moveto 23.25 (cam) alignedtext
+grestore
+% health->cam
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 507 182 moveto
+478 167 428 139 396 122 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 397.441 118.797 moveto
+387 117 lineto
+394.042 124.916 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 397.441 118.797 moveto
+387 117 lineto
+394.042 124.916 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+462.5 145.65 moveto 15 (14) alignedtext
+grestore
+% health_fraud
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+458 106 47.1991 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+423.875 101.65 moveto 68.25 (health fraud) alignedtext
+grestore
+% health->health_fraud
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 516 177 moveto
+505 164 491 146 478 131 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 480.8 128.9 moveto
+472 123 lineto
+475.2 133.1 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 480.8 128.9 moveto
+472 123 lineto
+475.2 133.1 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+497.5 145.65 moveto 15 (16) alignedtext
+grestore
+% politics_and_regulation
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+600 106 76.8241 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+536.25 101.65 moveto 127.5 (politics and regulation) alignedtext
+grestore
+% health->politics_and_regulation
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 542 177 moveto
+553 164 567 147 579 132 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 581.8 134.1 moveto
+585 124 lineto
+576.2 129.9 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 581.8 134.1 moveto
+585 124 lineto
+576.2 129.9 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+566.5 145.65 moveto 15 (15) alignedtext
+grestore
+% public_health
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+745 106 50.1991 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+707.875 101.65 moveto 74.25 (public health) alignedtext
+grestore
+% health->public_health
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 554 184 moveto
+590 169 658 141 703 124 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 704.283 127.26 moveto
+712 120 lineto
+701.44 120.863 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 704.283 127.26 moveto
+712 120 lineto
+701.44 120.863 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+648.5 145.65 moveto 15 (21) alignedtext
+grestore
+% science_and_medicine
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+886 106 72.9495 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+825.625 101.65 moveto 120.75 (science and medicine) alignedtext
+grestore
+% health->science_and_medicine
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 557 187 moveto
+615 173 746 141 824 121 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 824.881 124.393 moveto
+834 119 lineto
+823.508 117.529 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 824.881 124.393 moveto
+834 119 lineto
+823.508 117.529 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+727.5 145.65 moveto 15 (22) alignedtext
+grestore
+% science_and_the_media
+gsave
+1 setlinewidth
+0.000 0.000 0.000 nodecolor
+1052 106 74.8253 18 ellipse_path stroke
+0.000 0.000 0.000 nodecolor
+14.00 /Times-Roman set_font
+989.75 101.65 moveto 124.5 (science and the media) alignedtext
+grestore
+% health->science_and_the_media
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 558 190 moveto
+629 180 814 152 968 124 curveto
+974 123 980 121 986 120 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 986.881 123.393 moveto
+996 118 lineto
+985.508 116.529 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 986.881 123.393 moveto
+996 118 lineto
+985.508 116.529 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+857.5 145.65 moveto 15 (15) alignedtext
+grestore
+% parenting->autism_lit
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 124 177 moveto
+114 164 101 146 91 131 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 93.8 128.9 moveto
+85 123 lineto
+88.2 133.1 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 93.8 128.9 moveto
+85 123 lineto
+88.2 133.1 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+111.5 145.65 moveto 15 (13) alignedtext
+grestore
+% parenting->family
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 142 176 moveto
+145 164 150 148 153 134 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 156.471 134.492 moveto
+155 124 lineto
+149.607 133.119 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 156.471 134.492 moveto
+155 124 lineto
+149.607 133.119 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+151.5 145.65 moveto 15 (22) alignedtext
+grestore
+% vaccines->anti_vaccine_lunacy
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 223 92 moveto
+202 78 167 56 142 40 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 143.441 36.7969 moveto
+133 35 lineto
+140.042 42.916 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 143.441 36.7969 moveto
+133 35 lineto
+140.042 42.916 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+190.5 57.65 moveto 15 (35) alignedtext
+grestore
+% vaccines->jenny_mccarthy
+gsave
+1 setlinewidth
+0.000 0.000 0.000 edgecolor
+newpath 256 88 moveto
+262 76 272 59 279 45 curveto
+stroke
+0.000 0.000 0.000 edgecolor
+newpath 282.203 46.4414 moveto
+284 36 lineto
+276.084 43.0418 lineto
+closepath fill
+1 setlinewidth
+solid
+0.000 0.000 0.000 edgecolor
+newpath 282.203 46.4414 moveto
+284 36 lineto
+276.084 43.0418 lineto
+closepath stroke
+0.000 0.000 0.000 edgecolor
+14.00 /Times-Roman set_font
+274.5 57.65 moveto 15 (15) alignedtext
+grestore
+endpage
+showpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+%%BoundingBox: 36 36 324 114
+end
+restore
+%%EOF
