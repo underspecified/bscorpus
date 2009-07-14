@@ -7,7 +7,7 @@ import socket, urllib2
 import re
 
 # timeout in seconds
-timeout = 3
+timeout = 5
 socket.setdefaulttimeout(timeout)
 
 # utf-8 i/o plz!
@@ -25,18 +25,34 @@ def get_title(h):
 	except Exception, err:
 		return ''
 
-global blog, links, rlinks, tags, rtags, title
+global blog, links, rlinks, tags, rtags, title, ua
 blog = {}
 links = {}
 rlinks = {}
 tags = {}
 rtags = {}
 title = {}
+ua = "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)"
+
+def get_true_url(l):
+	try:
+		req = urllib2.Request(l, None, {'User-Agent' : ua})
+		l = urllib2.urlopen(req).geturl()
+#	except urllib2.HTTPError, err:
+#		print >>sys.stderr, '\t', "The server couldn't fulfill the request."
+#		print >>sys.stderr, '\t', 'Error code:', err.code
+#	except urllib2.URLError, err:
+#		print >>sys.stderr, '\t', 'We failed to reach a server.'
+#		print >>sys.stderr, '\t', 'Reason:', err.reason
+	except Exception, err:
+		print >>sys.stderr, 'UH-OH! ^^;', err, l
+		pass
+	return l
 
 def get_links(x):
 	'''Retrieve links from blog posts in XML file.'''
 	google_tags = set([u'fresh', u'read', u'reading-list'])
-	anchors = SoupStrainer('a', href=re.compile('http'))
+	anchors = SoupStrainer('a', href=re.compile('^http'))
 	d = feedparser.parse(x)
 	for e in d.entries:
 		try:
@@ -45,10 +61,9 @@ def get_links(x):
 			l = e.link        # link to blog post
 
 			# try to get permalink by following redirects
-			try:
-				if b not in l: l = urllib2.urlopen(l).geturl()
-			except Exception, err:
-				pass
+#			print >>sys.stderr, "blog:", b, "link:", l
+			if b.replace('http://', '').replace('www.', '') not in l:
+				l = get_true_url(l)
 
 			try:	
 				blog[l] = b
@@ -67,8 +82,9 @@ def get_links(x):
 					p = e.subtitle
 				elif 'content' in e and 'value' in e.content:
 					p = e.content.value
-#				else:
-#					p = urllib2.urlopen(l)
+				else:
+					req = urllib2.Request(l, None, {'User-Agent' : ua})
+					p = urllib2.urlopen(req).geturl()
 
 				# parse the html
 				s = BeautifulSoup(p, parseOnlyThese=anchors)
@@ -78,6 +94,7 @@ def get_links(x):
 				links.setdefault(l, [])
 				for a in s.findAll('a'):
 					h = a['href']
+					h = get_true_url(h)
 					blog.setdefault(h, '')
 					links[l].append(h)
 					rlinks.setdefault(h, [])
@@ -97,29 +114,28 @@ def get_links(x):
 def get_blogs(_links):
 	'''Return the blogs each link in a set is from, if it is identifiable.'''
 	all_blogs = frozenset([b for b in blog.values() if b])
-#	s = [b for b in all_blogs for l in _links if b in l]
-#	print >>sys.stderr, s
 	s = {}
 	for l in _links:
-		x = [b for b in all_blogs if b in l]
+		x = [b for b in all_blogs if b.replace('http://', '').replace('www.', '') in l]
 		s[l] = x[0] if x else ''
 #	print >>sys.stderr, s
 	return s
 
 def has_many_blogs(_links):
 	'''Check if a set of links point to more than one known blogs.'''
-	if len(_links) < 2:
-		return False
+#	if len(_links) < 2:
+#		return False
 	v = frozenset(get_blogs(_links).values())
 #	print >>sys.stderr, v, len(frozenset(v))
-	return v == frozenset([]) or len(v) > 1
+#	return v == frozenset(['']) or len(v) > 1
+	return len(v) > 1
 
 def filter_rlinks(_rlinks):
 	'''Throw away link spam and self-referential links.'''
 	clinks = {}
 	for l in _rlinks:
 		# only keep non-self-referential reverse links that are from different blogs
-		c = frozenset(_rlinks[l])
+		c = _rlinks[l]
 #		print >>sys.stderr, has_many_blogs(c), c
 		if has_many_blogs(c):
 			clinks[l] = frozenset([x for x in c if x!=l and x not in blog.values()])
@@ -127,7 +143,7 @@ def filter_rlinks(_rlinks):
 
 def print_rlinks(_rlinks):
 	'''Print reverse links if they aren't self-refererential.'''
-	for l in sorted(_rlinks, key=lambda x: len(frozenset(_rlinks[x])), reverse=True):
+	for l in sorted(filter_rlinks(_rlinks), key=lambda x: len(frozenset(_rlinks[x])), reverse=True):
 		d = frozenset(_rlinks[l])
 		i = [title[i] for i in d if i in title]
 		t = sorted(reduce(set.union, [tags[l]]+[tags[z] for z in d if z in tags]))
@@ -136,7 +152,6 @@ def print_rlinks(_rlinks):
 if len(sys.argv) > 1:
 	for x in sys.argv[1:]:
 		get_links(x)
-	flinks = filter_rlinks(rlinks)
-	print_rlinks(flinks)
+	print_rlinks(rlinks)
 else:
 	print >>sys.stderr, 'usage: pr-links.py <rss-feed.xml> [<rss-feed.xml> ...]'
