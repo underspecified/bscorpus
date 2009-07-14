@@ -5,7 +5,6 @@ import feedparser
 from BeautifulSoup import BeautifulSoup, SoupStrainer
 import socket, urllib2
 import re
-import cpickle
 
 # timeout in seconds
 timeout = 5
