@@ -5,6 +5,7 @@ import feedparser
 from BeautifulSoup import BeautifulSoup, SoupStrainer
 import socket, urllib2
 import re
+import cpickle
 
 # timeout in seconds
 timeout = 5
@@ -94,7 +95,7 @@ def get_links(x):
 				links.setdefault(l, [])
 				for a in s.findAll('a'):
 					h = a['href']
-					h = get_true_url(h)
+#					h = get_true_url(h)
 					blog.setdefault(h, '')
 					links[l].append(h)
 					rlinks.setdefault(h, [])
