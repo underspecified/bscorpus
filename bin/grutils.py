@@ -137,7 +137,7 @@ def filter_rlinks():
 	print >>sys.stderr, "Filtering rlinks . . .",
 	clinks = {}
 	for i,l in enumerate(rlinks):
-		if (i % 10) == 0: print >>sys.stderr, '.',
+		if (i % 100) == 0: print >>sys.stderr, '.',
 		# only keep non-self-referential reverse links that are from different blogs
 		c = rlinks[l]
 #		print >>sys.stderr, has_many_blogs(c), c
