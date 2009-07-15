@@ -132,40 +132,42 @@ def has_many_blogs(_links):
 #	return v == frozenset(['']) or len(v) > 1
 	return len(v) > 1
 
-def filter_rlinks(_rlinks):
+def filter_rlinks():
 	'''Throw away link spam and self-referential links.'''
+	print >>sys.stderr, "Filtering rlinks ...",
 	clinks = {}
-	for l in _rlinks:
+	for l in rlinks:
 		# only keep non-self-referential reverse links that are from different blogs
-		c = _rlinks[l]
+		c = rlinks[l]
 #		print >>sys.stderr, has_many_blogs(c), c
 		if has_many_blogs(c):
 			clinks[l] = frozenset([x for x in c if x!=l and x not in blog.values()])
+	print >>sys.stderr, "done!"
 	return clinks
 
 def print_rlinks():
 	'''Print reverse links if they aren't self-refererential.'''
-	for l in sorted(filter_rlinks(rlinks), key=lambda x: len(frozenset(rlinks[x])), reverse=True):
-		d = frozenset(rlinks[l])
+	clinks = filter_rlinks()
+	for l in sorted(clinks, key=lambda x: len(frozenset(clinks[x])), reverse=True):
+		d = frozenset(clinks[l])
 		i = [title[i] for i in d if i in title]
 		t = sorted(reduce(set.union, [tags[l]]+[tags[z] for z in d if z in tags]))
 		print >>sys.stdout, len(d), get_title(l), l, i, t, d, frozenset(get_blogs(d).values()), has_many_blogs(d)
 
 def pickle_data(f):
 	'''Pickle data and store it to file.'''
+	print >>sys.stderr, "Pickling ...",
 	i = file(f, 'w')
 	cPickle.dump((blog, links, rlinks, tags, rtags, title), i, 2)
 	i.close()
-#	print >>sys.stderr, "Pickled!"
+	print >>sys.stderr, "done!"
 
 
 def unpickle_data(f):
 	'''Read data from file and unpickle it.'''
+	print >>sys.stderr, "Unpickling ...",
 	i = file(f, 'r')
 	global blog, links, rlinks, tags, rtags, title
 	blog, links, rlinks, tags, rtags, title = cPickle.load(i)
 	i.close()
-#	for o in (blog, links, rlinks, tags, rtags, title):
-#		print >>sys.stderr, o
-#		print >>sys.stderr, "=" * 50
-#	print >>sys.stderr, "Unpickled!"
+	print >>sys.stderr, "done!"
