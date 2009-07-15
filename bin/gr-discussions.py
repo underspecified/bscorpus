@@ -9,10 +9,8 @@ sys.stdin = codecs.getwriter('utf-8')(sys.stdin)
 
 from grutils import *
 
-if len(sys.argv) > 2:
-	for x in sys.argv[2:]:
-		get_links(x)
-	pickle_data(sys.argv[1])
-
+if len(sys.argv) == 2:
+	unpickle_data(sys.argv[1])
+	print_rlinks()
 else:
-	print >>sys.stderr, 'usage: gr-links.py <rss-feed.pkl> <rss-feed.xml> [<rss-feed.xml> ...]'
+	print >>sys.stderr, 'usage: gr-discussion.py <rss-feed.pkl>'

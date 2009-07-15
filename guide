@@ -5,3 +5,4 @@ hg status
 hg diff
 
 python bin/gr-links.py data/test/gr-test-100.xml
+python bin/gr-discussions.py gr.pkl
