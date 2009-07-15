@@ -4,16 +4,16 @@ BSHOME	?= $(HOME)/bscorpus
 FS      := gr-feeds
 POSTS   := 1000
 stats	:= gr-cats.stats.txt gr-entries.stats.txt gr-blogs.stats.txt gr-titles.stats.txt gr-urls.stats.txt
-links	:= gr-links.txt
+discussions	:= gr-discussions.txt
 
-all:	xml txt stats links
+all:	xml txt stats discussions
 
-clean:	clean.stats clean.links clean.log
+clean:	clean.stats clean.discussions clean.log
 
-cleanall: clean.xml clean.txt clean.log clean.stats clean.links
+cleanall: clean.xml clean.txt clean.log clean.stats clean.discussions
 
-clean.links:
-	rm -f $(links)
+clean.discussions:
+	rm -f $(discussions)
 
 clean.stats:
 	rm -f $(stats)
@@ -29,7 +29,7 @@ clean.xml:
 
 stats:	$(stats)
 
-links:	$(links)
+discussions:	$(discussions)
 
 %.stats.txt:	%.txt
 	tr A-Z a-z < $< | \
@@ -37,11 +37,11 @@ links:	$(links)
 	uniq -c | \
 	sort -t'	' -nr > $@
 
-gr-links.txt:	gr-links.pkl $(BSHOME)/bin/gr-discussion.py $(BSHOME)/bin/grutils.py
-	python $(BSHOME)/bin/gr-discussion.py $< | tee gr-links.txt
+gr-discussions.txt:	gr-links.pkl $(BSHOME)/bin/gr-discussions.py $(BSHOME)/bin/grutils.py
+	python $(BSHOME)/bin/gr-discussions.py $< | tee $@
 
 gr-links.pkl:	$(BSHOME)/bin/gr-links.py $(BSHOME)/bin/grutils.py
-	python $(BSHOME)/bin/gr-links.py $@ $(shell echo $(FS).*.xml 2>&1 | tee gr-links.log
+	python $(BSHOME)/bin/gr-links.py $@ $(shell echo $(FS).*.xml) 2>&1 | tee gr-links.log
 
 gr-blogs.txt:	gr-entries.txt
 	cut -f1 < $< > $@
