@@ -120,11 +120,11 @@ def get_blogs(_links):
 		x = [b for b in all_blogs if b.replace('http://', '').replace('www.', '') in l]
 		s[l] = x[0] if x else ''
 #	print >>sys.stderr, s
-	return s
+	return frozenset(s.values())
 
-def has_many_blogs(_links):
+def has_many_blogs(v):
 	'''Check if a set of links point to more than one known blogs.'''
-	v = frozenset(get_blogs(_links).values())
+#	v = frozenset(b.values())
 #	print >>sys.stderr, v, len(frozenset(v))
 #	return v == frozenset(['']) or len(v) > 1
 	return len(v) > 1
@@ -137,9 +137,9 @@ def filter_rlinks():
 		if (i % 100) == 0: print >>sys.stderr, '.',
 		# only keep non-self-referential reverse links that are from different blogs
 		c = rlinks[l]
-#		print >>sys.stderr, has_many_blogs(c), c
-		if has_many_blogs(c):
-			clinks[l] = frozenset([x for x in c if x!=l and x not in blog.values()])
+#		print >>sys.stderr, has_many_blogs(get_blogs(c)), c
+		if has_many_blogs(get_blogs(c)):
+			clinks[l] = frozenset([x for x in c if x!=l and x not in all_blogs])
 	print >>sys.stderr, "done!"
 	return clinks
 
@@ -150,7 +150,8 @@ def print_rlinks():
 		d = frozenset(clinks[l])
 		i = [title[i] for i in d if i in title]
 		t = sorted(reduce(set.union, [tags[l]]+[tags[z] for z in d if z in tags]))
-		print >>sys.stdout, len(d), get_title(l), l, i, t, d, frozenset(get_blogs(d).values()), has_many_blogs(d)
+		b = get_blogs(d)
+		print >>sys.stdout, len(d), get_title(l), l, i, t, d, b, has_many_blogs(b)
 
 def pickle_data(f):
 	'''Pickle data and store it to file.'''
