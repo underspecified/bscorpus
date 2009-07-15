@@ -37,8 +37,11 @@ links:	$(links)
 	uniq -c | \
 	sort -t'	' -nr > $@
 
-gr-links.txt:	$(BSHOME)/bin/gr-links.py
-	(python $(BSHOME)/bin/gr-links.py $(shell echo $(FS).*.xml) | tee $@) 2>&1 | tee gr-links.log
+gr-links.txt:	gr-links.pkl $(BSHOME)/bin/gr-discussion.py $(BSHOME)/bin/grutils.py
+	python $(BSHOME)/bin/gr-discussion.py $< | tee gr-links.txt
+
+gr-links.pkl:	$(BSHOME)/bin/gr-links.py $(BSHOME)/bin/grutils.py
+	python $(BSHOME)/bin/gr-links.py $@ $(shell echo $(FS).*.xml 2>&1 | tee gr-links.log
 
 gr-blogs.txt:	gr-entries.txt
 	cut -f1 < $< > $@
