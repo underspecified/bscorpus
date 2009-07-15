@@ -134,7 +134,7 @@ def has_many_blogs(_links):
 
 def filter_rlinks():
 	'''Throw away link spam and self-referential links.'''
-	print >>sys.stderr, "Filtering rlinks . . .",
+	print >>sys.stderr, "Filtering rlinks (%d). . ." % len(rlinks),
 	clinks = {}
 	for i,l in enumerate(rlinks):
 		if (i % 100) == 0: print >>sys.stderr, '.',
