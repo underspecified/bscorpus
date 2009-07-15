@@ -139,7 +139,7 @@ def filter_rlinks():
 		# only keep non-self-referential reverse links that are from different blogs
 		c = rlinks[l]
 #		print >>stderr, has_many_blogs(get_blogs(c)), c
-		if has_many_blogs(get_blogs(c)):
+		if c not in all_blogs and has_many_blogs(get_blogs(c)):
 			clinks[l] = frozenset([x for x in c if x!=l and x not in all_blogs])
 	print >>stderr, "done!"
 	return clinks
