@@ -8,6 +8,7 @@ import sys
 import codecs 
 sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
 sys.stdin = codecs.getwriter('utf-8')(sys.stdin)
+sys.stderr = codecs.getwriter('utf-8')(sys.stderr)
 
 if len(sys.argv) > 2:
 	for x in sys.argv[2:]:

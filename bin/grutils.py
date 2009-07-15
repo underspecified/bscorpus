@@ -16,6 +16,7 @@ import sys
 import codecs 
 sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
 sys.stdin = codecs.getwriter('utf-8')(sys.stdin)
+sys.stderr = codecs.getwriter('utf-8')(sys.stderr)
 
 titles = SoupStrainer('title')
 def get_title(h):
