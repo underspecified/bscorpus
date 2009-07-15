@@ -6,9 +6,9 @@ from grutils import *
 # utf-8 i/o plz!
 import sys
 import codecs 
-sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
-sys.stdin = codecs.getwriter('utf-8')(sys.stdin)
-sys.stderr = codecs.getwriter('utf-8')(sys.stderr)
+stdout = codecs.getwriter('utf-8')(sys.stdout)
+stdin = codecs.getwriter('utf-8')(sys.stdin)
+stderr = codecs.getwriter('utf-8')(sys.stderr)
 
 if len(sys.argv) > 2:
 	for x in sys.argv[2:]:
@@ -16,4 +16,4 @@ if len(sys.argv) > 2:
 	pickle_data(sys.argv[1])
 
 else:
-	print >>sys.stderr, 'usage: gr-links.py <rss-feed.pkl> <rss-feed.xml> [<rss-feed.xml> ...]'
+	print >>stderr, 'usage: gr-links.py <rss-feed.pkl> <rss-feed.xml> [<rss-feed.xml> ...]'

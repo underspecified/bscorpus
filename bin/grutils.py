@@ -14,9 +14,9 @@ socket.setdefaulttimeout(timeout)
 # utf-8 i/o plz!
 import sys
 import codecs 
-sys.stdout = codecs.getwriter('utf-8')(sys.stdout)
-sys.stdin = codecs.getwriter('utf-8')(sys.stdin)
-sys.stderr = codecs.getwriter('utf-8')(sys.stderr)
+stdout = codecs.getwriter('utf-8')(sys.stdout)
+stdin = codecs.getwriter('utf-8')(sys.stdin)
+stderr = codecs.getwriter('utf-8')(sys.stderr)
 
 titles = SoupStrainer('title')
 def get_title(h):
@@ -42,13 +42,13 @@ def get_true_url(l):
 		req = urllib2.Request(l, None, {'User-Agent' : ua})
 		l = urllib2.urlopen(req).geturl()
 #	except urllib2.HTTPError, err:
-#		print >>sys.stderr, '\t', "The server couldn't fulfill the request."
-#		print >>sys.stderr, '\t', 'Error code:', err.code
+#		print >>stderr, '\t', "The server couldn't fulfill the request."
+#		print >>stderr, '\t', 'Error code:', err.code
 #	except urllib2.URLError, err:
-#		print >>sys.stderr, '\t', 'We failed to reach a server.'
-#		print >>sys.stderr, '\t', 'Reason:', err.reason
+#		print >>stderr, '\t', 'We failed to reach a server.'
+#		print >>stderr, '\t', 'Reason:', err.reason
 	except Exception, err:
-		print >>sys.stderr, 'UH-OH! ^^;', err, l
+		print >>stderr, 'UH-OH! ^^;', err, l
 		pass
 	return l
 
@@ -64,14 +64,14 @@ def get_links(x):
 			l = e.link        # link to blog post
 
 			# try to get permalink by following redirects
-#			print >>sys.stderr, "blog:", b, "link:", l
+#			print >>stderr, "blog:", b, "link:", l
 			if b.replace('http://', '').replace('www.', '') not in l:
 				l = get_true_url(l)
 
 			try:	
 				blog[l] = b
 				tags[l] = set([t.label or t.term for t in e.tags if t.label or t.term]) - google_tags
-#				print >>sys.stderr, tags[l]
+#				print >>stderr, tags[l]
 				for t in tags[l]:
 					rtags.setdefault(t, set())
 					rtags[t].add(l)
@@ -91,7 +91,7 @@ def get_links(x):
 
 				# parse the html
 				s = BeautifulSoup(p, parseOnlyThese=anchors)
-#				print >>sys.stderr, s.prettify()
+#				print >>stderr, s.prettify()
 
 				# index links in blog post summary
 				links.setdefault(l, [])
@@ -104,15 +104,15 @@ def get_links(x):
 					rlinks[h].append(l)
 					tags.setdefault(h, set())
 #					title.setdefault(h, get_title(h))
-#					print >>sys.stderr, h
+#					print >>stderr, h
 
-				print >>sys.stderr, "WIN! \(^o^)/", l
+				print >>stderr, "WIN! \(^o^)/", l
 
 			except Exception, err:
-				print >>sys.stderr, "FAIL! >_<", err, l
+				print >>stderr, "FAIL! >_<", err, l
 	
 		except Exception, err:
-			print >>sys.stderr, "EPIC FAIL! Orz", err, e.id
+			print >>stderr, "EPIC FAIL! Orz", err, e.id
 
 def get_blogs(_links):
 	'''Return the blogs each link in a set is from, if it is identifiable.'''
@@ -120,28 +120,28 @@ def get_blogs(_links):
 	for l in _links:
 		x = [b for b in all_blogs if b.replace('http://', '').replace('www.', '') in l]
 		s[l] = x[0] if x else ''
-#	print >>sys.stderr, s
+#	print >>stderr, s
 	return frozenset(s.values())
 
 def has_many_blogs(v):
 	'''Check if a set of links point to more than one known blogs.'''
 #	v = frozenset(b.values())
-#	print >>sys.stderr, v, len(frozenset(v))
+#	print >>stderr, v, len(frozenset(v))
 #	return v == frozenset(['']) or len(v) > 1
 	return len(v) > 1
 
 def filter_rlinks():
 	'''Throw away link spam and self-referential links.'''
-	print >>sys.stderr, "Filtering rlinks (%d) . . ." % len(rlinks),
+	print >>stderr, "Filtering rlinks (%d) . . ." % len(rlinks),
 	clinks = {}
 	for i,l in enumerate(rlinks):
-		if (i % 100) == 0: print >>sys.stderr, '.',
+		if (i % 100) == 0: print >>stderr, '.',
 		# only keep non-self-referential reverse links that are from different blogs
 		c = rlinks[l]
-#		print >>sys.stderr, has_many_blogs(get_blogs(c)), c
+#		print >>stderr, has_many_blogs(get_blogs(c)), c
 		if has_many_blogs(get_blogs(c)):
 			clinks[l] = frozenset([x for x in c if x!=l and x not in all_blogs])
-	print >>sys.stderr, "done!"
+	print >>stderr, "done!"
 	return clinks
 
 def print_rlinks():
@@ -152,23 +152,23 @@ def print_rlinks():
 		i = [title[i] for i in d if i in title]
 		t = sorted(reduce(set.union, [tags[l]]+[tags[z] for z in d if z in tags]))
 		b = get_blogs(d)
-		print >>sys.stdout, len(d), get_title(l), l, i, t, d, b, has_many_blogs(b)
+		print >>stdout, len(d), get_title(l), l, i, t, d, b, has_many_blogs(b)
 
 def pickle_data(f):
 	'''Pickle data and store it to file.'''
-	print >>sys.stderr, "Pickling ...",
+	print >>stderr, "Pickling ...",
 	i = file(f, 'w')
 	pickle.dump((blog, links, rlinks, tags, rtags, title), i, 2)
 	i.close()
-	print >>sys.stderr, "done!"
+	print >>stderr, "done!"
 
 def unpickle_data(f):
 	'''Read data from file and unpickle it.'''
-	print >>sys.stderr, "Unpickling ...",
+	print >>stderr, "Unpickling ...",
 	i = file(f, 'r')
 	global blog, all_blogs, links, rlinks, tags, rtags, title
 	blog, links, rlinks, tags, rtags, title = pickle.load(i)
 	i.close()
 	global all_blogs
 	all_blogs = frozenset([b for b in blog.values() if b])	
-	print >>sys.stderr, "done!"
+	print >>stderr, "done!"
