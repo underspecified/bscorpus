@@ -5,7 +5,7 @@ import feedparser
 from BeautifulSoup import BeautifulSoup, SoupStrainer
 import socket, urllib2
 import re
-import cPickle
+import cPickle as pickle
 
 # timeout in seconds
 timeout = 5
@@ -115,7 +115,6 @@ def get_links(x):
 
 def get_blogs(_links):
 	'''Return the blogs each link in a set is from, if it is identifiable.'''
-	all_blogs = frozenset([b for b in blog.values() if b])
 	s = {}
 	for l in _links:
 		x = [b for b in all_blogs if b.replace('http://', '').replace('www.', '') in l]
@@ -125,8 +124,6 @@ def get_blogs(_links):
 
 def has_many_blogs(_links):
 	'''Check if a set of links point to more than one known blogs.'''
-#	if len(_links) < 2:
-#		return False
 	v = frozenset(get_blogs(_links).values())
 #	print >>sys.stderr, v, len(frozenset(v))
 #	return v == frozenset(['']) or len(v) > 1
@@ -134,7 +131,7 @@ def has_many_blogs(_links):
 
 def filter_rlinks():
 	'''Throw away link spam and self-referential links.'''
-	print >>sys.stderr, "Filtering rlinks (%d). . ." % len(rlinks),
+	print >>sys.stderr, "Filtering rlinks (%d) . . ." % len(rlinks),
 	clinks = {}
 	for i,l in enumerate(rlinks):
 		if (i % 100) == 0: print >>sys.stderr, '.',
@@ -159,16 +156,17 @@ def pickle_data(f):
 	'''Pickle data and store it to file.'''
 	print >>sys.stderr, "Pickling ...",
 	i = file(f, 'w')
-	cPickle.dump((blog, links, rlinks, tags, rtags, title), i, 2)
+	pickle.dump((blog, links, rlinks, tags, rtags, title), i, 2)
 	i.close()
 	print >>sys.stderr, "done!"
-
 
 def unpickle_data(f):
 	'''Read data from file and unpickle it.'''
 	print >>sys.stderr, "Unpickling ...",
 	i = file(f, 'r')
-	global blog, links, rlinks, tags, rtags, title
-	blog, links, rlinks, tags, rtags, title = cPickle.load(i)
+	global blog, all_blogs, links, rlinks, tags, rtags, title
+	blog, links, rlinks, tags, rtags, title = pickle.load(i)
 	i.close()
+	global all_blogs
+	all_blogs = frozenset([b for b in blog.values() if b])	
 	print >>sys.stderr, "done!"
