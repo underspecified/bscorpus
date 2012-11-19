@@ -1,4 +1,4 @@
-#!/usr/bin/python2.5
+#!/usr/bin/python2.7
 # -*- coding: utf-8 -*-
 
 import feedparser
@@ -64,20 +64,26 @@ def get_links(x):
 			l = e.link        # link to blog post
 
 			# try to get permalink by following redirects
-#			print >>stderr, "blog:", b, "link:", l
-			if b.replace('http://', '').replace('www.', '') not in l:
+                        #print >>stderr, "blog:", b, "link:", l
+                        b_ = b.replace('http://', '').replace('www.', '')
+			if b_ not in l:
 				l = get_true_url(l)
 
 			try:	
 				blog[l] = b
-				tags[l] = set([t.label or t.term for t in e.tags if t.label or t.term]) - google_tags
-#				print >>stderr, tags[l]
+				tags[l] = set(
+                                        [t.label or t.term 
+                                         for t in e.tags 
+                                         if t.label or t.term]
+                                ) - google_tags
+				#print >>stderr, tags[l]
 				for t in tags[l]:
 					rtags.setdefault(t, set())
 					rtags[t].add(l)
 				title[l] = i
 
-				# get blog post summary by trying several RSS aliases
+				# get blog post summary by trying
+				# several RSS aliases
 				p = None
 				if 'summary' in e:
 					p = e.summary
@@ -86,25 +92,27 @@ def get_links(x):
 				elif 'content' in e and 'value' in e.content:
 					p = e.content.value
 				else:
-					req = urllib2.Request(l, None, {'User-Agent' : ua})
+					req = urllib2.Request(
+                                                l, None, {'User-Agent' : ua}
+                                        )
 					p = urllib2.urlopen(req).geturl()
 
 				# parse the html
 				s = BeautifulSoup(p, parseOnlyThese=anchors)
-#				print >>stderr, s.prettify()
+				#print >>stderr, s.prettify()
 
 				# index links in blog post summary
 				links.setdefault(l, [])
 				for a in s.findAll('a'):
 					h = a['href']
-#					h = get_true_url(h)
+					#h = get_true_url(h)
 					blog.setdefault(h, '')
 					links[l].append(h)
 					rlinks.setdefault(h, [])
 					rlinks[h].append(l)
 					tags.setdefault(h, set())
-#					title.setdefault(h, get_title(h))
-#					print >>stderr, h
+					#title.setdefault(h, get_title(h))
+					#print >>stderr, h
 
 				print >>stderr, "WIN! \(^o^)/", l
 
@@ -115,20 +123,23 @@ def get_links(x):
 			print >>stderr, "EPIC FAIL! Orz", err, e.id
 
 def get_blogs(_links):
-	'''Return the blogs each link in a set is from, if it is identifiable.'''
+	'''Return the blogs each link in a set is from, if identifiable.'''
 	s = {}
 	for l in _links:
-		x = [b for b in all_blogs if b.replace('http://', '').replace('www.', '') in l]
+		x = [b 
+                     for b in all_blogs 
+                     if b.replace('http://', '').replace('www.', '') in l]
 		s[l] = x[0] if x else ''
-#	print >>stderr, s
+        #print >>stderr, s
 	return frozenset(s.values())
 
 def has_many_blogs(v):
 	'''Check if a set of links point to more than one known blogs.'''
-#	v = frozenset(b.values())
-#	print >>stderr, v, len(frozenset(v))
-#	return v == frozenset(['']) or len(v) > 1
-	return len(v) > 1
+	return len(frozenset(get_blogs(v))) > 1
+
+def not_in_all_blogs(v):
+        '''Returns True if intersection between v and all_blogs is empty.'''
+        return not bool(frozenset.intersection(frozenset(v), all_blogs))
 
 def filter_rlinks():
 	'''Throw away link spam and self-referential links.'''
@@ -136,23 +147,37 @@ def filter_rlinks():
 	clinks = {}
 	for i,l in enumerate(rlinks):
 		if (i % 100) == 0: print >>stderr, '.',
-		# only keep non-self-referential reverse links that are from different blogs
+		# only keep non-self-referential reverse links that
+		# are from different blogs
 		c = rlinks[l]
-#		print >>stderr, has_many_blogs(get_blogs(c)), c
-		if c not in all_blogs and has_many_blogs(get_blogs(c)):
-			clinks[l] = frozenset([x for x in c if x!=l and x not in all_blogs])
+                #print >>sys.stderr, has_many_blogs(get_blogs(c)), c
+		if not_in_all_blogs(c) and has_many_blogs(c):
+			clinks[l] = frozenset(
+                                [x 
+                                 for x in c 
+                                 if x!=l and x not in all_blogs]
+                        )
 	print >>stderr, "done!"
 	return clinks
 
 def print_rlinks():
-	'''Print reverse links if they aren't self-refererential.'''
+	'''Print reverse links if they aren't self-referential.'''
 	clinks = filter_rlinks()
-	for l in sorted(clinks, key=lambda x: len(frozenset(clinks[x])), reverse=True):
+	for l in sorted(clinks, 
+                        key=lambda x: len(frozenset(clinks[x])), 
+                        reverse=True):
 		d = frozenset(clinks[l])
 		i = [title[i] for i in d if i in title]
-		t = sorted(reduce(set.union, [tags[l]]+[tags[z] for z in d if z in tags]))
+		t = sorted(
+                        reduce(set.union, 
+                               [tags[l]] + [tags[z] 
+                                            for z in d 
+                                            if z in tags]
+                       )
+                )
 		b = get_blogs(d)
-		print >>stdout, len(d), get_title(l), l, i, t, d, b, has_many_blogs(b)
+		print >>stdout, len(d), get_title(l), l, i, t, d, b,
+                print >>stdout, has_many_blogs(b)
 
 def pickle_data(f):
 	'''Pickle data and store it to file.'''
