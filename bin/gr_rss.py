@@ -21,15 +21,16 @@ def gr_auth(user, passwd):
 	auth_resp = urllib2.urlopen(auth_req)
 	auth_resp_content = auth_resp.read()
 	auth = dict(
-                x.split('=') 
-                for x in auth_resp_content.split('\n') 
-                if x
+                [x.split('=')
+                 for x in auth_resp_content.split('\n') 
+                 if '=' in x]
         )
         #print >>sys.stderr, 'auth:', auth
         return {'Authorization': 'GoogleLogin auth=%s' % auth['Auth']}
 
 cont_re = re.compile(r'<gr:continuation>(.+)</gr:continuation>')
 def get_cont(content):
+        '''Get continue token from Google Reader response content'''
 	m = cont_re.search(content)
 	if m:
 		return m.group(1)
@@ -37,6 +38,7 @@ def get_cont(content):
                 return None
 
 def get_feeds(base_url, header):
+        '''Request feeds from Google Reader until they run out'''
         cont_url = base_url
         while True:
                 try:
