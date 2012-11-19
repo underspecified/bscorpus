@@ -1,0 +1,14 @@
+{
+  "friends" : [ {
+    "userIds" : [ "15483461753948633089" ],
+    "profileIds" : [ "103095841819546144517" ],
+    "contactId" : "-1",
+    "stream" : "user/15483461753948633089/state/com.google/broadcast",
+    "flags" : 1,
+    "displayName" : "Genron Mappu",
+    "givenName" : "Genron",
+    "n" : "",
+    "p" : "",
+    "hasSharedItemsOnProfile" : false
+  } ]
+}

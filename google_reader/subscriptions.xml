@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+    <head>
+        <title>Genron の Google リーダー登録フィード</title>
+    </head>
+    <body>
+        <outline text="A Blog Around The Clock"
+            title="A Blog Around The Clock" type="rss"
+            xmlUrl="http://feeds2.feedburner.com/ABlogAroundTheClock" htmlUrl="http://scienceblogs.com/clock/"/>
+        <outline text="A Photon In The Darkness"
+            title="A Photon In The Darkness" type="rss"
+            xmlUrl="http://photoninthedarkness.com/?feed=rss2" htmlUrl="http://photoninthedarkness.com"/>
+        <outline text="Aardvarchaeology" title="Aardvarchaeology"
+            type="rss"
+            xmlUrl="http://feeds2.feedburner.com/scienceblogs/lgtN" htmlUrl="http://scienceblogs.com/aardvarchaeology/"/>
+        <outline text="Action Skeptics" title="Action Skeptics"
+            type="rss"
+            xmlUrl="http://actionskeptics.blogspot.com/feeds/posts/default?alt=rss" htmlUrl="http://actionskeptics.blogspot.com/"/>
+        <outline text="Adventures in Ethics and Science"
+            title="Adventures in Ethics and Science" type="rss"
+            xmlUrl="http://feeds2.feedburner.com/scienceblogs/ethicsandscience" htmlUrl="http://scienceblogs.com/ethicsandscience/"/>
+        <outline text="Age Of Ignorance" title="Age Of Ignorance"
+            type="rss"
+            xmlUrl="http://age-of-ignorance.blogspot.com/feeds/posts/default?alt=rss" htmlUrl="http://age-of-ignorance.blogspot.com/"/>
+        <outline text="Andrea's Buzzing About:"
+            title="Andrea's Buzzing About:" type="rss"
+            xmlUrl="http://qw88nb88.wordpress.com/feed/" htmlUrl="http://qw88nb88.wordpress.com"/>
+        <outline text="Angry Astronomer" title="Angry Astronomer"
+            type="rss"
+            xmlUrl="http://angryastronomer.blogspot.com/feeds/posts/default" htmlUrl="http://angryastronomer.blogspot.com/"/>
+        <outline text="Anne's Anti-Quackery &amp; Science Blog"
+            title="Anne's Anti-Quackery &amp; Science Blog" type="rss"
+            xmlUrl="http://amr2you.blogspot.com/feeds/posts/default?alt=rss" htmlUrl="http://amr2you.blogspot.com/"/>
+        <outline text="Archaeoporn" title="Archaeoporn" type="rss"
+            xmlUrl="http://archaeoporn.wordpress.com/feed/" htmlUrl="http://archaeoporn.wordpress.com"/>
+        <outline text="Autism Diva" title="Autism Diva" type="rss"
+            xmlUrl="http://autismdiva.blogspot.com/feeds/posts/default?alt=rss" htmlUrl="http://autismdiva.blogspot.com/"/>
+        <outline text="Autism News Beat" title="Autism News Beat"
+            type="rss" xmlUrl="http://autism-news-beat.com/?feed=rss2" htmlUrl="http://autism-news-beat.com"/>
+        <outline text="Autism Street" title="Autism Street" type="rss"
+            xmlUrl="http://www.autismstreet.org/weblog/?feed=rss2" htmlUrl="http://www.autismstreet.org/weblog"/>
+        <outline text="Autism Vox" title="Autism Vox" type="rss"
+            xmlUrl="http://www.blisstree.com/autismvox/feed/" htmlUrl="http://blisstree.com"/>
+        <outline text="Bad Astronomy" title="Bad Astronomy" type="rss"
+            xmlUrl="http://blogs.discovermagazine.com/badastronomy/feed/" htmlUrl="http://blogs.discovermagazine.com/badastronomy"/>
+        <outline text="Bad Science" title="Bad Science" type="rss"
+            xmlUrl="http://www.badscience.net/feed/" htmlUrl="http://www.badscience.net"/>
+        <outline text="Badchemist's Blog" title="Badchemist's Blog"
+            type="rss" xmlUrl="http://badchemist.net/feed" htmlUrl="http://badchemist.net"/>
+        <outline text="badscienceblogs" title="badscienceblogs"
+            type="rss"
+            xmlUrl="http://www.badscienceblogs.net/?feed=rss2" htmlUrl="http://www.badscienceblogs.net"/>
+        <outline text="Bay Area Skeptics" title="Bay Area Skeptics"
+            type="rss" xmlUrl="http://www.baskeptics.org/rss.xml" htmlUrl="http://www.baskeptics.org"/>
+        <outline text="Be Lambic or Green" title="Be Lambic or Green"
+            type="rss" xmlUrl="http://www.lambic.co.uk/blog/feed/" htmlUrl="http://lambic.co.uk/blog"/>
+        <outline text="Beyond The Second Law"
+            title="Beyond The Second Law" type="rss"
+            xmlUrl="http://beyondthesecondlaw.wordpress.com/feed/" htmlUrl="http://beyondthesecondlaw.wordpress.com"/>
+        <outline text="Bug Girl's Blog" title="Bug Girl's Blog"
+            type="rss" xmlUrl="http://membracid.wordpress.com/feed/" htmlUrl="http://membracid.wordpress.com"/>
+        <outline text="Change.org's Autism Blog"
+            title="Change.org's Autism Blog" type="rss"
+            xmlUrl="http://autism.change.org/blog/rss" htmlUrl="http://news.change.org/autism.rss"/>
+        <outline text="Circadiana" title="Circadiana" type="rss"
+            xmlUrl="http://circadiana.blogspot.com/feeds/posts/default?alt=rss" htmlUrl="http://circadiana.blogspot.com/"/>
+        <outline text="Circular Reasoning" title="Circular Reasoning"
+            type="rss"
+            xmlUrl="http://skepticscircle.blogspot.com/feeds/posts/default?alt=rss" htmlUrl="http://skepticscircle.blogspot.com/"/>
+        <outline text="City of Skeptics" title="City of Skeptics"
+            type="rss" xmlUrl="http://skepticssa.wordpress.com/feed/" htmlUrl="http://skepticssa.wordpress.com"/>
+        <outline text="consider, evaluate, act"
+            title="consider, evaluate, act" type="rss"
+            xmlUrl="http://teekblog.blogspot.com/feeds/posts/default?alt=rss" htmlUrl="http://teekblog.blogspot.com/"/>
+        <outline text="Conspiracy Factory" title="Conspiracy Factory"
+            type="rss"
+            xmlUrl="http://conspiracyfactory.blogspot.com/feeds/posts/default?alt=rss" htmlUrl="http://conspiracyfactory.blogspot.com/"/>
+        <outline text="Cosmic Variance" title="Cosmic Variance"
+            type="rss"
+            xmlUrl="http://blogs.discovermagazine.com/cosmicvariance/feed/" htmlUrl="http://blogs.discovermagazine.com/cosmicvariance"/>
+        <outline text="DC's Improbable Science"
+            title="DC's Improbable Science" type="rss"
+            xmlUrl="http://dcscience.net/?feed=rss2" htmlUrl="http://www.dcscience.net"/>
+        <outline text="Debunking Christianity"
+            title="Debunking Christianity" type="rss"
+            xmlUrl="http://feeds.feedburner.com/debunkingchristianity" htmlUrl="http://debunkingchristianity.blogspot.com/"/>
+        <outline text="denialism blog" title="denialism blog" type="rss"
+            xmlUrl="http://scienceblogs.com/denialism/index.xml" htmlUrl="http://scienceblogs.com/denialism"/>
+        <outline text="Dubito Ergo Sum" title="Dubito Ergo Sum"
+            type="rss"
+            xmlUrl="http://dubitoergo.blogspot.com/feeds/posts/default" htmlUrl="http://dubitoergo.blogspot.com/"/>
+        <outline text="Effort Sisyphus" title="Effort Sisyphus"
+            type="rss"
+            xmlUrl="http://techskeptic.blogspot.com/feeds/posts/default" htmlUrl="http://techskeptic.blogspot.com/"/>
+        <outline text="extraordinary claims"
+            title="extraordinary claims" type="rss"
+            xmlUrl="http://extraordinaryclaims.wordpress.com/feed/" htmlUrl="http://extraordinaryclaims.wordpress.com"/>
+        <outline text="False Dichotomies blogs"
+            title="False Dichotomies blogs" type="rss"
+            xmlUrl="http://www.falsedichotomies.org/blog/feed" htmlUrl="http://www.falsedichotomies.org/blog"/>
+        <outline text="Freakonomics" title="Freakonomics" type="rss"
+            xmlUrl="http://freakonomics.blogs.nytimes.com/rss2.xml" htmlUrl="http://www.freakonomics.com"/>
+        <outline text="Friendly Atheist by Hemant Mehta"
+            title="Friendly Atheist by Hemant Mehta" type="rss"
+            xmlUrl="http://friendlyatheist.com/feed/" htmlUrl="http://www.patheos.com/blogs/friendlyatheist"/>
+        <outline text="Genomicron" title="Genomicron" type="rss"
+            xmlUrl="http://feeds.feedburner.com/Genomicron" htmlUrl="http://www.genomicron.evolverzone.com"/>
+        <outline text="Good Math, Bad Math" title="Good Math, Bad Math"
+            type="rss"
+            xmlUrl="http://scienceblogs.com/goodmath/atom.xml" htmlUrl="http://scienceblogs.com/goodmath/"/>
+        <outline text="Greg Laden's Blog" title="Greg Laden's Blog"
+            type="rss"
+            xmlUrl="http://scienceblogs.com/gregladen/index.xml" htmlUrl="http://scienceblogs.com/gregladen"/>
+        <outline text="Health Issues" title="Health Issues" type="rss"
+            xmlUrl="http://www.acsh.org/rss/healthissues.xml" htmlUrl="http://www.acsh.org/rss/healthissues.xml"/>
+        <outline
+            text="Holford Myths: what is the problem with Nutritionist Patrick Holford?"
+            title="Holford Myths: what is the problem with Nutritionist Patrick Holford?"
+            type="rss" xmlUrl="http://holfordmyths.org/feed/" htmlUrl="http://holfordmyths.org"/>
+        <outline text="I Speak of Dreams" title="I Speak of Dreams"
+            type="rss"
+            xmlUrl="http://lizditz.typepad.com/i_speak_of_dreams/rss.xml" htmlUrl="http://lizditz.typepad.com/i_speak_of_dreams/"/>
+        <outline text="Jack of Kent" title="Jack of Kent" type="rss"
+            xmlUrl="http://jackofkent.blogspot.com/feeds/posts/default?alt=rss" htmlUrl="http://jackofkent.blogspot.com/"/>
+        <outline text="James Randi Educational Foundation"
+            title="James Randi Educational Foundation" type="rss"
+            xmlUrl="http://www.randi.org/site/index.php?format=feed&amp;type=rss" htmlUrl="http://www.randi.org/site/index.php/component/content/frontpage.html"/>
+        <outline text="Language Log" title="Language Log" type="rss"
+            xmlUrl="http://languagelog.ldc.upenn.edu/nll/?feed=rss2" htmlUrl="http://languagelog.ldc.upenn.edu/nll"/>
+        <outline text="Martin's blog" title="Martin's blog" type="rss"
+            xmlUrl="http://feeds.feedburner.com/layscientist" htmlUrl="http://layscience.net"/>
+        <outline text="MattMaroon.com" title="MattMaroon.com" type="rss"
+            xmlUrl="http://feeds.feedburner.com/mattmaroon/AAcm" htmlUrl="http://mattmaroon.com"/>
+        <outline text="Mike's Weekly Skeptic Rant"
+            title="Mike's Weekly Skeptic Rant" type="rss"
+            xmlUrl="http://mikesweeklyskepticrant.blogspot.com/feeds/posts/default" htmlUrl="http://mikesweeklyskepticrant.blogspot.com/"/>
+        <outline text="Ministry of Truth" title="Ministry of Truth"
+            type="rss" xmlUrl="http://www.ministryoftruth.org.uk/feed/" htmlUrl="http://www.ministryoftruth.org.uk"/>
+        <outline text="Mors dei" title="Mors dei" type="rss"
+            xmlUrl="http://morsdei.wordpress.com/feed/" htmlUrl="http://morsdei.wordpress.com"/>
+        <outline text="NeuroLogica Blog" title="NeuroLogica Blog"
+            type="rss"
+            xmlUrl="http://www.theness.com/neurologicablog/?feed=rss2" htmlUrl="http://theness.com/neurologicablog"/>
+        <outline text="New Urban Legends" title="New Urban Legends"
+            type="rss" xmlUrl="http://www.snopes.com/info/whatsnew.rss" htmlUrl="http://www.snopes.com/info/whatsnew.asp"/>
+        <outline text="No Jesus, No Peas" title="No Jesus, No Peas"
+            type="rss"
+            xmlUrl="http://nojesusnopeas.blogspot.com/feeds/posts/default?alt=rss" htmlUrl="http://nojesusnopeas.blogspot.com/"/>
+        <outline text="On Becoming a Domestic and Laboratory Goddess"
+            title="On Becoming a Domestic and Laboratory Goddess"
+            type="rss"
+            xmlUrl="http://scienceblogs.com/isisthescientist/index.xml" htmlUrl="http://scienceblogs.com/isisthescientist"/>
+        <outline text="Pharyngula" title="Pharyngula" type="rss"
+            xmlUrl="http://scienceblogs.com/pharyngula/atom.xml" htmlUrl="http://scienceblogs.com/pharyngula/"/>
+        <outline text="PodBlack Cat" title="PodBlack Cat" type="rss"
+            xmlUrl="http://feeds.feedburner.com/podblackcat" htmlUrl="http://podblack.com"/>
+        <outline text="RealClimate" title="RealClimate" type="rss"
+            xmlUrl="http://www.realclimate.org/index.php/feed/" htmlUrl="http://www.realclimate.org"/>
+        <outline text="Research Blogging - All Topics - English"
+            title="Research Blogging - All Topics - English" type="rss"
+            xmlUrl="http://feeds.feedburner.com/ResearchBloggingAllEnglish" htmlUrl="http://www.researchblogging.org"/>
+        <outline text="Researcher Forum" title="Researcher Forum"
+            type="rss"
+            xmlUrl="http://dontleavecanadabehind.wordpress.com/feed/" htmlUrl="http://dontleavecanadabehind.wordpress.com"/>
+        <outline text="Respectful Insolence"
+            title="Respectful Insolence" type="rss"
+            xmlUrl="http://scienceblogs.com/insolence/atom.xml" htmlUrl="http://scienceblogs.com/insolence/"/>
+        <outline text="Salto sobrius" title="Salto sobrius" type="rss"
+            xmlUrl="http://saltosobrius.blogspot.com/feeds/posts/default?alt=rss" htmlUrl="http://saltosobrius.blogspot.com/"/>
+        <outline text="Sandwalk" title="Sandwalk" type="rss"
+            xmlUrl="http://sandwalk.blogspot.com/feeds/posts/default" htmlUrl="http://sandwalk.blogspot.com/"/>
+        <outline text="scepticsbook.com" title="scepticsbook.com"
+            type="rss" xmlUrl="http://scepticsbook.com/feed/" htmlUrl="http://scepticsbook.com"/>
+        <outline text="Science After Sunclipse"
+            title="Science After Sunclipse" type="rss"
+            xmlUrl="http://scienceblogs.com/sunclipse/index.xml" htmlUrl="http://scienceblogs.com/sunclipse"/>
+        <outline text="Science And Politics"
+            title="Science And Politics" type="rss"
+            xmlUrl="http://sciencepolitics.blogspot.com/feeds/posts/default?alt=rss" htmlUrl="http://sciencepolitics.blogspot.com/"/>
+        <outline text="Science In The News Daily"
+            title="Science In The News Daily" type="rss"
+            xmlUrl="http://www.americanscientist.org/rss/id.2/publications.aspx" htmlUrl="http://www.americanscientist.org/rss/id.2/publications.aspx"/>
+        <outline text="Science-Based Medicine"
+            title="Science-Based Medicine" type="rss"
+            xmlUrl="http://www.sciencebasedmedicine.org/?feed=rss2" htmlUrl="http://www.sciencebasedmedicine.org"/>
+        <outline text="Scientific Misconduct Blog"
+            title="Scientific Misconduct Blog" type="rss"
+            xmlUrl="http://feeds.feedburner.com/ScientificMisconductBlog" htmlUrl="http://scientific-misconduct.blogspot.com/"/>
+        <outline text="Secular Skeptic" title="Secular Skeptic"
+            type="rss"
+            xmlUrl="http://secularskeptic.blogspot.com/feeds/posts/default" htmlUrl="http://secularskeptic.blogspot.com/"/>
+        <outline text="Skepacabra" title="Skepacabra" type="rss"
+            xmlUrl="http://skepacabra.wordpress.com/feed/" htmlUrl="http://skepacabra.wordpress.com"/>
+        <outline text="Skepchick" title="Skepchick" type="rss"
+            xmlUrl="http://skepchick.org/blog/?feed=rss2" htmlUrl="http://skepchick.org"/>
+        <outline text="Skepticblog" title="Skepticblog" type="rss"
+            xmlUrl="http://skepticblog.org/feed/" htmlUrl="http://www.skepticblog.org"/>
+        <outline text="Skeptico" title="Skeptico" type="rss"
+            xmlUrl="http://skeptico.blogs.com/skeptico/atom.xml" htmlUrl="http://skeptico.blogs.com/skeptico/"/>
+        <outline text="Skeptobot" title="Skeptobot" type="rss"
+            xmlUrl="http://www.skeptobot.com/feeds/posts/default?alt=rss" htmlUrl="http://www.skeptobot.com/"/>
+        <outline text="Space City Skeptics" title="Space City Skeptics"
+            type="rss"
+            xmlUrl="http://spacecityskeptics.wordpress.com/feed/" htmlUrl="http://spacecityskeptics.wordpress.com"/>
+        <outline text="Starts With A Bang" title="Starts With A Bang"
+            type="rss"
+            xmlUrl="http://scienceblogs.com/startswithabang/index.xml" htmlUrl="http://scienceblogs.com/startswithabang"/>
+        <outline text="The Bad Idea Blog" title="The Bad Idea Blog"
+            type="rss" xmlUrl="http://badidea.wordpress.com/feed/" htmlUrl="http://badidea.wordpress.com"/>
+        <outline text="The Evilutionary Biologist"
+            title="The Evilutionary Biologist" type="rss"
+            xmlUrl="http://evilutionarybiologist.blogspot.com/feeds/posts/default" htmlUrl="http://evilutionarybiologist.blogspot.com/"/>
+        <outline text="The Intersection" title="The Intersection"
+            type="rss"
+            xmlUrl="http://blogs.discovermagazine.com/intersection/feed/" htmlUrl="http://blogs.discovermagazine.com/intersection"/>
+        <outline text="The Lay Scientist" title="The Lay Scientist"
+            type="rss" xmlUrl="http://www.layscience.net/rss.xml" htmlUrl="http://layscience.net"/>
+        <outline text="The Loom" title="The Loom" type="rss"
+            xmlUrl="http://blogs.discovermagazine.com/loom/feed/" htmlUrl="http://blogs.discovermagazine.com/loom"/>
+        <outline text="The Panda's Thumb" title="The Panda's Thumb"
+            type="rss" xmlUrl="http://pandasthumb.org/atom.xml" htmlUrl="http://pandasthumb.org/"/>
+        <outline text="The Pile System" title="The Pile System"
+            type="rss" xmlUrl="http://thepilesystem.wordpress.com/feed/" htmlUrl="http://thepilesystem.wordpress.com"/>
+        <outline text="the quackometer" title="the quackometer"
+            type="rss" xmlUrl="http://www.quackometer.net/blog/rss.xml" htmlUrl="http://www.quackometer.net/blog/"/>
+        <outline text="The Rogues Gallery" title="The Rogues Gallery"
+            type="rss"
+            xmlUrl="http://www.theskepticsguide.org/sgublog/?feed=rss2" htmlUrl="http://www.theskepticsguide.org/sgublog"/>
+        <outline
+            text="The Science and Entertainment Exchange: The X-Change Files"
+            title="The Science and Entertainment Exchange: The X-Change Files"
+            type="rss" xmlUrl="http://feeds.nap.edu/x-changefiles" htmlUrl="http://www.scienceandentertainmentexchange.org/blog"/>
+        <outline text="The Scientist" title="The Scientist" type="rss"
+            xmlUrl="http://network.nature.com/people/rpg/blog/posts.rss" htmlUrl="http://blogs.nature.com/rpg/"/>
+        <outline text="The Skepbitch" title="The Skepbitch" type="rss"
+            xmlUrl="http://skepbitch.wordpress.com/feed/" htmlUrl="http://skepbitch.wordpress.com"/>
+        <outline text="The Skeptical Teacher"
+            title="The Skeptical Teacher" type="rss"
+            xmlUrl="http://skepticalteacher.wordpress.com/feed/" htmlUrl="http://skepticalteacher.wordpress.com"/>
+        <outline text="Thinking Is Dangerous"
+            title="Thinking Is Dangerous" type="rss"
+            xmlUrl="http://thinking-is-dangerous.blogspot.com/feeds/posts/default" htmlUrl="http://thinking-is-dangerous.blogspot.com/"/>
+        <outline text="What the hell is this?"
+            title="What the hell is this?" type="rss"
+            xmlUrl="http://shpalman.livejournal.com/data/rss" htmlUrl="http://shpalman.livejournal.com/"/>
+        <outline text="What's The Harm?" title="What's The Harm?"
+            type="rss" xmlUrl="http://feeds.feedburner.com/WhatsTheHarm" htmlUrl="http://whatstheharm.net/"/>
+        <outline text="White Coat Underground"
+            title="White Coat Underground" type="rss"
+            xmlUrl="http://scienceblogs.com/whitecoatunderground/index.xml" htmlUrl="http://scienceblogs.com/whitecoatunderground"/>
+        <outline text="Why Evolution Is True"
+            title="Why Evolution Is True" type="rss"
+            xmlUrl="http://whyevolutionistrue.wordpress.com/feed/" htmlUrl="http://whyevolutionistrue.wordpress.com"/>
+        <outline text="Your Religion Is False"
+            title="Your Religion Is False" type="rss"
+            xmlUrl="http://yrif.org/feed/" htmlUrl="http://yrif.org"/>
+    </body>
+</opml>
