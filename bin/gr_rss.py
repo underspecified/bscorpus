@@ -34,50 +34,38 @@ def get_cont(content):
 		return m.group(1)
 	return None
 
-def gr_print_feeds(url,header,FILE):
-	reader_req = urllib2.Request(url,None,header)
-	reader_resp = urllib2.urlopen(reader_req)
-	reader_resp_content = reader_resp.read()
-	print >>FILE, reader_resp_content
-	cont = get_cont(reader_resp_content)
-	if cont:
-		cont_url = "%s&c=%s" % (url,cont)
-		print >>sys.stderr, "\tcont_url: %s" % cont_url
-		return cont_url
-	return None
+def get_feeds(base_url, header):
+        cont_url = base_url
+        while True:
+                try:
+                        request = urllib2.Request(cont_url, None, header)
+                        response = urllib2.urlopen(request)
+                        content = response.read()
+                        yield content
+                        cont = get_cont(content)
+                        if not cont: break
+                        cont_url = "%s&c=%s" % (base_url, cont)
+                        #print >>sys.stderr, "cont_url: %s" % cont_url
+                except Exception as err:
+                        print >>sys.stderr, 'Error getting feeds! >_<', err
+                        raise err
 
 def main():
         fs = "gr-feeds"
         posts = 1000
-        iters = 10
-        if (len(sys.argv)>=1):
+        if (len(sys.argv) >= 1):
                 fs = sys.argv[1]
-        if (len(sys.argv)>2):
+        if (len(sys.argv) > 2):
                 posts = int(sys.argv[2])
-        fmt = "%%s.%%0%dd.xml" % 2
+        fmt = "%%s.%%0%dd.xml" % 3
         header = gr_auth('genronmappu@gmail.com', 'matsumoto')
-        print >>sys.stderr, 'header:', header
+        #print >>sys.stderr, 'header:', header
         base_url = 'https://www.google.com/reader/atom/?n=%d' % posts
-        i = 0
-        try:
-                file = fmt % (fs,i)
+        for i, feed in enumerate(get_feeds(base_url, header)):
+                file = fmt % (fs, i)
                 print >>sys.stderr, "Making file %s ..." % file
-                FH = open(file,"w")
-                cont_url = gr_print_feeds(base_url,header,FH)
-                i = i+1
-        finally:
-                FH.close()
-
-        #for i in range(1,iters):
-        while(cont_url):
-                try:
-                        file = fmt % (fs,i)
-                        print >>sys.stderr, "Making file %s ..." % file
-                        FH = open(file,"w")
-                        cont_url = gr_print_feeds(cont_url,header,FH)
-                        i = i+1
-                finally:
-                        FH.close()
+                with open(file, 'w') as fh:
+                        print >>fh, feed
 
 if __name__ == '__main__':
         main()
