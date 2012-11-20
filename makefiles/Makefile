@@ -1,35 +1,49 @@
-#!/usr/bin/make
+#!/usr/bin/make -f
 
-BSHOME	?= $(HOME)/bscorpus
-FS      := gr_feeds
-POSTS   := 1000
-stats	:= gr_cats.stats.txt gr_entries.stats.txt gr_blogs.stats.txt gr_titles.stats.txt gr_urls.stats.txt
-discussions	:= gr_discussions.txt
+SHELL	:= /bin/bash
+BSHOME	:= $(realpath ..)
+PATH	:= $(BSHOME)/bin:$(PATH)
 
-all:	stats discussions
+fs	:= gr_feeds
+post	:= 1000
+xml	:= $(wildcard xml/$(fs).*.xml)
+txt	:= $(subst xml,txt,$(xml))
+stats	:= $(addprefix stats/,gr_cats.stats.txt gr_entries.stats.txt gr_blogs.stats.txt gr_titles.stats.txt gr_urls.stats.txt)
+discussions	:= $(addprefix disc/,gr_discussions.txt gr_links.pkl)
 
-clean:	clean.stats clean.discussions clean.log
+all:	stats
 
-cleanall: clean.xml clean.txt clean.log clean.stats clean.discussions
+clean:	clean.stats
+
+cleanall: clean.xml clean.txt clean.stats clean.discussions
 
 clean.discussions:
-	rm -f $(discussions)
+	rm -rf disc/
 
 clean.stats:
-	rm -f $(stats)
-
-clean.log:
-	rm -f *.log
+	rm -rf stats/
 
 clean.txt:
-	rm -f *.txt
+	rm -rf txt/
 
 clean.xml:
-	rm -f *.xml xml.done
+	rm -rf xml/
 
-stats:	$(stats)
+discussions:	disc/done
 
-discussions:	$(discussions)
+disc/done:	$(discussions)
+	touch disc/done
+
+disc/gr_discussions.txt:	gr_links.pkl $(BSHOME)/bin/gr_discussions.py $(BSHOME)/bin/grutils.py
+	gr_discussions.py $< | tee $@
+
+disc/gr_links.pkl:	$(BSHOME)/bin/gr_links.py $(BSHOME)/bin/grutils.py
+	gr_links.py $@ $(xml) 2>&1 | tee disc/gr_links.log
+
+stats:	stats/done
+
+stats/done:	$(stats)
+	touch stats/done
 
 %.stats.txt:	%.txt
 	tr A-Z a-z < $< | \
@@ -37,40 +51,42 @@ discussions:	$(discussions)
 	uniq -c | \
 	sort -t'	' -nr > $@
 
-gr_discussions.txt:	gr_links.pkl $(BSHOME)/bin/gr_discussions.py $(BSHOME)/bin/grutils.py
-	python $(BSHOME)/bin/gr_discussions.py $< | tee $@
-
-gr_links.pkl:	$(BSHOME)/bin/gr_links.py $(BSHOME)/bin/grutils.py
-	python $(BSHOME)/bin/gr_links.py $@ $(shell echo $(FS).*.xml) 2>&1 | \
-	tee gr_links.log
-
-gr_blogs.txt:	gr_entries.txt
+stats/gr_blogs.txt:	stats/gr_entries.txt
 	cut -f1 < $< > $@
 
-gr_titles.txt:	gr_entries.txt
+stats/gr_titles.txt:	stats/gr_entries.txt
 	cut -f2 < $< > $@
 
-gr_urls.txt:	gr_entries.txt
+stats/gr_urls.txt:	stats/gr_entries.txt
 	cut -f3 < $< > $@
 
-gr_cats.txt:	gr_feeds.txt $(BSHOME)/bin/gr2cats.awk
-	awk -f $(BSHOME)/bin/gr2cats.awk < $< > $@
+stats/gr_cats.txt:	stats/gr_feeds.txt $(BSHOME)/bin/gr2cats.awk
+	gr2cats.awk < $< > $@
 
-gr_entries.txt:	gr_feeds.txt $(BSHOME)/bin/gr2blogs.awk
-	awk -f $(BSHOME)/bin/gr2blogs.awk < $< > $@
+stats/gr_entries.txt:	stats/gr_feeds.txt $(BSHOME)/bin/gr2blogs.awk
+	mkdir -p stats
+	gr2blogs.awk < $< > $@
 
-gr_feeds.txt:
-	cat $(FS).*.txt > $@
+stats/gr_feeds.txt:	txt
+	mkdir -p stats
+	cat $(txt) > $@
 
-txt:	xml.done
-	make $(shell echo $(FS).*.xml | sed 's/xml/txt/g')
+txt:	txt/done
 
-xml: $(BSHOME)/bin/gr_rss.py
-	python $(BSHOME)/bin/gr_rss.py $(FS) $(POSTS)
-	touch xml.done
+txt/done:	xml
+	mkdir -p txt
+	make $(txt)
+	touch txt/done
 
-%.txt:	%.xml $(BSHOME)/xslt/gr.xslt
+xml:	xml/done
+
+xml/done: $(BSHOME)/bin/gr_rss.py
+	mkdir -p xml
+	cd xml && gr_rss.py $(fs) $(posts)
+	touch xml/done
+
+txt/%.txt:	xml/%.xml $(BSHOME)/xslt/gr.xslt
 	-xsltproc $(BSHOME)/xslt/gr.xslt $< | \
 	grep -v 'com.google' > $@
 
-.PHONY:	all clean* stats links txt xml*
+.PHONY:	all clean* discussion stats txt warc xml
