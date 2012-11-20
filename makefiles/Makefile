@@ -32,7 +32,7 @@ clean.xml:
 discussions:	disc/done
 
 disc/done:	$(discussions)
-	touch disc/done
+	touch $@
 
 disc/gr_discussions.txt:	gr_links.pkl $(BSHOME)/bin/gr_discussions.py $(BSHOME)/bin/grutils.py
 	gr_discussions.py $< | tee $@
@@ -43,9 +43,9 @@ disc/gr_links.pkl:	$(BSHOME)/bin/gr_links.py $(BSHOME)/bin/grutils.py
 stats:	stats/done
 
 stats/done:	$(stats)
-	touch stats/done
+	touch $@
 
-%.stats.txt:	%.txt $(BSHOME)/bin/count_stats.sh
+%.stats.txt:	%.txt $(BSHOME)/bin/calc_stats.sh
 	calc_stats.sh < $< > $@
 
 stats/gr_blogs.txt:	stats/gr_entries.txt
@@ -64,26 +64,26 @@ stats/gr_entries.txt:	stats/gr_feeds.txt $(BSHOME)/bin/gr2blogs.awk
 	mkdir -p stats
 	gr2blogs.awk < $< > $@
 
-stats/gr_feeds.txt:	txt
+stats/gr_feeds.txt:	txt/done
 	mkdir -p stats
 	cat $(txt) > $@
 
 txt:	txt/done
 
-txt/done:	xml
+txt/done:	xml/done
 	mkdir -p txt
 	make $(txt)
-	touch txt/done
+	touch $@
+
+txt/%.txt:	xml/%.xml $(BSHOME)/xslt/gr.xslt
+	-xsltproc $(BSHOME)/xslt/gr.xslt $< | \
+	grep -v 'com.google' > $@
 
 xml:	xml/done
 
 xml/done: $(BSHOME)/bin/gr_rss.py
 	mkdir -p xml
 	cd xml && gr_rss.py $(fs) $(posts)
-	touch xml/done
-
-txt/%.txt:	xml/%.xml $(BSHOME)/xslt/gr.xslt
-	-xsltproc $(BSHOME)/xslt/gr.xslt $< | \
-	grep -v 'com.google' > $@
+	touch $@
 
 .PHONY:	all clean* discussion stats txt warc xml
