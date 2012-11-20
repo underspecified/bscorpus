@@ -8,6 +8,6 @@ BEGIN {
 {
 	blog = $1
 	title = $2
-	link = $3
-	print blog
+	url = $3
+	print url
 }
