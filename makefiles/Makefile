@@ -45,11 +45,8 @@ stats:	stats/done
 stats/done:	$(stats)
 	touch stats/done
 
-%.stats.txt:	%.txt
-	tr A-Z a-z < $< | \
-	sort -t'	' | \
-	uniq -c | \
-	sort -t'	' -nr > $@
+%.stats.txt:	%.txt $(BSHOME)/bin/count_stats.sh
+	calc_stats.sh < $< > $@
 
 stats/gr_blogs.txt:	stats/gr_entries.txt
 	cut -f1 < $< > $@
