@@ -1,32 +1,25 @@
-================================
-Genron Map English Corpus v0.1.1
-================================
+# The Bad Science Corpus
 
-Eric Nichols <eric-n@is.naist.jp>, 2008/10/16
+Author: Eric Nichols <eric@ecei.tohoku.ac.jp>, Tohoku University, Japan
 
+## Project Goal
 
-This is a preliminary release of the Genron Map English corpus.
-The goal is to produce a corpus of claims and their refutations 
-from posts on anti-pseudoscience blogs.
+This is a pre-release of the *Bad Science Corpus*, an automatically-constructed collection of posts on scientifically-contraversial topics gathered from blogs by scientists and skeptics. The goal of this project is to produce a self-expanding source of contraversial claims and their refutations by knowledgable parties to support research on analysis rhetorical and logical argumentation structues. See publication [1] for more details.
 
-Currently it consists of 57 articles downloaded from www.badscience.net
-with permission from its author Dr. Ben Goldachre <ben@badscience.net>.
-The original HTML for each post is downloaded and the Plan 9 utility
-htmlfmt is used to convert it to plain text. Bad Science data has been
-cleaned up -- front matter and comments are stripped out by the script
-data/cleanup-badscience.sh.
+## Resources
 
-The files are organized as follows:
+* __RSS feed__: RSS feeds for several hundred science/skeptic blogs have been archived in a Google Reader account since 2008. Stored in `data/xml`.
+* __Blog posts__: downloads of the HTML for all blog posts in the blog feeds, stored in Web Archives. Stored in `data/warc`.
+* __Discussions__: lists of blog posts that link to the same external article. Stored in `data/disc`
 
-data/blog-name/category/YYYYMM/title.{html,txt,txt.clean}
+## Utilities
 
-For example:
+There are Python scripts for accessing the Bad Science RSS feeds and updating the corpus as new posts are added. 
 
-data/www.badscience.net/fish-oil/200809/dave-ford-from-durham-council-plays-at-being-a-scientist-again.html
+* `bin/gr_rss.py`: downloads RSS feeds as XML files
+* `bin/gr_links.py`: extracts all links from RSS feed XML
+* `bin/gr_discussions.py`: groups all links from feeds into discussions that have common external link
 
-is a post from www.badscience.net about fish oil published in September, 2008.
+## References
 
-scheme/ contains the source code for an RSS feed downloader that produces
-a bash script for downloading new articles and converting them to text.
-bin/ contains the compiled scheme code for various platforms and some small
-utility scripts.
+[1] Constructing a Scientific Blog Corpus for Information Credibility Analysis. Eric Nichols, Koji Murakami, Kentaro Inui, and Yuji Matsumoto. Proceedings of Pacling 2009. Hokkaido, Japan. 2009.
