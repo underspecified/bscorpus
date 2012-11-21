@@ -13,7 +13,7 @@ warc	:= $(subst xml,warc,$(xml))
 stats	:= $(addprefix stats/,gr_cats.stats.txt gr_entries.stats.txt gr_blogs.stats.txt gr_titles.stats.txt gr_urls.stats.txt)
 discussions	:= $(addprefix disc/,gr_discussions.txt gr_links.pkl)
 
-all:	stats
+all:	stats discussions warc
 
 clean:	clean.stats
 
