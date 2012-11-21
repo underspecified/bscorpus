@@ -42,10 +42,12 @@ discussions:	disc/done
 disc/done:	$(discussions)
 	touch $@
 
-disc/gr_discussions.txt:	gr_links.pkl $(BSHOME)/bin/gr_discussions.py $(BSHOME)/bin/grutils.py
+disc/gr_discussions.txt:	disc/gr_links.pkl $(BSHOME)/bin/gr_discussions.py $(BSHOME)/bin/grutils.py
+	mkdir -p disc
 	gr_discussions.py $< | tee $@
 
 disc/gr_links.pkl:	$(BSHOME)/bin/gr_links.py $(BSHOME)/bin/grutils.py
+	mkdir -p disc
 	gr_links.py $@ $(xml) 2>&1 | tee disc/gr_links.log
 
 stats:	stats/done
@@ -66,7 +68,7 @@ stats/gr_titles.txt:	stats/gr_feeds.txt $(BSHOME)/bin/gr2titles.awk
 
 stats/gr_urls.txt:	stats/gr_feeds.txt $(BSHOME)/bin/gr2urls.awk
 	mkdir -p stats
-	gr2urls.txt < $< > $@
+	gr2urls.awk < $< > $@
 
 stats/gr_cats.txt:	stats/gr_feeds.txt $(BSHOME)/bin/gr2cats.awk
 	mkdir -p stats
@@ -84,7 +86,7 @@ warc:	warc/done
 
 warc/done:	urls/done
 	mkdir -p warc
-	make $(warc)
+	+make $(warc)
 	touch $@
 
 warc/%.warc:	urls/%.urls
@@ -95,7 +97,7 @@ urls:	urls/done
 
 urls/done:	txt/done
 	mkdir -p urls
-	make $(urls)
+	+make $(urls)
 	touch $@
 
 urls/%.urls:	txt/%.txt $(BSHOME)/bin/gr2urls.awk
@@ -106,7 +108,7 @@ txt:	txt/done
 
 txt/done:	xml/done
 	mkdir -p txt
-	make $(txt)
+	+make $(txt)
 	touch $@
 
 txt/%.txt:	xml/%.xml $(BSHOME)/xslt/gr.xslt
