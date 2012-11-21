@@ -17,7 +17,7 @@ all:	stats discussions warc
 
 clean:	clean.stats
 
-cleanall: clean.xml clean.txt clean.stats clean.discussions
+cleanall: clean.xml clean.txt clean.stats clean.discussions clean.urls clean.warc
 
 clean.discussions:
 	rm -rf disc/
