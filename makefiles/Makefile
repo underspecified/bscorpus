@@ -40,6 +40,7 @@ clean.xml:
 discussions:	disc/done
 
 disc/done:	$(discussions)
+	mkdir -p disc
 	touch $@
 
 disc/gr_discussions.txt:	disc/gr_links.pkl $(BSHOME)/bin/gr_discussions.py $(BSHOME)/bin/grutils.py
@@ -53,6 +54,7 @@ disc/gr_links.pkl:	xml/done $(BSHOME)/bin/gr_links.py $(BSHOME)/bin/grutils.py
 stats:	stats/done
 
 stats/done:	$(stats)
+	mkdir -p stats
 	touch $@
 
 %.stats.txt:	%.txt $(BSHOME)/bin/calc_stats.sh
@@ -84,9 +86,8 @@ stats/gr_feeds.txt:	txt/done
 
 warc:	warc/done
 
-warc/done:	urls/done
+warc/done:	urls/done $(warc)
 	mkdir -p warc
-	+make $(warc)
 	touch $@
 
 warc/%.warc:	urls/%.urls
@@ -95,9 +96,8 @@ warc/%.warc:	urls/%.urls
 
 urls:	urls/done
 
-urls/done:	txt/done
+urls/done:	txt/done $(urls)
 	mkdir -p urls
-	+make $(urls)
 	touch $@
 
 urls/%.urls:	txt/%.txt $(BSHOME)/bin/gr2urls.awk
@@ -106,9 +106,8 @@ urls/%.urls:	txt/%.txt $(BSHOME)/bin/gr2urls.awk
 
 txt:	txt/done
 
-txt/done:	xml/done
+txt/done:	xml/done $(txt)
 	mkdir -p txt
-	+make $(txt)
 	touch $@
 
 txt/%.txt:	xml/%.xml $(BSHOME)/xslt/gr.xslt
