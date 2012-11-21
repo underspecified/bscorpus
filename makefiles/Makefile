@@ -46,7 +46,7 @@ disc/gr_discussions.txt:	disc/gr_links.pkl $(BSHOME)/bin/gr_discussions.py $(BSH
 	mkdir -p disc
 	gr_discussions.py $< | tee $@
 
-disc/gr_links.pkl:	$(BSHOME)/bin/gr_links.py $(BSHOME)/bin/grutils.py
+disc/gr_links.pkl:	xml/done $(BSHOME)/bin/gr_links.py $(BSHOME)/bin/grutils.py
 	mkdir -p disc
 	gr_links.py $@ $(xml) 2>&1 | tee disc/gr_links.log
 
