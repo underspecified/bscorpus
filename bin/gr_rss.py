@@ -64,7 +64,12 @@ def main():
         fmt = '%%s.%%0%dd.xml' % 3
         header = gr_auth('genronmappu@gmail.com', 'matsumoto')
         #print >>sys.stderr, 'header:', header
-        base_url = 'https://www.google.com/reader/atom/?n=%d' % posts
+
+	# parameter 'r' specifies feed order: 
+	# most recent first (d) or least recent first(o)
+	# see here for parameter explanation: 
+	# https://code.google.com/p/pyrfeed/wiki/GoogleReaderAPI
+        base_url = 'https://www.google.com/reader/atom/?r=o&n=%d' % posts
         for i, feed in enumerate(get_feeds(base_url, header)):
                 file = fmt % (fs, i)
                 print >>sys.stderr, 'Making file %s ...' % file
