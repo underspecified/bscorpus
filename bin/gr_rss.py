@@ -7,10 +7,6 @@ import urllib2
 
 def gr_auth(user, passwd):
 	'''Authenticate to obtain Auth token'''
-	#auth_url = 'https://accounts.google.com/o/oauth2/auth'
-	#auth_req_data = urllib.urlencode(
-	#	{'client_id': '985064621815.apps.googleusercontent.com', }
-        #)
 	auth_url = 'https://www.google.com/accounts/ClientLogin'
 	auth_req_data = urllib.urlencode(
                 {'Email':user, 'Passwd':passwd, 'service':'reader', 
