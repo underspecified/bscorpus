@@ -1,0 +1,17 @@
+WARC/1.0
+WARC-Type: warcinfo
+Content-Type: application/warc-fields
+WARC-Date: 2012-11-21T08:12:54Z
+WARC-Record-ID: <urn:uuid:6e6fb07d-611a-4674-a5aa-995b8f7f4026>
+WARC-Filename: gr_feeds.080-00000.warc
+WARC-Block-Digest: sha1:VBDKQDWGYNLVOBXYRJ3BWOP2QMKQGMGG
+Content-Length: 316
+
+software: Wget/1.14 (linux-gnu)
+format: WARC File Format 1.0
+conformsTo: http://bibnum.bnf.fr/WARC/WARC_ISO_28500_version1_latestdraft.pdf
+robots: classic
+wget-arguments: "-nv" "-T60" "--no-warc-compression" "--warc-max-size=1G" "--warc-cdx" "-O-" "--warc-file=gr_feeds.080" "-i" "../urls/gr_feeds.080.urls" 
+
+
+

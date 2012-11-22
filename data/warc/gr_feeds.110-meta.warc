@@ -1,0 +1,891 @@
+WARC/1.0
+WARC-Type: warcinfo
+Content-Type: application/warc-fields
+WARC-Date: 2012-11-21T08:39:27Z
+WARC-Record-ID: <urn:uuid:85fbc4a2-b4cd-48e6-93a3-7e0a3f6c1659>
+WARC-Filename: gr_feeds.110-meta.warc
+WARC-Block-Digest: sha1:MMBLNGBQW727KNZUT4ZFDSSKOVJN24SF
+Content-Length: 316
+
+software: Wget/1.14 (linux-gnu)
+format: WARC File Format 1.0
+conformsTo: http://bibnum.bnf.fr/WARC/WARC_ISO_28500_version1_latestdraft.pdf
+robots: classic
+wget-arguments: "-nv" "-T60" "--no-warc-compression" "--warc-max-size=1G" "--warc-cdx" "-O-" "--warc-file=gr_feeds.110" "-i" "../urls/gr_feeds.110.urls" 
+
+
+
+WARC/1.0
+WARC-Type: resource
+WARC-Record-ID: <urn:uuid:8abfb42b-9b96-4554-b4be-dbc0f9d13d2e>
+WARC-Warcinfo-ID: <urn:uuid:85fbc4a2-b4cd-48e6-93a3-7e0a3f6c1659>
+WARC-Target-URI: metadata://gnu.org/software/wget/warc/MANIFEST.txt
+WARC-Date: 2012-11-21T08:39:27Z
+WARC-Block-Digest: sha1:55Z6OBN4EIFJNINVQK3ZF3ESEFRJ325A
+Content-Type: text/plain
+Content-Length: 96
+
+<urn:uuid:d4c9e563-c2cd-49ed-b33f-98b636449448>
+<urn:uuid:85fbc4a2-b4cd-48e6-93a3-7e0a3f6c1659>
+
+
+WARC/1.0
+WARC-Type: resource
+WARC-Record-ID: <urn:uuid:8abfb42b-9b96-4554-b4be-dbc0f9d13d2e>
+WARC-Warcinfo-ID: <urn:uuid:85fbc4a2-b4cd-48e6-93a3-7e0a3f6c1659>
+WARC-Target-URI: metadata://gnu.org/software/wget/warc/wget_arguments.txt
+WARC-Date: 2012-11-21T08:39:27Z
+WARC-Block-Digest: sha1:QBS532AGOYO4GKEQXH7YFLCLVLYPFZDJ
+Content-Type: text/plain
+Content-Length: 138
+
+"-nv" "-T60" "--no-warc-compression" "--warc-max-size=1G" "--warc-cdx" "-O-" "--warc-file=gr_feeds.110" "-i" "../urls/gr_feeds.110.urls" 
+
+
+WARC/1.0
+WARC-Type: resource
+WARC-Record-ID: <urn:uuid:1505516a-0362-4815-9e63-9b62c470cf21>
+WARC-Warcinfo-ID: <urn:uuid:85fbc4a2-b4cd-48e6-93a3-7e0a3f6c1659>
+WARC-Concurrent-To: <urn:uuid:8abfb42b-9b96-4554-b4be-dbc0f9d13d2e>
+WARC-Target-URI: metadata://gnu.org/software/wget/warc/wget.log
+WARC-Date: 2012-11-21T08:39:27Z
+WARC-Block-Digest: sha1:76HJNQ2CK6WM65VHXVENREAPN4EJMGWP
+Content-Type: text/plain
+Content-Length: 96352
+
+2012-11-21 17:12:58 URL:http://www.freakonomics.com/2008/10/14/why-cant-religion-be-pay-to-play/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [73791] -> "-" [1]
+2012-11-21 17:13:01 URL:http://scienceblogs.com/denialism/2008/10/14/breathing-102/ [72678] -> "-" [1]
+2012-11-21 17:13:05 URL:http://scienceblogs.com/insolence/2008/10/14/dr-val-has-moved/ [73999] -> "-" [1]
+2012-11-21 17:13:10 URL:http://scienceblogs.com/pharyngula/2008/10/14/obama-ishindu/ [149853] -> "-" [1]
+2012-11-21 17:13:20 URL:http://www.freakonomics.com/2008/10/14/shillers-subprime-solutions/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [87837] -> "-" [1]
+2012-11-21 17:13:22 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/14/you-know-who-else-might-be-on-doctor-who/ [71024] -> "-" [1]
+2012-11-21 17:13:24 URL:http://languagelog.ldc.upenn.edu/nll/?p=716 [100644] -> "-" [1]
+2012-11-21 17:13:27 URL:http://www.freakonomics.com/2008/10/14/my-son-andrew-would-have-turned-10-today/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [73625] -> "-" [1]
+2012-11-21 17:13:28 URL:http://www.skeptobot.com/2008/10/skeptics-in-pub-review-paul-taylor-from.html [71401] -> "-" [1]
+http://www.theskepticsguide.org/sgublog/?p=349:
+2012-11-21 17:13:28 ERROR 500: Internal Server Error.
+2012-11-21 17:13:30 URL:http://languagelog.ldc.upenn.edu/nll/?p=714 [74375] -> "-" [1]
+2012-11-21 17:13:31 URL:http://sandwalk.blogspot.jp/2008/10/gene-genie-38.html [131387] -> "-" [1]
+2012-11-21 17:13:38 URL:http://scienceblogs.com/pharyngula/2008/10/14/ruse-vs-fuller/ [267606] -> "-" [1]
+2012-11-21 17:13:41 URL:http://skepchick.org/2008/10/book-review-death-from-the-skies-by-phil-plait/ [69008] -> "-" [1]
+2012-11-21 17:13:42 URL:http://sandwalk.blogspot.jp/2008/10/have-fun-on-voting-day.html [143035] -> "-" [1]
+2012-11-21 17:13:46 URL:http://skepchick.org/2008/10/skepchick-quickies-1014/ [43273] -> "-" [1]
+2012-11-21 17:13:47 URL:http://sandwalk.blogspot.jp/2008/10/pz-myers-in-toronto.html [126802] -> "-" [1]
+2012-11-21 17:13:51 URL:http://scienceblogs.com/insolence/2008/10/14/biologie-totale-the-quackery-of-german-n/ [101135] -> "-" [1]
+2012-11-21 17:13:56 URL:http://scienceblogs.com/pharyngula/2008/10/14/pray-for-a-poll-to-turn-out-th/ [181849] -> "-" [1]
+2012-11-21 17:13:59 URL:http://theness.com/neurologicablog/index.php/mande-barung-bunk/ [52621] -> "-" [1]
+2012-11-21 17:14:06 URL:http://scienceblogs.com/pharyngula/2008/10/14/physics-is-important-to-us-bio/ [75501] -> "-" [1]
+2012-11-21 17:14:14 URL:http://skepchick.org/2008/10/i-didnt-listen-and-i-dont-regret-a-thing/ [81178] -> "-" [1]
+2012-11-21 17:14:16 URL:http://www.snopes.com/business/alliance/dolltalk.asp [78/78] -> "-" [1]
+2012-11-21 17:14:21 URL:http://scienceblogs.com/pharyngula/2008/10/14/happy-birthday-alex-hickey/ [64847] -> "-" [1]
+2012-11-21 17:14:22 URL:http://languagelog.ldc.upenn.edu/nll/?p=713 [64232] -> "-" [1]
+2012-11-21 17:14:24 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/13/death-by-meteorite/ [164079] -> "-" [1]
+2012-11-21 17:14:27 URL:http://scienceblogs.com/denialism/2008/10/13/who-broke-scienceblogs/ [51412] -> "-" [1]
+2012-11-21 17:14:31 URL:http://scienceblogs.com/pharyngula/2008/10/13/fossil-daisychain/ [187996] -> "-" [1]
+2012-11-21 17:14:33 URL:http://pandasthumb.org/archives/2008/10/fossil-daisy-ch.html [75298/75298] -> "-" [1]
+2012-11-21 17:14:34 URL:http://debunkingchristianity.blogspot.jp/2008/10/critique-of-my-argument-on-problem-of.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+DebunkingChristianity+(Debunking+Christianity) [104157] -> "-" [1]
+2012-11-21 17:14:36 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/13/your-cassini-awesomeness-for-today/ [98473] -> "-" [1]
+2012-11-21 17:14:39 URL:http://scienceblogs.com/pharyngula/2008/10/13/please-stop-youre-driving-me-i/ [79055] -> "-" [1]
+2012-11-21 17:14:44 URL:http://scienceblogs.com/pharyngula/2008/10/13/whoa-hitchens-endorses-obama/ [214267] -> "-" [1]
+2012-11-21 17:14:47 URL:http://skepchick.org/2008/10/run-to-the-hills-run-for-your-life/ [49419] -> "-" [1]
+2012-11-21 17:14:49 URL:http://www.freakonomics.com/2008/10/13/mccain-the-media-money-and-montesinos-and-obama-too/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [83887] -> "-" [1]
+2012-11-21 17:14:54 URL:http://scienceblogs.com/pharyngula/2008/10/13/venomfangx-vs-thunderf00t/ [108814] -> "-" [1]
+2012-11-21 17:15:01 URL:http://sandwalk.blogspot.jp/2008/10/strategic-voting.html [217059] -> "-" [1]
+2012-11-21 17:15:03 URL:http://languagelog.ldc.upenn.edu/nll/?p=712 [94487] -> "-" [1]
+2012-11-21 17:15:05 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/13/lhc-podcast-now-with-government-goodness/ [68119] -> "-" [1]
+2012-11-21 17:15:05 URL:http://sandwalk.blogspot.jp/2008/10/mondays-molecule-92.html [128909] -> "-" [1]
+http://debunkingchristianity.blogspot.jp/2008/10/help-my-book-is-not-on-automatic-re.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+DebunkingChristianity+(Debunking+Christianity):
+2012-11-21 17:15:06 ERROR 404: Not Found.
+2012-11-21 17:15:10 URL:http://scienceblogs.com/pharyngula/2008/10/13/the-2008-ignobels/ [76690] -> "-" [1]
+2012-11-21 17:15:11 URL:http://apgaylard.wordpress.com/2008/10/13/how-low-can-you-go/ [88753] -> "-" [1]
+2012-11-21 17:15:12 URL:http://teekblog.blogspot.jp/2008/10/opiks-magnum-opus-or-lembits-loughton.html [53373] -> "-" [1]
+2012-11-21 17:15:13 URL:http://sandwalk.blogspot.jp/2008/10/are-science-and-religion-compatible.html [193723] -> "-" [1]
+2012-11-21 17:15:15 URL:http://www.freakonomics.com/2008/10/13/as-half-the-world-marches-toward-nationalization-the-other-half-marches-in-the-opposite-direction/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [76987] -> "-" [1]
+2012-11-21 17:15:16 URL:http://sandwalk.blogspot.jp/2008/10/activist-scientists.html [128336] -> "-" [1]
+2012-11-21 17:15:19 URL:http://skepchick.org/2008/10/afternoon-inquisition-columbus-day-edition/ [104530] -> "-" [1]
+2012-11-21 17:15:21 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/13/big-picture-the-sun/ [83159] -> "-" [1]
+2012-11-21 17:15:24 URL:http://www.freakonomics.com/2008/10/13/would-you-want-to-be-immortalized-by-a-tennis-club/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [74564] -> "-" [1]
+2012-11-21 17:15:29 URL:http://scienceblogs.com/goodmath/2008/10/13/infinity-is-not-a-number/ [209130] -> "-" [1]
+2012-11-21 17:15:29 URL:http://teekblog.blogspot.jp/2008/10/opiks-magnum-opus-or-lembits-loughton.html [53373] -> "-" [1]
+2012-11-21 17:15:30 URL:http://pandasthumb.org/archives/2008/10/loxodonta-afric.html [42993/42993] -> "-" [1]
+2012-11-21 17:15:33 URL:http://www.freakonomics.com/2008/10/13/zingales-time-for-plan-b-to-fight-the-financial-crisis/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [75205] -> "-" [1]
+2012-11-21 17:15:37 URL:http://scienceblogs.com/pharyngula/2008/10/13/i-may-have-to-start-watching-t/ [82582] -> "-" [1]
+2012-11-21 17:15:39 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/13/ufony/ [74793] -> "-" [1]
+2012-11-21 17:15:45 URL:http://pandasthumb.org/archives/2008/10/why-evolution-i-1.html [138918/138918] -> "-" [1]
+http://www.theskepticsguide.org/sgublog/?p=348:
+2012-11-21 17:15:50 ERROR 500: Internal Server Error.
+2012-11-21 17:15:56 URL:http://scienceblogs.com/pharyngula/2008/10/13/why-evolution-is-true/ [255575] -> "-" [1]
+2012-11-21 17:15:57 URL:http://languagelog.ldc.upenn.edu/nll/?p=710 [64829] -> "-" [1]
+2012-11-21 17:16:05 URL:http://scienceblogs.com/pharyngula/2008/10/13/halloween-in-toronto/ [94481] -> "-" [1]
+2012-11-21 17:16:06 URL:http://languagelog.ldc.upenn.edu/nll/?p=711 [69299] -> "-" [1]
+2012-11-21 17:16:11 URL:http://scienceblogs.com/insolence/2008/10/13/obesity-and-diet-the-first-law-of-thermodynamics/ [131806] -> "-" [1]
+2012-11-21 17:16:13 URL:http://www.freakonomics.com/2008/10/13/congratulations-paul-krugman/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [76591] -> "-" [1]
+2012-11-21 17:16:16 URL:http://www.freakonomics.com/2008/10/13/krugman-wins-the-nobel-prize/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [73473] -> "-" [1]
+2012-11-21 17:16:20 URL:http://scienceblogs.com/pharyngula/2008/10/13/wait-what-i-missed-columbus-da/ [88807] -> "-" [1]
+2012-11-21 17:16:25 URL:http://scienceblogs.com/pharyngula/2008/10/13/where-in-the-world-is-pz-myers/ [89416] -> "-" [1]
+2012-11-21 17:16:31 URL:http://scienceblogs.com/pharyngula/2008/10/13/those-crazy-brits/ [212699] -> "-" [1]
+2012-11-21 17:16:46 URL:http://theness.com/neurologicablog/index.php/artificial-consciousness/ [114761] -> "-" [1]
+2012-11-21 17:16:49 URL:http://skepchick.org/2008/10/skepchick-quickies-1013/ [46548] -> "-" [1]
+http://debunkingchristianity.blogspot.jp/2008/10/review-of-my-book-by-another-author-its.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+DebunkingChristianity+(Debunking+Christianity):
+2012-11-21 17:16:50 ERROR 404: Not Found.
+2012-11-21 17:16:55 URL:http://scienceblogs.com/pharyngula/2008/10/12/theyre-much-tastier-dipped-in/ [95317] -> "-" [1]
+2012-11-21 17:16:56 URL:http://www.snopes.com/photos/natural/indiatree.asp [25125/25125] -> "-" [1]
+2012-11-21 17:16:58 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/12/insurance-from-the-skies/ [88601] -> "-" [1]
+2012-11-21 17:17:02 URL:http://scienceblogs.com/denialism/2008/10/12/is-this-for-real-racist-attack/ [113195] -> "-" [1]
+2012-11-21 17:17:03 URL:http://actionforautism.co.uk/2008/10/12/the-present-crisis-and-the-national-autistic-society/ [4787] -> "-" [1]
+http://www.sciencepunk.com/v5/2008/10/radioactive-bananas/:
+2012-11-21 17:17:04 ERROR 404: Not Found.
+2012-11-21 17:17:06 URL:http://skeptico.blogs.com/skeptico/2008/10/religulous.html [72472/72472] -> "-" [1]
+http://www.realclimate.org/index.php/archives/2008/10/tropical-tropopshere-iii/:
+2012-11-21 17:17:07 ERROR 403: Forbidden.
+2012-11-21 17:17:08 URL:http://debunkingchristianity.blogspot.jp/2008/10/applying-data-and-information-quality.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+DebunkingChristianity+(Debunking+Christianity) [171335] -> "-" [1]
+2012-11-21 17:17:09 URL:http://languagelog.ldc.upenn.edu/nll/?p=706 [77251] -> "-" [1]
+2012-11-21 17:17:12 URL:http://scienceblogs.com/denialism/2008/10/13/breathing-for-dummies/ [68165] -> "-" [1]
+2012-11-21 17:17:15 URL:http://skepchick.org/2008/10/afternoonearly-evening-inquisition-1012/ [123783] -> "-" [1]
+2012-11-21 17:17:16 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/12/skeptical-parenting/ [121443] -> "-" [1]
+2012-11-21 17:17:20 URL:http://scienceblogs.com/pharyngula/2008/10/12/i-am-so-proud-of-philadelphia/ [125623] -> "-" [1]
+2012-11-21 17:17:24 URL:http://scienceblogs.com/pharyngula/2008/10/12/what-didnt-happen-in-springfie/ [107467] -> "-" [1]
+2012-11-21 17:17:29 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/12/the-lhc-may-influence-november-4/ [84813] -> "-" [1]
+2012-11-21 17:17:33 URL:http://scienceblogs.com/pharyngula/2008/10/12/how-appropriate/ [80141] -> "-" [1]
+2012-11-21 17:17:36 URL:http://scienceblogs.com/pharyngula/2008/10/12/where-are-your-links-for-the-t/ [55696] -> "-" [1]
+2012-11-21 17:17:37 URL:http://languagelog.ldc.upenn.edu/nll/?p=708 [73441] -> "-" [1]
+2012-11-21 17:17:43 URL:http://scienceblogs.com/pharyngula/2008/10/12/how-low-will-he-sink/ [316577] -> "-" [1]
+2012-11-21 17:17:48 URL:http://scienceblogs.com/insolence/2008/10/12/framing-vaccines-revisited-the-empathy-g/ [175218] -> "-" [1]
+http://wellingtongrey.blogspot.jp/2008/10/warning-in-case-of-terrorist-attack-do.html:
+2012-11-21 17:17:48 ERROR 404: Not Found.
+2012-11-21 17:17:49 URL:http://modnebzdury.blogspot.jp/2008/10/gorzkie-witaminki-dla-chopczyka-i.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+ModneBzdury+(Modne+Bzdury) [58145] -> "-" [1]
+2012-11-21 17:17:50 URL:http://modnebzdury.blogspot.jp/2008/10/sas-o-promieniowaniu.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+ModneBzdury+(Modne+Bzdury) [52802] -> "-" [1]
+2012-11-21 17:17:51 URL:http://languagelog.ldc.upenn.edu/nll/?p=707 [62329] -> "-" [1]
+http://www.theskepticsguide.org/sgublog/?p=347:
+2012-11-21 17:17:52 ERROR 500: Internal Server Error.
+2012-11-21 17:17:57 URL:http://scienceblogs.com/pharyngula/2008/10/12/possummomma-has-gone-silent/ [246039] -> "-" [1]
+2012-11-21 17:18:00 URL:http://scienceblogs.com/pharyngula/2008/10/12/radio-reminder-30/ [72834] -> "-" [1]
+2012-11-21 17:18:07 URL:http://leftbrainrightbrain.co.uk/2008/10/12/sunday-solution-no4-plus-update/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A%20LeftBrain%2FrightBrain%20%28Left%20Brain%2FRight%20Brain%29 [89089] -> "-" [1]
+2012-11-21 17:18:09 URL:http://www.snopes.com/politics/obama/money.asp [26910/26910] -> "-" [1]
+2012-11-21 17:18:16 URL:http://scienceblogs.com/insolence/2008/10/12/framing-vaccines-again/ [101692] -> "-" [1]
+2012-11-21 17:18:17 URL:http://debunkingchristianity.blogspot.jp/2008/10/john-f-haught-responds-to-my-review-of.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+DebunkingChristianity+(Debunking+Christianity) [151467] -> "-" [1]
+2012-11-21 17:18:18 URL:http://sandwalk.blogspot.jp/2008/10/why-do-we-call-them-idiots-part.html [127594] -> "-" [1]
+2012-11-21 17:18:18 URL:http://sandwalk.blogspot.jp/2008/10/epigenetics-again.html [142809] -> "-" [1]
+2012-11-21 17:18:20 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/11/dot-astronomy-talk/ [73731] -> "-" [1]
+2012-11-21 17:18:24 URL:http://www.dcscience.net/?p=259 [151431] -> "-" [1]
+2012-11-21 17:18:26 URL:http://pandasthumb.org/archives/2008/10/featured-george.html [131325/131325] -> "-" [1]
+2012-11-21 17:18:29 URL:http://leftbrainrightbrain.co.uk/2008/10/11/age-of-autism-use-appalling-scare-tactics/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A%20LeftBrain%2FrightBrain%20%28Left%20Brain%2FRight%20Brain%29 [231744] -> "-" [1]
+2012-11-21 17:18:30 URL:http://thinking-is-dangerous.blogspot.jp/2008/10/is-this-dubious-seven-seas-marketing.html [129731] -> "-" [1]
+http://www.badscience.net/2008/10/how-to-get-free-publicity-in-150-newspapers/:
+2012-11-21 17:18:33 ERROR 404: Not Found.
+2012-11-21 17:18:34 URL:http://debunkingchristianity.blogspot.jp/2008/10/i-believe-jesus-was-historical-person.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+DebunkingChristianity+(Debunking+Christianity) [195347] -> "-" [1]
+2012-11-21 17:18:36 URL:http://skepchick.org/2008/10/afternoon-inquisition-1011/ [83853] -> "-" [1]
+2012-11-21 17:18:37 URL:http://thinking-is-dangerous.blogspot.jp/2008/10/is-this-dubious-seven-seas-marketing.html [129731] -> "-" [1]
+2012-11-21 17:18:46 URL:http://scienceblogs.com/pharyngula/2008/10/11/brunswick-school-district-the/ [321996] -> "-" [1]
+2012-11-21 17:18:50 URL:http://scienceblogs.com/insolence/2008/10/11/autisms-false-prophets-finally-science-p/ [109857] -> "-" [1]
+2012-11-21 17:18:53 URL:http://scienceblogs.com/pharyngula/2008/10/11/how-mccain-will-win-the-youth/ [80117] -> "-" [1]
+2012-11-21 17:19:04 URL:http://scienceblogs.com/denialism/2008/10/11/gg-bridge-suicide-net-nanny-st/ [92162] -> "-" [1]
+2012-11-21 17:19:07 URL:http://scienceblogs.com/insolence/2008/10/11/nooo-they-got-bullwinkle/ [77347] -> "-" [1]
+2012-11-21 17:19:08 URL:http://evilutionarybiologist.blogspot.jp/2008/10/this-weeks-citation-classic-gfp.html [93086] -> "-" [1]
+2012-11-21 17:19:12 URL:http://scienceblogs.com/pharyngula/2008/10/11/everything-you-need-to-know-ab/ [206706] -> "-" [1]
+2012-11-21 17:19:16 URL:http://scienceblogs.com/pharyngula/2008/10/11/im-on-skeptics-guide-to-the-un/ [62330] -> "-" [1]
+2012-11-21 17:19:17 URL:http://languagelog.ldc.upenn.edu/nll/?p=705 [59437] -> "-" [1]
+2012-11-21 17:19:20 URL:http://skepchick.org/2008/10/3477/ [63392] -> "-" [1]
+2012-11-21 17:19:24 URL:http://scienceblogs.com/pharyngula/2008/10/11/sowhere-are-the-octopus-langua/ [85069] -> "-" [1]
+2012-11-21 17:19:25 URL:http://languagelog.ldc.upenn.edu/nll/?p=704 [60976] -> "-" [1]
+2012-11-21 17:19:28 URL:http://skepchick.org/2008/10/worlds-laziest-blogger-checking-in/ [44178] -> "-" [1]
+2012-11-21 17:19:29 URL:http://languagelog.ldc.upenn.edu/nll/?p=703 [65379] -> "-" [1]
+http://www.badscience.net/2008/10/how-to-get-free-publicity-in-150-newspapers/:
+2012-11-21 17:19:31 ERROR 404: Not Found.
+2012-11-21 17:19:36 URL:http://leftbrainrightbrain.co.uk/2008/10/11/too-many-falsehoods-too-often/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A%20LeftBrain%2FrightBrain%20%28Left%20Brain%2FRight%20Brain%29 [100353] -> "-" [1]
+2012-11-21 17:19:37 URL:http://debunkingchristianity.blogspot.jp/2008/10/morality-theology-and-invisible-god-of.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+DebunkingChristianity+(Debunking+Christianity) [108214] -> "-" [1]
+2012-11-21 17:19:38 URL:http://languagelog.ldc.upenn.edu/nll/?p=702 [68351] -> "-" [1]
+2012-11-21 17:19:39 URL:http://languagelog.ldc.upenn.edu/nll/?p=701 [62335] -> "-" [1]
+2012-11-21 17:19:41 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/10/box-full-of-death/ [98244] -> "-" [1]
+2012-11-21 17:19:47 URL:http://www.skeptobot.com/2008/10/skeptobot-video-rants-1-astrology.html [64026] -> "-" [1]
+2012-11-21 17:19:47 URL:http://www.skeptobot.com/2008/10/skeptobot-is-back-slowly-but-back.html [59471] -> "-" [1]
+2012-11-21 17:19:48 URL:http://www.skeptobot.com/2008/10/skeptobot-video-rants-1-astrology.html [64026] -> "-" [1]
+2012-11-21 17:19:48 URL:http://www.skeptobot.com/2008/10/skeptobot-is-back-slowly-but-back.html [59471] -> "-" [1]
+2012-11-21 17:19:49 URL:http://debunkingchristianity.blogspot.jp/2008/10/i-have-no-fear-of-gods-judgment-for.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+DebunkingChristianity+(Debunking+Christianity) [145851] -> "-" [1]
+2012-11-21 17:19:57 URL:http://scienceblogs.com/pharyngula/2008/10/10/this-poll-cannot-stand/ [216209] -> "-" [1]
+2012-11-21 17:20:04 URL:http://scienceblogs.com/pharyngula/2008/10/10/short-takes-from-the-mailbag/ [144108] -> "-" [1]
+2012-11-21 17:20:07 URL:http://www.freakonomics.com/2008/10/10/my-colleague-casey-mulligan-in-the-times-there-is-no-reason-to-panic/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [77432] -> "-" [1]
+2012-11-21 17:20:12 URL:http://skepchick.org/2008/10/comment-o-the-week-monkey-edition/ [34437] -> "-" [1]
+2012-11-21 17:20:14 URL:http://www.freakonomics.com/2008/10/10/if-teaser-rates-work-for-buying-houses-why-not-for-online-music/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [76572] -> "-" [1]
+2012-11-21 17:20:15 URL:http://debunkingchristianity.blogspot.jp/2008/10/it-is-often-case-that-people-who-hold.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+DebunkingChristianity+(Debunking+Christianity) [107825] -> "-" [1]
+2012-11-21 17:20:17 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/10/enceladus-flyby/ [87938] -> "-" [1]
+2012-11-21 17:20:20 URL:http://scienceblogs.com/goodmath/2008/10/10/friday-recipe-stuffed-flank-st/ [37044] -> "-" [1]
+2012-11-21 17:20:24 URL:http://skepchick.org/2008/10/afternoon-inquisition-2/ [186242] -> "-" [1]
+2012-11-21 17:20:25 URL:http://www.snopes.com/politics/obama/postamerican.asp [22114/22114] -> "-" [1]
+2012-11-21 17:20:28 URL:http://www.freakonomics.com/2008/10/10/what-we-still-dont-know-about-the-mortgage-crisis/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [86264] -> "-" [1]
+2012-11-21 17:20:30 URL:http://pandasthumb.org/archives/2008/10/pavo-cristatus.html [109584/109584] -> "-" [1]
+2012-11-21 17:20:32 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/10/captain-disillusion/ [79147] -> "-" [1]
+2012-11-21 17:20:37 URL:http://scienceblogs.com/denialism/2008/10/10/the-plant-liberation-front/ [77210] -> "-" [1]
+2012-11-21 17:20:37 URL:http://gimpyblog.wordpress.com/2008/10/10/bbc-gets-quack-to-speculate-on-mental-health-of-prime-minister-during-time-of-financial-crisis/ [6003] -> "-" [1]
+2012-11-21 17:20:38 URL:http://apgaylard.wordpress.com/2008/10/10/new-scientist-publish-my-letter/ [75874] -> "-" [1]
+2012-11-21 17:20:43 URL:http://scienceblogs.com/pharyngula/2008/10/10/on-my-way-to-missouri/ [75837] -> "-" [1]
+2012-11-21 17:20:47 URL:http://www.freakonomics.com/2008/10/10/why-are-discount-stores-full-of-xs-and-xxl-clothes/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [75324] -> "-" [1]
+2012-11-21 17:20:49 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/10/high-roller/ [85517] -> "-" [1]
+2012-11-21 17:20:51 URL:http://jdc325.wordpress.com/2008/10/10/happy-pills-and-happy-hormones-if-only-it-were-that-simple/ [86879] -> "-" [1]
+2012-11-21 17:20:51 URL:http://hawk-handsaw.blogspot.jp/2008/10/result.html [58722] -> "-" [1]
+2012-11-21 17:20:53 URL:http://jdc325.wordpress.com/2008/10/10/heal-all-illness-by-thinking-why-do-people-assume-altmed-is-safe/ [88971] -> "-" [1]
+2012-11-21 17:20:56 URL:http://www.freakonomics.com/2008/10/10/economics-nobel-predictions/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [73034] -> "-" [1]
+2012-11-21 17:20:57 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://actionskeptics.blogspot.jp/2008/10/97th-skeptics-circle.html%26zx%3Dhca0uiyzlyyu&ltmpl=private [55124] -> "-" [1]
+2012-11-21 17:21:00 URL:http://scienceblogs.com/insolence/2008/10/10/if-you-think-measles-is-always-a-minor-d/ [95803] -> "-" [1]
+2012-11-21 17:21:01 URL:http://sandwalk.blogspot.jp/2008/10/humanism-is-liberal.html [163208] -> "-" [1]
+2012-11-21 17:21:04 URL:http://scienceblogs.com/pharyngula/2008/10/10/friday-cephalopod-beautiful-bo/ [72244] -> "-" [1]
+2012-11-21 17:21:08 URL:http://skepchick.org/2008/10/skepchick-quickies-1010/ [72732] -> "-" [1]
+2012-11-21 17:21:11 URL:http://scienceblogs.com/pharyngula/2008/10/10/another-review-of-the-origins/ [88065] -> "-" [1]
+2012-11-21 17:21:17 URL:http://scienceblogs.com/pharyngula/2008/10/10/dignity-denied/ [292382] -> "-" [1]
+2012-11-21 17:21:18 URL:http://debunkingchristianity.blogspot.jp/2008/10/christian-who-calls-my-approach-breath.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+DebunkingChristianity+(Debunking+Christianity) [99685] -> "-" [1]
+2012-11-21 17:21:19 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://actionskeptics.blogspot.jp/2008/10/they-left-their-souls-in-san-francisco.html%26zx%3D9bx6a5tgs2vg&ltmpl=private [55179] -> "-" [1]
+2012-11-21 17:21:19 URL:http://skepbitch.wordpress.com/2008/10/09/skepbitch-does-the-jref-and-coral-castle/ [5862] -> "-" [1]
+2012-11-21 17:21:22 URL:http://scienceblogs.com/pharyngula/2008/10/10/jellyfish-gettin-it-on-baby/ [85648] -> "-" [1]
+2012-11-21 17:21:27 URL:http://scienceblogs.com/pharyngula/2008/10/09/practice-for-the-election-with/ [98750] -> "-" [1]
+2012-11-21 17:21:31 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/09/live-radio-interview-tonight/ [81434] -> "-" [1]
+2012-11-21 17:21:32 URL:http://www.snopes.com/politics/biden/debt.asp [33493/33493] -> "-" [1]
+2012-11-21 17:21:34 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/09/kentucky-space/ [85392] -> "-" [1]
+2012-11-21 17:21:37 URL:http://scienceblogs.com/pharyngula/2008/10/09/hey-academics-join-the-club/ [60639] -> "-" [1]
+2012-11-21 17:21:40 URL:http://skepchick.org/2008/10/divining-for-a-date-october-challenge/ [85412] -> "-" [1]
+2012-11-21 17:21:44 URL:http://scienceblogs.com/pharyngula/2008/10/09/lets-switch-to-radio/ [122972] -> "-" [1]
+2012-11-21 17:21:45 URL:http://www.snopes.com/inboxer/medical/delburg.asp [25731/25731] -> "-" [1]
+2012-11-21 17:21:47 URL:http://languagelog.ldc.upenn.edu/nll/?p=698 [108145] -> "-" [1]
+2012-11-21 17:21:49 URL:http://scienceblogs.com/insolence/2008/10/09/the-countdown-to-100-continuesthe-97th-m/ [75361] -> "-" [1]
+2012-11-21 17:21:54 URL:http://scienceblogs.com/pharyngula/2008/10/09/hawaiis-shame/ [133957] -> "-" [1]
+2012-11-21 17:21:54 URL:http://skepticscircle.blogspot.jp/2008/10/relentless-march-to-skeptics-circle-100.html [37710] -> "-" [1]
+2012-11-21 17:21:57 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/09/365-days-of-astronomy/ [76206] -> "-" [1]
+2012-11-21 17:21:59 URL:http://theness.com/neurologicablog/index.php/dowsing-for-journalists/ [112868] -> "-" [1]
+2012-11-21 17:22:02 URL:http://skepchick.org/2008/10/afternoon-inquisition-109/ [88741] -> "-" [1]
+2012-11-21 17:22:05 URL:http://www.freakonomics.com/2008/10/09/our-daily-bleg-has-a-debate-produced-anything-like-youre-no-jack-kennedy/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [74089] -> "-" [1]
+2012-11-21 17:22:07 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/09/nasa-prefers-not-to-use-russian-rockets/ [96956] -> "-" [1]
+2012-11-21 17:22:08 URL:http://languagelog.ldc.upenn.edu/nll/?p=697 [59652] -> "-" [1]
+2012-11-21 17:22:11 URL:http://scienceblogs.com/denialism/2008/10/09/disastermccains-health-care-pl/ [76197] -> "-" [1]
+2012-11-21 17:22:17 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/09/rain-of-iron-on-earth/ [126374] -> "-" [1]
+2012-11-21 17:22:20 URL:http://www.freakonomics.com/2008/10/09/and-theyre-not-even-paved-with-gold/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [73456] -> "-" [1]
+2012-11-21 17:22:21 URL:http://mikesweeklyskepticrant.blogspot.jp/2008/10/skeptics-circle-97.html [28382] -> "-" [1]
+2012-11-21 17:22:25 URL:http://skepchick.org/2008/10/new-cpt-d-video-tam6-and-ripped-off-by-german-tv/ [35503] -> "-" [1]
+2012-11-21 17:22:27 URL:http://www.freakonomics.com/2008/10/09/the-freak-est-links-169/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [55980] -> "-" [1]
+2012-11-21 17:22:31 URL:http://scienceblogs.com/insolence/2008/10/09/the-vitamin-c-empire-strikes-back/ [125343] -> "-" [1]
+http://www.theskepticsguide.org/sgublog/?p=346:
+2012-11-21 17:22:31 ERROR 500: Internal Server Error.
+2012-11-21 17:22:34 URL:http://skepchick.org/2008/10/skepchick-quickies-109/ [75035] -> "-" [1]
+2012-11-21 17:22:45 URL:http://scienceblogs.com/pharyngula/2008/10/09/hannity-pwned/ [514046] -> "-" [1]
+2012-11-21 17:22:46 URL:http://languagelog.ldc.upenn.edu/nll/?p=696 [77488] -> "-" [1]
+2012-11-21 17:22:47 URL:http://languagelog.ldc.upenn.edu/nll/?p=695 [62189] -> "-" [1]
+2012-11-21 17:22:51 URL:http://scienceblogs.com/pharyngula/2008/10/09/it-does-get-cold-in-minnesota/ [88458] -> "-" [1]
+http://wellingtongrey.blogspot.jp/2008/10/behavior-modification-loop-of-epic-fail.html:
+2012-11-21 17:22:51 ERROR 404: Not Found.
+2012-11-21 17:22:53 URL:http://languagelog.ldc.upenn.edu/nll/?p=694 [68301] -> "-" [1]
+http://www.realclimate.org/index.php/archives/2008/10/adapting-in-amsterdam/:
+2012-11-21 17:22:53 ERROR 403: Forbidden.
+2012-11-21 17:22:57 URL:http://scienceblogs.com/pharyngula/2008/10/09/we-do-need-a-cool-hand-on-the/ [123694] -> "-" [1]
+2012-11-21 17:22:59 URL:http://www.snopes.com/politics/obama/allison.asp [26753/26753] -> "-" [1]
+2012-11-21 17:23:01 URL:http://leftbrainrightbrain.co.uk/2008/10/09/the-myth-of-mild-measles/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A%20LeftBrain%2FrightBrain%20%28Left%20Brain%2FRight%20Brain%29 [125802] -> "-" [1]
+2012-11-21 17:23:16 URL:http://scienceblogs.com/pharyngula/2008/10/09/what-are-we-lepers/ [158042] -> "-" [1]
+2012-11-21 17:23:20 URL:http://scienceblogs.com/pharyngula/2008/10/08/wreckers/ [183148] -> "-" [1]
+2012-11-21 17:23:21 URL:http://pandasthumb.org/archives/2008/10/tamias-minimus.html [70284/70284] -> "-" [1]
+2012-11-21 17:23:23 URL:http://skepchick.org/2008/10/atlanta-skeptics-in-the-pub-this-weekend/ [26392] -> "-" [1]
+2012-11-21 17:23:25 URL:http://languagelog.ldc.upenn.edu/nll/?p=691 [63242] -> "-" [1]
+2012-11-21 17:23:26 URL:http://valueaddedwater.wordpress.com/2008/10/08/what-would-you-refuse-to-use/ [36206] -> "-" [1]
+2012-11-21 17:23:27 URL:http://valueaddedwater.wordpress.com/2008/10/08/one-hand-doesnt-know-what-the-other-is-doing/ [38681] -> "-" [1]
+2012-11-21 17:23:30 URL:http://www.quackometer.net/blog/2008/10/julian-graves-not-just-nuts-dangerously.html [93578/93578] -> "-" [1]
+2012-11-21 17:23:34 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/08/mccains-planetariophobia/ [362336] -> "-" [1]
+2012-11-21 17:23:35 URL:http://languagelog.ldc.upenn.edu/nll/?p=693 [59573] -> "-" [1]
+2012-11-21 17:23:37 URL:http://www.quackometer.net/blog/2008/10/julian-graves-not-just-nuts-dangerously.html [93578/93578] -> "-" [1]
+2012-11-21 17:23:37 URL:http://actionforautism.co.uk/2008/10/08/jim-sinclair-and-moosepuppy-animal-rescue/ [4776] -> "-" [1]
+2012-11-21 17:23:40 URL:http://www.freakonomics.com/2008/10/08/the-price-of-everything/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [74422] -> "-" [1]
+2012-11-21 17:23:41 URL:http://sandwalk.blogspot.jp/2008/10/nobel-laureate-stanley-prusiner.html [151623] -> "-" [1]
+2012-11-21 17:23:44 URL:http://leftbrainrightbrain.co.uk/2008/10/08/autism-and-allergies/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A%20LeftBrain%2FrightBrain%20%28Left%20Brain%2FRight%20Brain%29 [145162] -> "-" [1]
+2012-11-21 17:23:47 URL:http://skepchick.org/2008/10/afternoon-inquisition-108/ [209432] -> "-" [1]
+2012-11-21 17:23:53 URL:http://languagelog.ldc.upenn.edu/nll/?p=692 [57749] -> "-" [1]
+2012-11-21 17:23:57 URL:http://scienceblogs.com/pharyngula/2008/10/08/wednesday-cephalopod-in-flagra/ [86855] -> "-" [1]
+2012-11-21 17:24:02 URL:http://skepchick.org/2008/10/boston-skeptics-in-the-pub-october-20/ [31172] -> "-" [1]
+2012-11-21 17:24:03 URL:http://sandwalk.blogspot.jp/2008/10/2008-nobel-prize-in-chemistry.html [160928] -> "-" [1]
+2012-11-21 17:24:05 URL:http://www.freakonomics.com/2008/10/08/faith-based-dieting/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [76111] -> "-" [1]
+2012-11-21 17:24:06 URL:http://www.snopes.com/inboxer/nothing/innout.asp [25393/25393] -> "-" [1]
+2012-11-21 17:24:08 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/08/hubble-spies-eye-in-the-sky/ [94018] -> "-" [1]
+2012-11-21 17:24:09 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/08/did-the-chinese-fake-their-space-walk/ [145885] -> "-" [1]
+2012-11-21 17:24:13 URL:http://scienceblogs.com/pharyngula/2008/10/08/gfp-wins-nobel-prize/ [126394] -> "-" [1]
+2012-11-21 17:24:16 URL:http://www.freakonomics.com/2008/10/08/why-dont-economics-textbooks-focus-on-financial-crises/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [77398] -> "-" [1]
+2012-11-21 17:24:22 URL:http://scienceblogs.com/pharyngula/2008/10/08/i-need-to-take-a-shower-after/ [391261] -> "-" [1]
+2012-11-21 17:24:25 URL:http://scienceblogs.com/pharyngula/2008/10/08/international-cephalopod-appre/ [77041] -> "-" [1]
+2012-11-21 17:24:28 URL:http://www.freakonomics.com/2008/10/08/spending-your-money-while-donating-it/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [66115] -> "-" [1]
+2012-11-21 17:24:32 URL:http://scienceblogs.com/insolence/2008/10/08/yawn-another-worthless-acupuncti-mean-ac/ [131195] -> "-" [1]
+2012-11-21 17:24:32 URL:http://hawk-handsaw.blogspot.jp/2008/10/shang-study-remains-firmly-in-water.html [96494] -> "-" [1]
+2012-11-21 17:24:34 URL:http://theness.com/neurologicablog/index.php/preventative-hype/ [49883] -> "-" [1]
+2012-11-21 17:24:39 URL:http://scienceblogs.com/pharyngula/2008/10/08/for-you-visual-thinkers-who-co/ [147123] -> "-" [1]
+2012-11-21 17:24:44 URL:http://scienceblogs.com/pharyngula/2008/10/08/advice/ [75007] -> "-" [1]
+2012-11-21 17:24:45 URL:http://jdc325.wordpress.com/2008/10/08/sentencing-and-recidivism-on-trial/ [84226] -> "-" [1]
+2012-11-21 17:24:47 URL:http://www.badscience.net/2008/10/bad-science-teaching-resources-for-schools/ [102026/102026] -> "-" [1]
+2012-11-21 17:24:49 URL:http://leftbrainrightbrain.co.uk/2008/10/08/kirby-launches-torpedo-at-verstraeten-sinks-geier/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A%20LeftBrain%2FrightBrain%20%28Left%20Brain%2FRight%20Brain%29 [112375] -> "-" [1]
+2012-11-21 17:24:50 URL:http://thinking-is-dangerous.blogspot.jp/2008/10/only-people-who-think-glucosamine-works.html [143370] -> "-" [1]
+2012-11-21 17:24:52 URL:http://skepchick.org/2008/10/skepchick-quickies-108/ [44036] -> "-" [1]
+2012-11-21 17:24:54 URL:http://www.badscience.net/2008/10/bad-science-teaching-resources-for-schools/ [102026/102026] -> "-" [1]
+2012-11-21 17:24:56 URL:http://www.snopes.com/photos/signs/dogheaven.asp [24502/24502] -> "-" [1]
+2012-11-21 17:24:57 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/07/machaut-by-messenger/ [70615] -> "-" [1]
+2012-11-21 17:24:58 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/07/i-told-you-so/ [205806] -> "-" [1]
+2012-11-21 17:24:59 URL:http://languagelog.ldc.upenn.edu/nll/?p=690 [85346] -> "-" [1]
+2012-11-21 17:25:02 URL:http://scienceblogs.com/goodmath/2008/10/07/nobel-prize-blogging-symmetry/ [52396] -> "-" [1]
+2012-11-21 17:25:05 URL:http://scienceblogs.com/denialism/2008/10/07/a-big-problem-for-diabetics/ [95194] -> "-" [1]
+2012-11-21 17:25:19 URL:http://scienceblogs.com/pharyngula/2008/10/07/obama-vs-cranky-grampa/ [400533] -> "-" [1]
+2012-11-21 17:25:21 URL:http://skepchick.org/2008/10/who-loves-rebecca/ [35582] -> "-" [1]
+2012-11-21 17:25:28 URL:http://languagelog.ldc.upenn.edu/nll/?p=689 [72180] -> "-" [1]
+2012-11-21 17:25:33 URL:http://pandasthumb.org/archives/2008/10/the-case-of-id.html [188264/188264] -> "-" [1]
+2012-11-21 17:25:35 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/07/never-gonna-vaccinate-never-gonna-get-that-shot/ [77634] -> "-" [1]
+2012-11-21 17:25:36 URL:http://valueaddedwater.wordpress.com/2008/10/07/reality-check/ [47851] -> "-" [1]
+2012-11-21 17:25:38 URL:http://leftbrainrightbrain.co.uk/2008/10/07/peta-idiots/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A%20LeftBrain%2FrightBrain%20%28Left%20Brain%2FRight%20Brain%29 [94931] -> "-" [1]
+2012-11-21 17:25:42 URL:http://scienceblogs.com/pharyngula/2008/10/07/site-problems/ [73717] -> "-" [1]
+2012-11-21 17:25:46 URL:http://scienceblogs.com/pharyngula/2008/10/07/very-peculiar/ [159299] -> "-" [1]
+2012-11-21 17:25:47 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/07/arts-and-science-in-pasadena/ [60755] -> "-" [1]
+2012-11-21 17:25:48 URL:http://thinking-is-dangerous.blogspot.jp/2008/10/only-people-who-think-glucosamine-works.html [143370] -> "-" [1]
+2012-11-21 17:25:48 URL:http://actionforautism.co.uk/2008/10/07/national-autistic-society-international-conference-impressions/ [4797] -> "-" [1]
+2012-11-21 17:25:51 URL:http://www.freakonomics.com/2008/10/07/voting-with-eyeballs/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [76792] -> "-" [1]
+2012-11-21 17:25:54 URL:http://scienceblogs.com/insolence/2008/10/07/if-im-not-here-tomorrow-youll-know-why/ [121382] -> "-" [1]
+2012-11-21 17:25:56 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/07/galactic-tentacles-of-doom/ [81733] -> "-" [1]
+2012-11-21 17:25:57 URL:http://holfordwatch.info/?f [1227/1227] -> "-" [1]
+2012-11-21 17:26:00 URL:http://skepchick.org/2008/10/afternoon-inquisition-107/ [111397] -> "-" [1]
+2012-11-21 17:26:03 URL:http://www.freakonomics.com/2008/10/07/lojack-for-laptops-the-free-version/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [76761] -> "-" [1]
+2012-11-21 17:26:04 URL:http://sandwalk.blogspot.jp/2008/10/steve-jones-says-human-evolution-is.html [191602] -> "-" [1]
+2012-11-21 17:26:10 URL:http://scienceblogs.com/pharyngula/2008/10/07/grrrr/ [331361] -> "-" [1]
+2012-11-21 17:26:15 URL:http://www.freakonomics.com/2008/10/07/is-junglesmash-the-new-madison-avenue/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [81791] -> "-" [1]
+2012-11-21 17:26:15 URL:http://sandwalk.blogspot.jp/2008/10/my-friend-publishes-book.html [127356] -> "-" [1]
+2012-11-21 17:26:18 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/07/watermelon-planet/ [94708] -> "-" [1]
+http://www.theskepticsguide.org/sgublog/?p=345:
+2012-11-21 17:26:18 ERROR 500: Internal Server Error.
+2012-11-21 17:26:21 URL:http://skepchick.org/2008/10/pets-alt-med-and-a-transgendered-cat/ [77443] -> "-" [1]
+2012-11-21 17:26:24 URL:http://www.freakonomics.com/2008/10/07/martin-feldstein-on-the-financial-crisis/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [77593] -> "-" [1]
+2012-11-21 17:26:27 URL:http://scienceblogs.com/denialism/2008/10/07/obesity-and-healtha-quick-prim/ [78972] -> "-" [1]
+2012-11-21 17:26:31 URL:http://scienceblogs.com/pharyngula/2008/10/07/here-comes-the-bride/ [183831] -> "-" [1]
+2012-11-21 17:26:35 URL:http://www.freakonomics.com/2008/10/07/you-know-its-bad-when-theres-a-surcharge-on-your-cocaine/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [73533] -> "-" [1]
+2012-11-21 17:26:39 URL:http://scienceblogs.com/pharyngula/2008/10/07/small-forest-values/ [87817] -> "-" [1]
+2012-11-21 17:26:42 URL:http://scienceblogs.com/insolence/2008/10/07/hypnosis-and-hot-flashes-when-will-they/ [99591] -> "-" [1]
+2012-11-21 17:26:44 URL:http://theness.com/neurologicablog/index.php/are-humans-evolving/ [76851] -> "-" [1]
+2012-11-21 17:26:46 URL:http://skepchick.org/2008/10/skepchick-quickies-107/ [48412] -> "-" [1]
+2012-11-21 17:26:49 URL:http://scienceblogs.com/pharyngula/2008/10/07/hooray-for-oklahoma/ [69847] -> "-" [1]
+2012-11-21 17:26:58 URL:http://scienceblogs.com/pharyngula/2008/10/07/the-old-ones-are-too-old-for-t/ [79611] -> "-" [1]
+http://www.realclimate.org/index.php/archives/2008/10/what-links-the-retreat-of-jakobshavn-isbrae-wilkins-ice-shelf-and-the-petermann-glacier/:
+2012-11-21 17:27:03 ERROR 403: Forbidden.
+2012-11-21 17:27:05 URL:http://www.badscience.net/2008/10/nice-review-of-the-book-in-the-british-medical-journal-by-richard-smith/ [102853/102853] -> "-" [1]
+2012-11-21 17:27:06 URL:http://www.badscience.net/2008/10/nice-review-of-the-book-in-the-british-medical-journal-by-richard-smith/ [102853/102853] -> "-" [1]
+2012-11-21 17:27:07 URL:http://languagelog.ldc.upenn.edu/nll/?p=686 [97326] -> "-" [1]
+2012-11-21 17:27:11 URL:http://scienceblogs.com/pharyngula/2008/10/07/forget-palin/ [113705] -> "-" [1]
+2012-11-21 17:27:13 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/06/the-doctor-and-the-captain/ [89638] -> "-" [1]
+2012-11-21 17:27:14 URL:http://www.snopes.com/politics/business/bankholiday.asp [27335/27335] -> "-" [1]
+2012-11-21 17:27:15 URL:http://languagelog.ldc.upenn.edu/nll/?p=685 [75546] -> "-" [1]
+2012-11-21 17:27:18 URL:http://scienceblogs.com/pharyngula/2008/10/06/knitters-are-such-delightfully/ [98829] -> "-" [1]
+2012-11-21 17:27:20 URL:http://pandasthumb.org/archives/2008/10/bill-dembski-ch.html [118217/118217] -> "-" [1]
+2012-11-21 17:27:24 URL:http://scienceblogs.com/pharyngula/2008/10/06/a-comprehensive-plan-for-the-e/ [165504] -> "-" [1]
+2012-11-21 17:27:25 URL:http://sandwalk.blogspot.jp/2008/10/framing-science.html [158964] -> "-" [1]
+2012-11-21 17:27:26 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/06/what-does-your-candidate-think-about-science/ [68066] -> "-" [1]
+2012-11-21 17:27:27 URL:http://holfordwatch.info/?f [1227/1227] -> "-" [1]
+2012-11-21 17:27:28 URL:http://sandwalk.blogspot.jp/2008/10/mondays-molecule-91.html [128686] -> "-" [1]
+2012-11-21 17:27:31 URL:http://www.freakonomics.com/2008/10/06/is-the-best-defense-a-random-offense/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [75332] -> "-" [1]
+2012-11-21 17:27:33 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/06/incoming-2/ [117389] -> "-" [1]
+2012-11-21 17:27:36 URL:http://scienceblogs.com/denialism/2008/10/06/it-burns-it-burns/ [77030] -> "-" [1]
+2012-11-21 17:27:39 URL:http://skepchick.org/2008/10/afternoon-inquisition-106/ [113008] -> "-" [1]
+2012-11-21 17:27:45 URL:http://pandasthumb.org/archives/2008/10/openlab-2008-an.html [49993/49993] -> "-" [1]
+2012-11-21 17:27:50 URL:http://scienceblogs.com/pharyngula/2008/10/06/pregnancy-poll/ [236871] -> "-" [1]
+2012-11-21 17:27:52 URL:http://scienceblogs.com/insolence/2008/10/06/the-countdown-to-100-continues/ [72748] -> "-" [1]
+2012-11-21 17:27:54 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/06/two-weeks-to-doomsday-reading/ [81696] -> "-" [1]
+2012-11-21 17:27:57 URL:http://www.freakonomics.com/2008/10/06/free-super-crunching-software/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [76779] -> "-" [1]
+2012-11-21 17:27:58 URL:http://languagelog.ldc.upenn.edu/nll/?p=681 [63709] -> "-" [1]
+2012-11-21 17:28:03 URL:http://scienceblogs.com/pharyngula/2008/10/06/what-are-you-doing-here/ [195511] -> "-" [1]
+2012-11-21 17:28:04 URL:http://holfordwatch.info/?f [1221/1221] -> "-" [1]
+2012-11-21 17:28:07 URL:http://skepchick.org/2008/10/sgu-live-podcast-this-saturday-whos-in/ [65904] -> "-" [1]
+2012-11-21 17:28:09 URL:http://www.ktvl.com/news/bjorkquist_1187476___article.html/tricycle_timm.html [43726/43726] -> "-" [1]
+2012-11-21 17:28:10 URL:http://pandasthumb.org/archives/2008/10/geochelone-sulc.html [57292/57292] -> "-" [1]
+2012-11-21 17:28:13 URL:http://scienceblogs.com/pharyngula/2008/10/06/the-saga-of-the-butcher-of-mt/ [97625] -> "-" [1]
+2012-11-21 17:28:15 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/06/astronomers-find-a-planet-denser-than-lead/ [159657] -> "-" [1]
+2012-11-21 17:28:17 URL:http://www.freakonomics.com/2008/10/06/is-voting-dangerous-for-your-health/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [76579] -> "-" [1]
+2012-11-21 17:28:21 URL:http://www.dcscience.net/?p=258 [234306] -> "-" [1]
+http://wellingtongrey.blogspot.jp/2008/10/miscellanea-just-like-me.html:
+2012-11-21 17:28:21 ERROR 404: Not Found.
+2012-11-21 17:28:24 URL:http://leftbrainrightbrain.co.uk/2008/10/06/autism-genes-genius/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A%20LeftBrain%2FrightBrain%20%28Left%20Brain%2FRight%20Brain%29 [135894] -> "-" [1]
+2012-11-21 17:28:34 URL:http://scienceblogs.com/pharyngula/2008/10/06/integrity/ [161712] -> "-" [1]
+2012-11-21 17:28:37 URL:http://www.freakonomics.com/2008/10/06/my-daughters-reading-list/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [72670] -> "-" [1]
+2012-11-21 17:28:40 URL:http://scienceblogs.com/denialism/2008/10/06/worst-paper-ever/ [150287] -> "-" [1]
+2012-11-21 17:28:44 URL:http://scienceblogs.com/pharyngula/2008/10/06/astrology-is-bunk/ [166912] -> "-" [1]
+2012-11-21 17:28:49 URL:http://scienceblogs.com/pharyngula/2008/10/06/scientific-bias-and-the-voidof/ [124365] -> "-" [1]
+2012-11-21 17:28:52 URL:http://www.freakonomics.com/2008/10/06/freak-shots-foie-splurge/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [71834] -> "-" [1]
+2012-11-21 17:28:55 URL:http://scienceblogs.com/insolence/2008/10/06/vitamin-c-and-cancer-revisited-1/ [99563] -> "-" [1]
+2012-11-21 17:28:56 URL:http://sandwalk.blogspot.jp/2008/10/2008-nobel-prize-in-physiology-or.html [161476] -> "-" [1]
+http://skepchick.org/?p=3365:
+2012-11-21 17:28:58 ERROR 404: Not Found.
+2012-11-21 17:29:00 URL:http://scienceblogs.com/goodmath/2008/10/06/cryptographic-integrity-using/ [52933] -> "-" [1]
+2012-11-21 17:29:04 URL:http://www.dcscience.net/?p=258 [234306] -> "-" [1]
+2012-11-21 17:29:11 URL:http://theness.com/neurologicablog/index.php/an-upcoming-turing-test/ [87345] -> "-" [1]
+2012-11-21 17:29:15 URL:http://scienceblogs.com/pharyngula/2008/10/06/texans-keep-going-against-the/ [84137] -> "-" [1]
+2012-11-21 17:29:18 URL:http://scienceblogs.com/pharyngula/2008/10/06/and-the-nobel-prize-goes-to/ [81496] -> "-" [1]
+2012-11-21 17:29:21 URL:http://scienceblogs.com/pharyngula/2008/10/06/one-good-name-rescued-from-the/ [66041] -> "-" [1]
+2012-11-21 17:29:25 URL:http://scienceblogs.com/pharyngula/2008/10/06/sally-kerns-mouth-motors-on/ [110017] -> "-" [1]
+2012-11-21 17:29:28 URL:http://scienceblogs.com/insolence/2008/10/06/jenny-mccarthy-gets-rickrolld/ [99970] -> "-" [1]
+http://www.theskepticsguide.org/sgublog/?p=344:
+2012-11-21 17:29:28 ERROR 500: Internal Server Error.
+2012-11-21 17:29:29 URL:http://languagelog.ldc.upenn.edu/nll/?p=684 [67973] -> "-" [1]
+2012-11-21 17:29:30 URL:http://languagelog.ldc.upenn.edu/nll/?p=683 [72254] -> "-" [1]
+2012-11-21 17:29:33 URL:http://scienceblogs.com/pharyngula/2008/10/06/were-only-stupid-if-were-foole/ [115397] -> "-" [1]
+2012-11-21 17:29:36 URL:http://skepchick.org/2008/10/skepchick-quickies-106/ [60186] -> "-" [1]
+2012-11-21 17:29:38 URL:http://leftbrainrightbrain.co.uk/2008/10/06/why-now-jenny/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A%20LeftBrain%2FrightBrain%20%28Left%20Brain%2FRight%20Brain%29 [113532] -> "-" [1]
+2012-11-21 17:29:45 URL:http://scienceblogs.com/pharyngula/2008/10/06/i-pray-that-angels-come-down-f/ [305260] -> "-" [1]
+2012-11-21 17:29:46 URL:http://www.snopes.com/politics/ballot/arrest.asp [28016/28016] -> "-" [1]
+2012-11-21 17:29:49 URL:http://scienceblogs.com/pharyngula/2008/10/05/its-not-even-halloween-yet/ [81281] -> "-" [1]
+2012-11-21 17:29:58 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/05/messenger-flies-by-mercury-tonight/ [73933] -> "-" [1]
+http://www.realclimate.org/index.php/archives/2008/10/palin-on-global-warming/:
+2012-11-21 17:29:58 ERROR 403: Forbidden.
+2012-11-21 17:30:03 URL:http://scienceblogs.com/pharyngula/2008/10/05/a-little-comparison/ [166598] -> "-" [1]
+2012-11-21 17:30:07 URL:http://scienceblogs.com/pharyngula/2008/10/05/god-is-dead-and-this-is-the-be/ [121460] -> "-" [1]
+2012-11-21 17:30:09 URL:http://www.quackometer.net/blog/2008/10/neutrahealth-in-trouble.html [59113/59113] -> "-" [1]
+2012-11-21 17:30:11 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/05/tv-show-on-national-geographic-tonight/ [70346] -> "-" [1]
+2012-11-21 17:30:13 URL:http://pandasthumb.org/archives/2008/10/the-rise-of-ign.html [137525/137525] -> "-" [1]
+2012-11-21 17:30:14 URL:http://www.quackometer.net/blog/2008/10/neutrahealth-in-trouble.html [59113/59113] -> "-" [1]
+2012-11-21 17:30:19 URL:http://scienceblogs.com/pharyngula/2008/10/05/fourway-stops-must-be-outlawed/ [216884] -> "-" [1]
+2012-11-21 17:30:21 URL:http://leftbrainrightbrain.co.uk/2008/10/05/sunday-solutions-no3/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A%20LeftBrain%2FrightBrain%20%28Left%20Brain%2FRight%20Brain%29 [83470] -> "-" [1]
+2012-11-21 17:30:24 URL:http://skepchick.org/2008/10/news-recap-fundamentalist-edition/ [67602] -> "-" [1]
+2012-11-21 17:30:26 URL:http://apgaylard.wordpress.com/2008/10/05/my-first-thirteen-months/ [116597] -> "-" [1]
+2012-11-21 17:30:27 URL:http://languagelog.ldc.upenn.edu/nll/?p=682 [79939] -> "-" [1]
+2012-11-21 17:30:28 URL:http://languagelog.ldc.upenn.edu/nll/?p=677 [67044] -> "-" [1]
+2012-11-21 17:30:28 URL:http://languagelog.ldc.upenn.edu/nll/?p=675 [58482] -> "-" [1]
+2012-11-21 17:30:30 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/05/australias-new-chief-scientist/ [96340] -> "-" [1]
+2012-11-21 17:30:33 URL:http://scienceblogs.com/pharyngula/2008/10/05/charlies-playhouse-is-open-for/ [62203] -> "-" [1]
+2012-11-21 17:30:39 URL:http://scienceblogs.com/insolence/2008/10/05/more-lazy-weekend-video/ [82749] -> "-" [1]
+2012-11-21 17:30:42 URL:http://scienceblogs.com/pharyngula/2008/10/05/its-pushing-the-concept-of-ser/ [71317] -> "-" [1]
+2012-11-21 17:30:47 URL:http://scienceblogs.com/pharyngula/2008/10/05/palinoscopy/ [213085] -> "-" [1]
+http://www.theskepticsguide.org/sgublog/?p=343:
+2012-11-21 17:30:47 ERROR 500: Internal Server Error.
+2012-11-21 17:30:52 URL:http://scienceblogs.com/pharyngula/2008/10/05/berkeley-notices-a-creationist/ [247120] -> "-" [1]
+2012-11-21 17:30:54 URL:http://languagelog.ldc.upenn.edu/nll/?p=674 [100534] -> "-" [1]
+2012-11-21 17:30:57 URL:http://scienceblogs.com/pharyngula/2008/10/05/radio-reminder-29/ [83069] -> "-" [1]
+2012-11-21 17:30:59 URL:http://languagelog.ldc.upenn.edu/nll/?p=673 [126826] -> "-" [1]
+2012-11-21 17:31:00 URL:http://www.snopes.com/politics/obama/loans.asp [19885/19885] -> "-" [1]
+2012-11-21 17:31:01 URL:http://holfordwatch.info/?f [1221/1221] -> "-" [1]
+2012-11-21 17:31:03 URL:http://scienceblogs.com/denialism/2008/10/04/exciting-news-on-the-hiv-front/ [60638] -> "-" [1]
+2012-11-21 17:31:05 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/04/firefox-cooties/ [126306] -> "-" [1]
+2012-11-21 17:31:07 URL:http://leftbrainrightbrain.co.uk/2008/10/04/jon-poling-no-such-thing-as-bad-publicity/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A%20LeftBrain%2FrightBrain%20%28Left%20Brain%2FRight%20Brain%29 [115512] -> "-" [1]
+2012-11-21 17:31:09 URL:http://languagelog.ldc.upenn.edu/nll/?p=672 [58891] -> "-" [1]
+2012-11-21 17:31:09 URL:http://languagelog.ldc.upenn.edu/nll/?p=670 [60782] -> "-" [1]
+2012-11-21 17:31:12 URL:http://skepchick.org/2008/10/afternoon-inquisition-104/ [104027] -> "-" [1]
+2012-11-21 17:31:19 URL:http://languagelog.ldc.upenn.edu/nll/?p=671 [63752] -> "-" [1]
+2012-11-21 17:31:21 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/04/model-scientists/ [112255] -> "-" [1]
+2012-11-21 17:31:24 URL:http://jaycueaitch.wordpress.com/2008/10/04/old-stuff-revisted/ [57802] -> "-" [1]
+2012-11-21 17:31:27 URL:http://scienceblogs.com/insolence/2008/10/04/saturday-morning-lazy-youtube-sensitive/ [80849] -> "-" [1]
+2012-11-21 17:31:27 URL:http://gimpyblog.wordpress.com/2008/10/04/the-plural-of-anecdote-is-not-data-except-for-homeopaths/ [5893] -> "-" [1]
+2012-11-21 17:31:30 URL:http://skepchick.org/2008/10/skepchick-quickies-weekend-edition-104/ [76448] -> "-" [1]
+http://www.theskepticsguide.org/sgublog/?p=341:
+2012-11-21 17:31:31 ERROR 500: Internal Server Error.
+2012-11-21 17:31:33 URL:http://leftbrainrightbrain.co.uk/2008/10/04/1472/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A%20LeftBrain%2FrightBrain%20%28Left%20Brain%2FRight%20Brain%29 [89041] -> "-" [1]
+2012-11-21 17:31:34 URL:http://www.badscience.net/2008/10/more-crap-journals/ [84470/84470] -> "-" [1]
+2012-11-21 17:31:36 URL:http://languagelog.ldc.upenn.edu/nll/?p=669 [89188] -> "-" [1]
+2012-11-21 17:31:38 URL:http://www.badscience.net/2008/10/more-crap-journals/ [84470/84470] -> "-" [1]
+2012-11-21 17:31:39 URL:http://languagelog.ldc.upenn.edu/nll/?p=666 [72258] -> "-" [1]
+2012-11-21 17:31:42 URL:http://scienceblogs.com/denialism/2008/10/03/a-cup-of/ [66647] -> "-" [1]
+2012-11-21 17:31:43 URL:http://pandasthumb.org/archives/2008/10/giant-tortoise.html [83387/83387] -> "-" [1]
+2012-11-21 17:31:46 URL:http://scienceblogs.com/goodmath/2008/10/03/friday-random-ten-october-3/ [37813] -> "-" [1]
+2012-11-21 17:31:46 URL:http://sandwalk.blogspot.jp/2008/10/obama-biden-mccain-and-palin-agree-on.html [207546] -> "-" [1]
+2012-11-21 17:31:47 URL:http://sandwalk.blogspot.jp/2008/10/vote.html [141346] -> "-" [1]
+2012-11-21 17:31:50 URL:http://scienceblogs.com/insolence/2008/10/03/my-second-post/ [72348] -> "-" [1]
+2012-11-21 17:31:51 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/03/help-my-friends-take-hot-showers/ [98361] -> "-" [1]
+2012-11-21 17:31:54 URL:http://skepchick.org/2008/10/2008-ig-nobel-prizes-and-comments-o-the-week/ [48878] -> "-" [1]
+2012-11-21 17:31:57 URL:http://scienceblogs.com/denialism/2008/10/03/diabetic-foot-disease/ [50943] -> "-" [1]
+2012-11-21 17:32:06 URL:http://skepchick.org/2008/10/afternoon-inquisition-103/ [77390] -> "-" [1]
+2012-11-21 17:32:09 URL:http://www.freakonomics.com/2008/10/03/bob-dylan-understands-the-weak-economy/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [73384] -> "-" [1]
+2012-11-21 17:32:10 URL:http://sandwalk.blogspot.jp/2008/10/tangled-bank-115.html [128156] -> "-" [1]
+2012-11-21 17:32:12 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/03/the-back-yard-is-empty/ [82686] -> "-" [1]
+2012-11-21 17:32:14 URL:http://www.freakonomics.com/2008/10/03/what-would-george-do/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [71168] -> "-" [1]
+2012-11-21 17:32:17 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/03/astrology-in-retrograde/ [119230] -> "-" [1]
+2012-11-21 17:32:19 URL:http://www.freakonomics.com/2008/10/03/nber-economists-on-the-candidates-economic-plans/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [75913] -> "-" [1]
+2012-11-21 17:32:21 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/03/hubble-documentary-on-natgeo/ [76118] -> "-" [1]
+2012-11-21 17:32:23 URL:http://www.quackometer.net/blog/2008/10/how-can-you-criticise-homeopathy-when.html [58639/58639] -> "-" [1]
+2012-11-21 17:32:26 URL:http://www.freakonomics.com/2008/10/03/save-or-splurge/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [74609] -> "-" [1]
+2012-11-21 17:32:29 URL:http://www.freakonomics.com/2008/10/03/the-freak-est-links-168/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [57843] -> "-" [1]
+2012-11-21 17:32:32 URL:http://scienceblogs.com/insolence/2008/10/03/the-life-cycle-of-translational-research/ [88586] -> "-" [1]
+2012-11-21 17:32:33 URL:http://theness.com/neurologicablog/index.php/hyperactive-pattern-recognition/ [48741] -> "-" [1]
+http://www.theskepticsguide.org/sgublog/?p=340:
+2012-11-21 17:32:34 ERROR 500: Internal Server Error.
+2012-11-21 17:32:37 URL:http://skepchick.org/2008/10/skepchick-quickies-103/ [77375] -> "-" [1]
+2012-11-21 17:32:43 URL:http://www.snopes.com/politics/business/easescredit.asp [29907/29907] -> "-" [1]
+2012-11-21 17:32:45 URL:http://www.snopes.com/crime/gangs/genesee.asp [21856/21856] -> "-" [1]
+2012-11-21 17:32:45 URL:http://www.snopes.com/luck/gideon.asp [33945/33945] -> "-" [1]
+2012-11-21 17:32:47 URL:http://pandasthumb.org/archives/2008/10/freshwater-hear.html [146474/146474] -> "-" [1]
+2012-11-21 17:32:48 URL:http://blogs.discovermagazine.com/badastronomy/2008/10/02/three-things/ [79066] -> "-" [1]
+2012-11-21 17:32:50 URL:http://www.badscience.net/2008/10/generous-review-of-my-book-in-the-daily-telegraph/ [78938/78938] -> "-" [1]
+2012-11-21 17:32:51 URL:http://www.badscience.net/2008/10/there-is-a-plague-of-jellyfish-off-the-coast-of-spain-as-reported-in-the-guardian-this-week-ben-why-not-take-a-holiday-there-this-year/ [78065/78065] -> "-" [1]
+2012-11-21 17:32:53 URL:http://www.freakonomics.com/2008/10/02/john-cochrane-on-why-the-bailout-plan-would-be-a-disaster/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [88366] -> "-" [1]
+2012-11-21 17:32:57 URL:http://scienceblogs.com/denialism/2008/10/02/best-post-ever/ [54563] -> "-" [1]
+2012-11-21 17:33:00 URL:http://scienceblogs.com/goodmath/2008/10/02/differential-cryptanalysis/ [48938] -> "-" [1]
+2012-11-21 17:33:02 URL:http://www.freakonomics.com/2008/10/02/ask-the-best-places-to-live-guy/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [76546] -> "-" [1]
+2012-11-21 17:33:05 URL:http://skepchick.org/2008/10/afternoon-inquisition-102/ [121280] -> "-" [1]
+2012-11-21 17:33:09 URL:http://scienceblogs.com/insolence/2008/10/02/if-you-want-to-know-the-real-cause-of-th/ [115028] -> "-" [1]
+2012-11-21 17:33:11 URL:http://www.freakonomics.com/2008/10/02/manipulation-in-political-prediction-markets/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [80339] -> "-" [1]
+2012-11-21 17:33:14 URL:http://theness.com/neurologicablog/index.php/hubris-they-name-is-jenny-mccarthy/ [108291] -> "-" [1]
+2012-11-21 17:33:14 URL:http://sandwalk.blogspot.jp/2008/10/armor-of-god-pajamas.html [146839] -> "-" [1]
+2012-11-21 17:33:15 URL:http://pandasthumb.org/archives/2008/10/tangled-bank-11-4.html [42588/42588] -> "-" [1]
+2012-11-21 17:33:18 URL:http://www.freakonomics.com/2008/10/02/our-daily-bleg-whats-been-said-about-math/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [74321] -> "-" [1]
+2012-11-21 17:33:19 URL:http://sandwalk.blogspot.jp/2008/10/any-questions.html [155919] -> "-" [1]
+2012-11-21 17:33:21 URL:http://www.freakonomics.com/2008/10/02/this-website-almost-makes-politics-interesting/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A+FreakonomicsBlog+%2528Freakonomics+Blog%2529 [74180] -> "-" [1]
+2012-11-21 17:33:30 URL:http://scienceblogs.com/insolence/2008/10/02/you-knew-it-had-to-happen-a-quack-likens/ [115413] -> "-" [1]
+http://www.theskepticsguide.org/sgublog/?p=339:
+2012-11-21 17:33:30 ERROR 500: Internal Server Error.
+2012-11-21 17:33:33 URL:http://skepchick.org/2008/10/skepchick-quickies-102/ [80173] -> "-" [1]
+2012-11-21 17:33:34 URL:http://www.snopes.com/politics/palin/interview.asp [27080/27080] -> "-" [1]
+2012-11-21 17:33:34 URL:http://mikesweeklyskepticrant.blogspot.jp/2008/10/politics.html [30475] -> "-" [1]
+2012-11-21 17:33:36 URL:http://pandasthumb.org/archives/2008/10/the-best-possib.html [162116/162116] -> "-" [1]
+2012-11-21 17:33:39 URL:http://scienceblogs.com/insolence/2008/10/02/jenny-mccarthy-on-cnn-the-stupid-burns-o/ [105332] -> "-" [1]
+2012-11-21 17:33:41 URL:http://skeptico.blogs.com/skeptico/2008/10/subjective-idealism.html [76764/76764] -> "-" [1]
+2012-11-21 17:33:42 URL:http://sandwalk.blogspot.jp/2008/10/walking-with-charles-darwin.html [142658] -> "-" [1]
+2012-11-21 17:33:44 URL:http://scienceblogs.com/goodmath/2008/10/01/scienceblogs-donorschoose-driv/ [33689] -> "-" [1]
+2012-11-21 17:33:47 URL:http://scienceblogs.com/denialism/2008/10/01/im-a-holistic-doctor/ [58174] -> "-" [1]
+2012-11-21 17:33:47 URL:http://sandwalk.blogspot.jp/2008/10/new-model-organisms.html [155979] -> "-" [1]
+2012-11-21 17:33:50 URL:http://skepchick.org/2008/10/absolutely-off-topic-but-about-neil-gaiman/ [42383] -> "-" [1]
+2012-11-21 17:33:53 URL:http://skepchick.org/2008/10/afternoon-inquisition-101/ [232716] -> "-" [1]
+2012-11-21 17:33:54 URL:http://pandasthumb.org/archives/2008/10/bison-bison.html [69279/69279] -> "-" [1]
+2012-11-21 17:33:56 URL:http://theness.com/neurologicablog/index.php/entangled-logic/ [63117] -> "-" [1]
+2012-11-21 17:33:58 URL:http://www.snopes.com/photos/people/smallwaist.asp [32743/32743] -> "-" [1]
+2012-11-21 17:33:58 URL:http://mikesweeklyskepticrant.blogspot.jp/2008/09/youd-have-thought-gods-would-have.html [24946] -> "-" [1]
+2012-11-21 17:34:01 URL:http://scienceblogs.com/denialism/2008/09/30/the-times-doesnt-know-bayes/ [79925] -> "-" [1]
+http://www.quackometer.net/blog/2008/10/kaloba-cold-cure-how-mhra-condones.html:
+2012-11-21 17:34:09 ERROR 404: Not Found.
+2012-11-21 17:34:12 URL:http://scienceblogs.com/denialism/2008/09/30/the-times-on-woo-covering-the/ [55335] -> "-" [1]
+http://www.theskepticsguide.org/sgublog/?p=338:
+2012-11-21 17:34:12 ERROR 500: Internal Server Error.
+2012-11-21 17:34:14 URL:http://www.badscience.net/2008/09/bad-science-reviewed-in-the-daily-mail/ [90612/90612] -> "-" [1]
+2012-11-21 17:34:16 URL:http://theness.com/neurologicablog/index.php/scientific-consensus/ [66291] -> "-" [1]
+2012-11-21 17:34:17 URL:http://skepbitch.wordpress.com/2008/09/29/the-things-we-do-for-love-and-skepticism/ [5862] -> "-" [1]
+2012-11-21 17:34:18 URL:http://www.snopes.com/politics/obama/health.asp [28080/28080] -> "-" [1]
+2012-11-21 17:34:18 URL:http://mikesweeklyskepticrant.blogspot.jp/2008/09/matt-taibbi-slays-american-public-with.html [26660] -> "-" [1]
+2012-11-21 17:34:20 URL:http://pandasthumb.org/archives/2008/09/a-way-with-word.html [86281/86281] -> "-" [1]
+2012-11-21 17:34:21 URL:http://thinking-is-dangerous.blogspot.jp/2008/09/equazen-demonstrate-rigourous-and.html [149858] -> "-" [1]
+2012-11-21 17:34:24 URL:http://www.dcscience.net/?p=257 [121962] -> "-" [1]
+2012-11-21 17:34:24 URL:http://teekblog.blogspot.jp/2008/09/on-politics-of-crash.html [53022] -> "-" [1]
+2012-11-21 17:34:25 URL:http://pandasthumb.org/archives/2008/09/ceratotherium-s.html [58350/58350] -> "-" [1]
+http://www.realclimate.org/index.php/archives/2008/09/a-new-survey-of-scientists/:
+2012-11-21 17:34:26 ERROR 403: Forbidden.
+2012-11-21 17:34:27 URL:http://theness.com/neurologicablog/index.php/a-behavior-marker-for-autism/ [52587] -> "-" [1]
+http://www.theskepticsguide.org/sgublog/?p=337:
+2012-11-21 17:34:28 ERROR 500: Internal Server Error.
+2012-11-21 17:34:29 URL:http://www.snopes.com/sports/baseball/1908foul.asp [26921/26921] -> "-" [1]
+2012-11-21 17:34:30 URL:http://pandasthumb.org/archives/2008/09/happy-birthday-7.html [49103/49103] -> "-" [1]
+2012-11-21 17:34:32 URL:http://scienceblogs.com/denialism/2008/09/28/open-lab-08/ [46026] -> "-" [1]
+2012-11-21 17:34:33 URL:http://mikesweeklyskepticrant.blogspot.jp/2008/09/jurassic-park-documentary.html [27734] -> "-" [1]
+2012-11-21 17:34:34 URL:http://skeptico.blogs.com/skeptico/2008/09/the-harm-in-astrology.html [53187/53187] -> "-" [1]
+2012-11-21 17:34:36 URL:http://pandasthumb.org/archives/2008/09/casey-luskins-j.html [157140/157140] -> "-" [1]
+2012-11-21 17:34:39 URL:http://scienceblogs.com/denialism/2008/09/28/profiting-from-others-sufferin/ [167081] -> "-" [1]
+http://www.theskepticsguide.org/sgublog/?p=336:
+2012-11-21 17:34:40 ERROR 500: Internal Server Error.
+2012-11-21 17:34:43 URL:http://scienceblogs.com/denialism/2008/09/28/were-the-ancients-fools-1/ [70560] -> "-" [1]
+2012-11-21 17:34:44 URL:http://www.snopes.com/politics/mccain/invented.asp [27367/27367] -> "-" [1]
+2012-11-21 17:34:45 URL:http://badidea.wordpress.com/2008/09/27/ghost-haunts-dumbells-say-dumbells/ [57052] -> "-" [1]
+http://www.theskepticsguide.org/sgublog/?p=334:
+2012-11-21 17:34:50 ERROR 500: Internal Server Error.
+2012-11-21 17:34:52 URL:http://www.badscience.net/2008/09/dave-ford-from-durham-council-plays-at-being-a-scientist-again/ [152440/152440] -> "-" [1]
+2012-11-21 17:34:54 URL:http://theness.com/neurologicablog/index.php/mccains-ptosis/ [50287] -> "-" [1]
+http://www.theskepticsguide.org/sgublog/?p=335:
+2012-11-21 17:34:54 ERROR 500: Internal Server Error.
+2012-11-21 17:34:55 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://actionskeptics.blogspot.jp/2008/09/here-you-go-ebert.html%26zx%3D1mkttq2cq0t4&ltmpl=private [55116] -> "-" [1]
+2012-11-21 17:34:55 URL:http://mikesweeklyskepticrant.blogspot.jp/2008/09/its-like-shes-four-year-old-trying-to.html [28070] -> "-" [1]
+2012-11-21 17:34:59 URL:http://scienceblogs.com/goodmath/2008/09/25/how-mortgages-turned-into-a-tr/ [122936] -> "-" [1]
+2012-11-21 17:34:59 URL:http://skepticscircle.blogspot.jp/2008/09/96th-meeting-of-skeptics-circle.html [37029] -> "-" [1]
+2012-11-21 17:35:02 URL:http://theness.com/neurologicablog/index.php/calorie-restriction-for-life-extension/ [134218] -> "-" [1]
+2012-11-21 17:35:04 URL:http://www.badscience.net/2008/09/oh-hang-on-now-they-are-releasing-some-results-from-the-durham-fish-oil-trial/ [114349/114349] -> "-" [1]
+2012-11-21 17:35:05 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://actionskeptics.blogspot.jp/2008/09/96th-skeptics-circle.html%26zx%3Dp3grdvrk8rho&ltmpl=private [55123] -> "-" [1]
+2012-11-21 17:35:07 URL:http://skeptico.blogs.com/skeptico/2008/09/stef-coburn.html [356838/356838] -> "-" [1]
+2012-11-21 17:35:08 URL:http://skeptico.blogs.com/skeptico/2008/09/skeptics-circle.html [51520/51520] -> "-" [1]
+2012-11-21 17:35:09 URL:http://mikesweeklyskepticrant.blogspot.jp/2008/09/skeptics-circle-96.html [23105] -> "-" [1]
+2012-11-21 17:35:10 URL:http://badidea.wordpress.com/2008/09/24/mccain-suspends-campaign-to-spend-more-time-campaigning/ [58452] -> "-" [1]
+2012-11-21 17:35:12 URL:http://theness.com/neurologicablog/index.php/homeland-security-reads-minds/ [59085] -> "-" [1]
+2012-11-21 17:35:15 URL:http://scienceblogs.com/goodmath/2008/09/23/bad-probability-and-economic-d/ [124886] -> "-" [1]
+http://www.realclimate.org/index.php/archives/2008/09/the-mpg-confusion/:
+2012-11-21 17:35:16 ERROR 403: Forbidden.
+2012-11-21 17:35:18 URL:http://theness.com/neurologicablog/index.php/bacteria-are-your-friend/ [60175] -> "-" [1]
+2012-11-21 17:35:20 URL:http://www.quackometer.net/blog/2008/09/how-do-you-solve-problem-like-malaria.html [49895/49895] -> "-" [1]
+2012-11-21 17:35:21 URL:http://mikesweeklyskepticrant.blogspot.jp/2008/09/religion-slaps-ontario-patients-in-face.html [28630] -> "-" [1]
+2012-11-21 17:35:22 URL:http://dubitoergo.blogspot.jp/2008/09/creationism-in-my-classroom.html [132564] -> "-" [1]
+2012-11-21 17:35:22 URL:http://thinking-is-dangerous.blogspot.jp/2008/09/helios-homeopathy-remove-their-malaria_23.html [147617] -> "-" [1]
+http://feeds.feedburner.com/~r/scienceblogs/CyKN/~3/400215402/economic_disasters_and_stupid.php:
+2012-11-21 17:35:22 ERROR 404: Not Found.
+http://thinking-is-dangerous.blogspot.jp/2008/09/helios-homeopathy-remove-their-malaria.html:
+2012-11-21 17:35:23 ERROR 404: Not Found.
+2012-11-21 17:35:26 URL:http://www.quackometer.net/blog/2008/09/epiphenomena-of-quackery.html [62899/62899] -> "-" [1]
+2012-11-21 17:35:32 URL:http://www.badscience.net/2008/09/seriously-is-the-daily-mail-any-worse-than-your-average-academic-journal/ [114615/114615] -> "-" [1]
+2012-11-21 17:35:33 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://actionskeptics.blogspot.jp/2008/09/i-can-die-happy-now.html%26zx%3D7u5icpzput0m&ltmpl=private [55122] -> "-" [1]
+2012-11-21 17:35:34 URL:http://badidea.wordpress.com/2008/09/19/the-playing-the-race-card-card/ [59574] -> "-" [1]
+2012-11-21 17:35:36 URL:http://www.badscience.net/2008/09/dont-let-the-facts-spoil-a-good-story/ [73727/73727] -> "-" [1]
+2012-11-21 17:35:37 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://actionskeptics.blogspot.jp/2008/09/appeal-to-metaphysics.html%26zx%3Dhjlijfbqj1xx&ltmpl=private [55127] -> "-" [1]
+2012-11-21 17:35:37 URL:http://dubitoergo.blogspot.jp/2008/09/for-cause.html [64595] -> "-" [1]
+http://www.realclimate.org/index.php/archives/2008/09/on-straw-men-and-greenland-tad-pfeffer-responds/:
+2012-11-21 17:35:38 ERROR 403: Forbidden.
+2012-11-21 17:35:39 URL:http://thinking-is-dangerous.blogspot.jp/2008/09/birthday-result-artrosilium-website.html [295882] -> "-" [1]
+2012-11-21 17:35:39 URL:http://scientific-misconduct.blogspot.jp/2008/09/did-nz-drug-regulator-do-some.html [39515] -> "-" [1]
+2012-11-21 17:35:40 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://actionskeptics.blogspot.jp/2008/09/dear-world.html%26zx%3D1hg87cdorwykn&ltmpl=private [55097] -> "-" [1]
+2012-11-21 17:35:41 URL:http://thinking-is-dangerous.blogspot.jp/2008/09/bizarre-dietary-advice-from-yahoo.html [121156] -> "-" [1]
+2012-11-21 17:35:43 URL:http://www.quackometer.net/blog/2008/09/write-to-your-mp-about-our-libel-laws.html [50287/50287] -> "-" [1]
+2012-11-21 17:35:44 URL:http://skepbitch.wordpress.com/ [5810] -> "-" [1]
+2012-11-21 17:35:44 URL:http://mikesweeklyskepticrant.blogspot.jp/2008/09/lazy-post-so-you-know-im-still-alive.html [27587] -> "-" [1]
+2012-11-21 17:35:46 URL:http://badidea.wordpress.com/2008/09/15/conservatives-more-likely-to-believe-falsehoods-if-told-they-are-false-and-why-that-might-be-sensible-of-them/ [82909] -> "-" [1]
+2012-11-21 17:35:48 URL:http://scienceblogs.com/goodmath/2008/09/15/screwing-up-modes-of-operation/ [45138] -> "-" [1]
+2012-11-21 17:35:51 URL:http://scienceblogs.com/goodmath/2008/09/15/modes-of-operation-in-block-cr/ [59076] -> "-" [1]
+2012-11-21 17:35:52 URL:http://thinking-is-dangerous.blogspot.jp/2008/09/no-more-rath-sewage.html [116883] -> "-" [1]
+2012-11-21 17:35:54 URL:http://www.badscience.net/2008/09/speaking-gigs-this-week-in-london-monday-tuesday-wednesday/ [86872/86872] -> "-" [1]
+2012-11-21 17:35:56 URL:http://www.dcscience.net/?p=256 [100366] -> "-" [1]
+2012-11-21 17:35:58 URL:http://shpalman.livejournal.com/12077.html [56730] -> "-" [1]
+2012-11-21 17:35:59 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://actionskeptics.blogspot.jp/2008/09/95th-skeptics-circle.html%26zx%3D1h9d93wa3dctv&ltmpl=private [55128] -> "-" [1]
+2012-11-21 17:36:02 URL:http://scienceblogs.com/goodmath/2008/09/12/friday-random-10-sept-12/ [45124] -> "-" [1]
+2012-11-21 17:36:04 URL:http://www.quackometer.net/blog/2008/09/matthias-rath-charlatan.html [95286/95286] -> "-" [1]
+2012-11-21 17:36:06 URL:http://www.badscience.net/2008/09/matthias-rath-pulls-out-forced-to-pay-the-guardians-costs-i-think-this-means-i-win/ [144973/144973] -> "-" [1]
+2012-11-21 17:36:14 URL:http://www.dcscience.net/?p=255 [121123] -> "-" [1]
+http://badchemist.net/badscience/daily-mail-ignores-own-terrible-reporting-and-blames-the-media:
+2012-11-21 17:36:15 ERROR 404: Not Found.
+http://badchemist.net/badscience/creative-differences:
+2012-11-21 17:36:15 ERROR 404: Not Found.
+2012-11-21 17:36:15 URL:http://skepticscircle.blogspot.jp/2008/09/95th-meeting-of-skeptics-circle-911.html [37341] -> "-" [1]
+2012-11-21 17:36:16 URL:http://mikesweeklyskepticrant.blogspot.jp/2008/09/95th-skeptics-circle.html [23117] -> "-" [1]
+2012-11-21 17:36:17 URL:http://skeptico.blogs.com/skeptico/2008/09/skeptic-circle.html [51693/51693] -> "-" [1]
+2012-11-21 17:36:20 URL:http://scienceblogs.com/goodmath/2008/09/11/suddenly-i-feel-coordinated/ [46515] -> "-" [1]
+2012-11-21 17:36:23 URL:http://www.dcscience.net/?p=254 [101103] -> "-" [1]
+2012-11-21 17:36:24 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://actionskeptics.blogspot.jp/2008/09/ebay-roundup-moonstar7spirits.html%26zx%3D14nhc63yrpypj&ltmpl=private [55155] -> "-" [1]
+2012-11-21 17:36:24 URL:http://www.skeptobot.com/2008/09/skeptobot-update-not-dead-just-resting.html [58420] -> "-" [1]
+2012-11-21 17:36:25 URL:http://scientific-misconduct.blogspot.jp/2008/09/betty-dong-redux-from-boots-to.html [39782] -> "-" [1]
+2012-11-21 17:36:27 URL:http://www.quackometer.net/blog/2008/09/triamazon-man-convicted.html [78365/78365] -> "-" [1]
+2012-11-21 17:36:29 URL:http://skepticssa.wordpress.com/2008/09/10/hi-tech-rain-making-at-willunga/ [56468] -> "-" [1]
+2012-11-21 17:36:30 URL:http://teekblog.blogspot.jp/2008/09/book-review-bad-science-by-ben-goldacre.html [57826] -> "-" [1]
+2012-11-21 17:36:30 URL:http://scientific-misconduct.blogspot.jp/2008/09/whose-mouse-is-it-anyway.html [31911] -> "-" [1]
+http://badchemist.net/badscience/daily-mail-mass-hysteria-over-lhc:
+2012-11-21 17:36:30 ERROR 404: Not Found.
+2012-11-21 17:36:31 URL:http://scientific-misconduct.blogspot.jp/2008/09/placebo-journal-and-accupringles.html [30733] -> "-" [1]
+2012-11-21 17:36:31 URL:http://scientific-misconduct.blogspot.jp/2008/09/pharmaceutical-mergers-update.html [38871] -> "-" [1]
+http://www.realclimate.org/index.php/archives/2008/09/simple-question-simple-answer-no/:
+2012-11-21 17:36:32 ERROR 403: Forbidden.
+2012-11-21 17:36:32 URL:http://dubitoergo.blogspot.jp/2008/09/morality-and-such.html [84920] -> "-" [1]
+2012-11-21 17:36:33 URL:http://mikesweeklyskepticrant.blogspot.jp/2008/09/ufc-holy-shit.html [28532] -> "-" [1]
+http://badchemist.net/badscience/homeopathic-education-services-part-1:
+2012-11-21 17:36:33 ERROR 404: Not Found.
+2012-11-21 17:36:35 URL:http://skeptico.blogs.com/skeptico/2008/09/ancient-code.html [143987/143987] -> "-" [1]
+2012-11-21 17:36:36 URL:http://thinking-is-dangerous.blogspot.jp/2008/09/back-to-skool-for-tesco.html [130983] -> "-" [1]
+2012-11-21 17:36:37 URL:http://badidea.wordpress.com/2008/09/07/oprah-boycott-all-kinds-of-stupid/ [67573] -> "-" [1]
+http://badchemist.net/good-science/79:
+2012-11-21 17:36:37 ERROR 404: Not Found.
+2012-11-21 17:36:38 URL:http://dubitoergo.blogspot.jp/2008/09/having-it-both-ways.html [80514] -> "-" [1]
+2012-11-21 17:36:39 URL:http://badidea.wordpress.com/2008/09/06/blessed-are-the-peacemakers-for-they-shalt-have-50cal-machine-gun-turrets/ [67936] -> "-" [1]
+2012-11-21 17:36:40 URL:http://skepbitch.wordpress.com/2008/09/05/sex-with-george-hrab/ [5842] -> "-" [1]
+2012-11-21 17:36:43 URL:http://www.dcscience.net/?p=253 [121179] -> "-" [1]
+http://www.realclimate.org/index.php/archives/2008/09/how-much-will-sea-level-rise/:
+2012-11-21 17:36:43 ERROR 403: Forbidden.
+2012-11-21 17:36:45 URL:http://badidea.wordpress.com/2008/09/04/religious-freedom-under-international-islamic-attack/ [62816] -> "-" [1]
+2012-11-21 17:36:48 URL:http://www.dcscience.net/?p=252 [98578] -> "-" [1]
+2012-11-21 17:36:48 URL:http://skepbitch.wordpress.com/2008/09/03/dragoncon-in-500-words-or-less/ [5852] -> "-" [1]
+http://www.realclimate.org/index.php/archives/2008/09/progress-in-millennial-reconstructions/:
+2012-11-21 17:36:54 ERROR 403: Forbidden.
+2012-11-21 17:36:55 URL:http://badidea.wordpress.com/2008/09/03/godjews-for-jesus-to-palin-terrorism-is-gods-judgement-on-jews/ [73316] -> "-" [1]
+2012-11-21 17:36:58 URL:http://www.quackometer.net/blog/2008/09/little-sip-and-you-can-join-mile-high.html [62159/62159] -> "-" [1]
+2012-11-21 17:36:59 URL:http://www.quackometer.net/blog/2008/09/as-seen-on-amazon.html [44455/44455] -> "-" [1]
+2012-11-21 17:37:00 URL:http://thinking-is-dangerous.blogspot.jp/2008/09/hip-to-be-positive-or-negative.html [138050] -> "-" [1]
+2012-11-21 17:37:01 URL:http://badidea.wordpress.com/2008/09/02/sarah-palins-record-as-mayor-teeny-tiny-bush-administration/ [60356] -> "-" [1]
+2012-11-21 17:37:02 URL:http://teekblog.blogspot.jp/2008/09/how-to-write-scare-story-or-how-to-mis.html [76750] -> "-" [1]
+2012-11-21 17:37:03 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://actionskeptics.blogspot.jp/2008/09/last-month-in-church-signs.html%26zx%3D3oqif6kp6szw&ltmpl=private [55142] -> "-" [1]
+2012-11-21 17:37:04 URL:http://dubitoergo.blogspot.jp/2008/08/they-found-our-lack-of-faith-disturbing.html [76594] -> "-" [1]
+2012-11-21 17:37:05 URL:http://skeptico.blogs.com/skeptico/2008/08/girls-gone-wicca.html [66199/66199] -> "-" [1]
+2012-11-21 17:37:06 URL:http://skeptico.blogs.com/skeptico/2008/08/carnival-of-the-godless.html [50800/50800] -> "-" [1]
+http://www.realclimate.org/index.php/archives/2008/08/friday-round-up/:
+2012-11-21 17:37:07 ERROR 403: Forbidden.
+2012-11-21 17:37:07 URL:http://scientific-misconduct.blogspot.jp/2008/08/mail-order-academics.html [31409] -> "-" [1]
+2012-11-21 17:37:08 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://actionskeptics.blogspot.jp/2008/08/vendors-paradise.html%26zx%3Daocrm6kjfxgz&ltmpl=private [55113] -> "-" [1]
+2012-11-21 17:37:11 URL:http://www.dcscience.net/?p=251 [103806] -> "-" [1]
+2012-11-21 17:37:12 URL:http://skepticscircle.blogspot.jp/2008/08/94th-meeting-of-skeptics-circle-olympic.html [38435] -> "-" [1]
+2012-11-21 17:37:13 URL:http://skeptico.blogs.com/skeptico/2008/08/skeptics-circle-1.html [50971/50971] -> "-" [1]
+2012-11-21 17:37:14 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://actionskeptics.blogspot.jp/2008/08/skeptics-circle-94.html%26zx%3D1swzqnmjn4aj7&ltmpl=private [55120] -> "-" [1]
+2012-11-21 17:37:15 URL:http://scientific-misconduct.blogspot.jp/2008/08/listing-of-historical-pharmaceutical.html [32763] -> "-" [1]
+2012-11-21 17:37:18 URL:http://www.dcscience.net/?p=249 [175861] -> "-" [1]
+2012-11-21 17:37:19 URL:http://scientific-misconduct.blogspot.jp/2008/08/conflicts-of-interest-and-silence.html [32692] -> "-" [1]
+2012-11-21 17:37:20 URL:http://skepticssa.wordpress.com/2008/08/24/guglielmucci-and-a-reality-based-world/ [51890] -> "-" [1]
+2012-11-21 17:37:20 URL:http://scientific-misconduct.blogspot.jp/2008/08/awakenings.html [38714] -> "-" [1]
+2012-11-21 17:37:21 URL:http://dubitoergo.blogspot.jp/2008/08/big-gencon-report.html [76050] -> "-" [1]
+2012-11-21 17:37:21 URL:http://skepbitch.wordpress.com/2008/08/22/thinking-about-ass/ [5840] -> "-" [1]
+2012-11-21 17:37:22 URL:http://skepticssa.wordpress.com/2008/08/22/chinese-olympic-competitors-and-their-age/ [50046] -> "-" [1]
+http://www.realclimate.org/index.php/archives/2008/08/north-pole-notes-continued/:
+2012-11-21 17:37:23 ERROR 403: Forbidden.
+2012-11-21 17:37:24 URL:http://skepticssa.wordpress.com/2008/08/21/the-joker-in-a-tarot-card/ [46325] -> "-" [1]
+http://www.dcscience.net/?p=248:
+2012-11-21 17:37:27 ERROR 404: Not Found.
+http://www.realclimate.org/index.php/archives/2008/08/climate-change-methadone/:
+2012-11-21 17:37:28 ERROR 403: Forbidden.
+2012-11-21 17:37:31 URL:http://www.dcscience.net/?p=247 [94597] -> "-" [1]
+http://badchemist.net/good-science/i-think-someone-has-been-taking-the-piss:
+2012-11-21 17:37:31 ERROR 404: Not Found.
+2012-11-21 17:37:31 URL:http://thinking-is-dangerous.blogspot.jp/2008/08/another-back-cracking-quack-attack_18.html [139551] -> "-" [1]
+2012-11-21 17:37:32 URL:http://conspiracyfactory.blogspot.jp/2008/08/reporters-skeptical-bah.html [63753] -> "-" [1]
+2012-11-21 17:37:34 URL:http://skepticssa.wordpress.com/2008/08/14/93rd-skeptics-circle-a-mystical-reading-with-master-woo/ [67638] -> "-" [1]
+2012-11-21 17:37:38 URL:http://teekblog.blogspot.jp/2008/08/why-woo-or-how-does-one-of-most.html [56200] -> "-" [1]
+2012-11-21 17:37:39 URL:http://thinking-is-dangerous.blogspot.jp/2008/08/how-long-does-silly-season-last_13.html [132377] -> "-" [1]
+2012-11-21 17:37:40 URL:http://skepticssa.wordpress.com/2008/08/11/posting-for-skeptics-circle/ [47736] -> "-" [1]
+2012-11-21 17:37:40 URL:http://skepbitch.wordpress.com/2008/08/08/thank-fuck-its-friday/ [5843] -> "-" [1]
+2012-11-21 17:37:41 URL:http://angryastronomer.blogspot.jp/2008/08/pareidolia-n-15.html [81827] -> "-" [1]
+2012-11-21 17:37:44 URL:http://autism-news-beat.com/archives/74 [38965] -> "-" [1]
+2012-11-21 17:37:45 URL:http://skepticssa.wordpress.com/2008/08/07/as-the-titanic-of-science-slowly-sinks/ [47537] -> "-" [1]
+2012-11-21 17:37:46 URL:http://dubitoergo.blogspot.jp/2008/08/apocalypse-is-upon-us.html [72682] -> "-" [1]
+2012-11-21 17:37:47 URL:http://angryastronomer.blogspot.jp/2008/07/pareidolia-n-14.html [82181] -> "-" [1]
+2012-11-21 17:37:47 URL:http://angryastronomer.blogspot.jp/2008/07/pareidolia-n-13.html [85377] -> "-" [1]
+2012-11-21 17:37:48 URL:http://dubitoergo.blogspot.jp/2008/07/liveblogging-haunting.html [121851] -> "-" [1]
+2012-11-21 17:37:49 URL:http://skepticssa.wordpress.com/2008/07/30/climate-debate-and-facts/ [56704] -> "-" [1]
+2012-11-21 17:37:50 URL:http://dubitoergo.blogspot.jp/2008/07/its-not-big-truck.html [65560] -> "-" [1]
+2012-11-21 17:37:51 URL:http://www.skeptobot.com/2008/07/ubisoft-found-pirating-pirates.html [73248] -> "-" [1]
+2012-11-21 17:37:51 URL:http://www.skeptobot.com/2008/07/mylifemyidorg-is-going-to-be-amazing.html [64569] -> "-" [1]
+2012-11-21 17:37:51 URL:http://www.skeptobot.com/2008/07/crackergate-any-old-excuse-for-lee-and.html [59479] -> "-" [1]
+2012-11-21 17:37:52 URL:http://www.skeptobot.com/2008/07/skeptobot-is-on-break-i-need-to-write.html [61441] -> "-" [1]
+2012-11-21 17:37:52 URL:http://www.skeptobot.com/2008/06/shit-piss-fuck-cunt-cocksucker.html [60457] -> "-" [1]
+2012-11-21 17:37:52 URL:http://www.skeptobot.com/2008/06/anonymous-vs-scientology-on-more-4-news.html [59327] -> "-" [1]
+2012-11-21 17:37:53 URL:http://www.skeptobot.com/2008/06/svalbard-global-seed-vault-humanity-at.html [59607] -> "-" [1]
+2012-11-21 17:37:53 URL:http://www.skeptobot.com/2008/06/obama-vs-mccain-faith-off.html [63242] -> "-" [1]
+2012-11-21 17:37:53 URL:http://www.skeptobot.com/2008/06/send-your-name-to-moon.html [59477] -> "-" [1]
+2012-11-21 17:37:55 URL:http://skepticssa.wordpress.com/2008/07/28/firepower-scam/ [58338] -> "-" [1]
+2012-11-21 17:37:55 URL:http://dubitoergo.blogspot.jp/2008/07/recycled-content.html [73915] -> "-" [1]
+2012-11-21 17:37:56 URL:http://scientific-misconduct.blogspot.jp/2008/07/nottingham-university-goes-kerplunk.html [46559] -> "-" [1]
+2012-11-21 17:37:57 URL:http://angryastronomer.blogspot.jp/2008/07/got-live-one.html [108919] -> "-" [1]
+2012-11-21 17:37:57 URL:http://angryastronomer.blogspot.jp/2008/07/carnival-of-space-63.html [95721] -> "-" [1]
+2012-11-21 17:37:58 URL:http://conspiracyfactory.blogspot.jp/2008/07/friday-beautiful-science.html [64218] -> "-" [1]
+2012-11-21 17:37:59 URL:http://conspiracyfactory.blogspot.jp/2008/06/friday-beautiful-science_27.html [65896] -> "-" [1]
+2012-11-21 17:38:00 URL:http://conspiracyfactory.blogspot.jp/2008/06/george-carlin-1937-2008.html [63977] -> "-" [1]
+2012-11-21 17:38:00 URL:http://conspiracyfactory.blogspot.jp/2008/06/friday-beautiful-science_20.html [64948] -> "-" [1]
+2012-11-21 17:38:01 URL:http://conspiracyfactory.blogspot.jp/2008/06/dont-let-it-happen-again.html [68584] -> "-" [1]
+2012-11-21 17:38:02 URL:http://conspiracyfactory.blogspot.jp/2008/06/friday-beautiful-science.html [63255] -> "-" [1]
+2012-11-21 17:38:02 URL:http://conspiracyfactory.blogspot.jp/2008/06/sucked-out-into-space.html [62140] -> "-" [1]
+2012-11-21 17:38:03 URL:http://conspiracyfactory.blogspot.jp/2008/06/yum.html [62219] -> "-" [1]
+2012-11-21 17:38:04 URL:http://teekblog.blogspot.jp/2008/05/embryos-and-parliament-part-three-last.html [58436] -> "-" [1]
+2012-11-21 17:38:04 URL:http://teekblog.blogspot.jp/2008/05/embryos-and-parliament-part-two.html [55384] -> "-" [1]
+2012-11-21 17:38:04 URL:http://teekblog.blogspot.jp/2008/05/embryos-and-parlaiment-part-one.html [53435] -> "-" [1]
+2012-11-21 17:38:05 URL:http://teekblog.blogspot.jp/2008/05/double-blind-approach-to-restoting.html [59461] -> "-" [1]
+2012-11-21 17:38:06 URL:http://amr2you.blogspot.jp/2006/12/complementary-medicines-are-useless.html [50144] -> "-" [1]
+2012-11-21 17:38:06 URL:http://amr2you.blogspot.jp/2006/11/quackery-exposed.html [49403] -> "-" [1]
+2012-11-21 17:38:06 URL:http://amr2you.blogspot.jp/2006/11/clairvoyant-led-americans-to-saddam.html [50526] -> "-" [1]
+2012-11-21 17:38:07 URL:http://amr2you.blogspot.jp/2006/08/how-does-stress-influence-your-health.html [50981] -> "-" [1]
+2012-11-21 17:38:07 URL:http://amr2you.blogspot.jp/2006/07/38th-skeptics-circle-is-posted.html [49661] -> "-" [1]
+2012-11-21 17:38:08 URL:http://amr2you.blogspot.jp/2006/06/skeptics-circle-is-up-at-autism-diva.html [49315] -> "-" [1]
+2012-11-21 17:38:08 URL:http://amr2you.blogspot.jp/2006/06/road-from-foolishness-too-healthfraud.html [49968] -> "-" [1]
+2012-11-21 17:38:09 URL:http://amr2you.blogspot.jp/2006/06/watch-video-about-chiropractic-neck.html [49997] -> "-" [1]
+2012-11-21 17:38:09 URL:http://amr2you.blogspot.jp/2006/06/if-it-quacks-like-alien.html [49653] -> "-" [1]
+2012-11-21 17:38:10 URL:http://amr2you.blogspot.jp/2006/06/migraine-suffers-would-be-victims-of.html [51158] -> "-" [1]
+2012-11-21 17:38:12 URL:http://holfordmyths.org/ [15251] -> "-" [1]
+2012-11-21 17:38:14 URL:http://holfordmyths.org/ [15251] -> "-" [1]
+http://badchemist.net/badscience/expelled:
+2012-11-21 17:38:14 ERROR 404: Not Found.
+2012-11-21 17:38:16 URL:http://holfordmyths.org/ [15251] -> "-" [1]
+http://badchemist.net/random/welcome-to-deathrow:
+2012-11-21 17:38:16 ERROR 404: Not Found.
+http://secularskeptic.blogspot.jp/2008/04/in-which-i-summarize-my-experience-of.html:
+2012-11-21 17:38:17 ERROR 404: Not Found.
+http://badchemist.net/badscience/homeopathy-physics-utter-nonsense:
+2012-11-21 17:38:17 ERROR 404: Not Found.
+2012-11-21 17:38:19 URL:http://holfordmyths.org/ [15251] -> "-" [1]
+2012-11-21 17:38:24 URL:http://circadiana.blogspot.jp/2006/04/rem-sleep-and-paranormal-phenomena.html [34927] -> "-" [1]
+2012-11-21 17:38:24 URL:http://circadiana.blogspot.jp/2006/04/sleepy-americans.html [33577] -> "-" [1]
+2012-11-21 17:38:26 URL:http://holfordmyths.org/ [15251] -> "-" [1]
+http://secularskeptic.blogspot.jp/2008/02/go-look-at-moon.html:
+2012-11-21 17:38:27 ERROR 404: Not Found.
+2012-11-21 17:38:29 URL:http://holfordmyths.org/ [15251] -> "-" [1]
+http://badchemist.net/badscience/netcetera-are-a-pathetic-cretinous-excuse-for-a-webhost:
+2012-11-21 17:38:29 ERROR 404: Not Found.
+http://secularskeptic.blogspot.jp/2008/02/charles-darwin-and-racism.html:
+2012-11-21 17:38:30 ERROR 404: Not Found.
+http://secularskeptic.blogspot.jp/2008/02/we-are-pleased-to-inform-you.html:
+2012-11-21 17:38:30 ERROR 404: Not Found.
+2012-11-21 17:38:31 URL:http://sciencepolitics.blogspot.jp/2007/10/this-blog-is-dead_25.html [33799] -> "-" [1]
+http://secularskeptic.blogspot.jp/2008/02/omg-he-knows-my-name.html:
+2012-11-21 17:38:31 ERROR 404: Not Found.
+http://secularskeptic.blogspot.jp/2008/01/id-beatdown.html:
+2012-11-21 17:38:31 ERROR 404: Not Found.
+2012-11-21 17:38:34 URL:http://holfordmyths.org/ [15251] -> "-" [1]
+2012-11-21 17:38:36 URL:http://holfordmyths.org/ [15251] -> "-" [1]
+2012-11-21 17:38:38 URL:http://holfordmyths.org/ [15251] -> "-" [1]
+http://secularskeptic.blogspot.jp/2008/01/new-nas-book-and-more-about-secondary.html:
+2012-11-21 17:38:38 ERROR 404: Not Found.
+2012-11-21 17:38:40 URL:http://holfordmyths.org/ [15251] -> "-" [1]
+http://secularskeptic.blogspot.jp/2007/12/mathemagic-and-update.html:
+2012-11-21 17:38:41 ERROR 404: Not Found.
+http://www.acsh.org/healthissues/newsID.1648/healthissue_detail.asp:
+2012-11-21 17:38:42 ERROR 404: Not Found.
+http://www.acsh.org/healthissues/newsID.1648/healthissue_detail.asp:
+2012-11-21 17:38:42 ERROR 404: Not Found.
+http://www.acsh.org/healthissues/newsID.1591/healthissue_detail.asp:
+2012-11-21 17:38:43 ERROR 404: Not Found.
+http://www.ministryoftruth.org.uk/2007/11/17/growing-up-in-the-universe-2/:
+2012-11-21 17:38:44 ERROR 404: Not Found.
+http://www.ministryoftruth.org.uk/2007/11/17/r-e-s-p-e-c-t/:
+2012-11-21 17:38:44 ERROR 404: Not Found.
+http://www.ministryoftruth.org.uk/2007/11/17/wrapped-in-tinfoil/:
+2012-11-21 17:38:44 ERROR 404: Not Found.
+http://www.ministryoftruth.org.uk/2007/11/15/nothing-like-a-good-grovel/:
+2012-11-21 17:38:44 ERROR 404: Not Found.
+http://www.ministryoftruth.org.uk/2007/11/15/it-makes-even-light-rubbish-deadly/:
+2012-11-21 17:38:45 ERROR 404: Not Found.
+http://secularskeptic.blogspot.jp/2007/11/judgment-day-on-pbs.html:
+2012-11-21 17:38:45 ERROR 404: Not Found.
+http://www.ministryoftruth.org.uk/2007/11/14/growing-up-in-the-universe/:
+2012-11-21 17:38:45 ERROR 404: Not Found.
+http://www.ministryoftruth.org.uk/2007/11/13/hes-a-wobber-and-a/:
+2012-11-21 17:38:46 ERROR 404: Not Found.
+http://www.ministryoftruth.org.uk/2007/11/09/smoke-and-mirrors/:
+2012-11-21 17:38:46 ERROR 404: Not Found.
+http://www.ministryoftruth.org.uk/2007/11/09/on-religion-and-poverty/:
+2012-11-21 17:38:46 ERROR 404: Not Found.
+http://www.ministryoftruth.org.uk/2007/11/08/pass-the-sickbag/:
+2012-11-21 17:38:46 ERROR 404: Not Found.
+2012-11-21 17:38:48 URL:http://extraordinaryclaims.wordpress.com/2007/10/23/everything-you-always-wanted-to-know-about-guns-in-africa/ [43412] -> "-" [1]
+2012-11-21 17:38:49 URL:http://teekblog.blogspot.jp/2007/10/money-for-old-helix.html [66567] -> "-" [1]
+http://secularskeptic.blogspot.jp/2007/10/uber-cool-nerd-king.html:
+2012-11-21 17:38:49 ERROR 404: Not Found.
+2012-11-21 17:38:50 URL:http://extraordinaryclaims.wordpress.com/2007/10/08/the-observer-re-drafts-the-universe-with-untruth-and-distortion/ [69818] -> "-" [1]
+2012-11-21 17:38:51 URL:http://teekblog.blogspot.jp/2007/10/ig-nobel-prizes-such-fun.html [52504] -> "-" [1]
+2012-11-21 17:38:52 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://autismdiva.blogspot.jp/2007/10/jerry-kartzinel-and-lying-about-nature.html%26zx%3Dzj8fecazqauq&ltmpl=private [55166] -> "-" [1]
+2012-11-21 17:38:53 URL:http://sciencepolitics.blogspot.jp/2007/09/last-paper-by-steve-irwin.html [33901] -> "-" [1]
+2012-11-21 17:38:53 URL:http://sciencepolitics.blogspot.jp/2007/09/rethinking-foxp2.html [35246] -> "-" [1]
+2012-11-21 17:38:53 URL:http://sciencepolitics.blogspot.jp/2007/09/help-make-nih-funded-research-findings.html [34994] -> "-" [1]
+2012-11-21 17:38:54 URL:http://sciencepolitics.blogspot.jp/2007/09/science-blogging-conference.html [35343] -> "-" [1]
+2012-11-21 17:38:55 URL:http://extraordinaryclaims.wordpress.com/2007/09/29/mobile-phones-damage-hearing-concludes-very-dodgy-research/ [57157] -> "-" [1]
+2012-11-21 17:38:56 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://autismdiva.blogspot.jp/2007/09/jenny-mccarthy-and-problem-of-illusions.html%26zx%3D1cvt1ieic7niu&ltmpl=private [55173] -> "-" [1]
+2012-11-21 17:38:57 URL:http://beyondthesecondlaw.wordpress.com/2007/09/24/get-your-story-straight/ [41148] -> "-" [1]
+2012-11-21 17:38:58 URL:http://extraordinaryclaims.wordpress.com/2007/09/23/a-language-of-bullshit/ [63020] -> "-" [1]
+2012-11-21 17:38:59 URL:http://extraordinaryclaims.wordpress.com/2007/09/22/hello-world/ [39998] -> "-" [1]
+http://saltosobrius.blogspot.jp/2007/09/magnetometry-in-kaga.html:
+2012-11-21 17:39:00 ERROR 404: Not Found.
+2012-11-21 17:39:01 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://autismdiva.blogspot.jp/2007/09/cedillo-omnibus-hearing-by-numbers.html%26zx%3Dgsqclnk1j5e9&ltmpl=private [55155] -> "-" [1]
+2012-11-21 17:39:02 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://autismdiva.blogspot.jp/2007/09/perfect-just-fine.html%26zx%3D68wfpvp3ce0n&ltmpl=private [55102] -> "-" [1]
+http://www.acsh.org/healthissues/newsid.1591/healthissue_detail.asp:
+2012-11-21 17:39:03 ERROR 404: Not Found.
+2012-11-21 17:39:09 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://autismdiva.blogspot.jp/2007/09/dr-frankenstein-testifies.html%26zx%3D4h5yd2fdngyg&ltmpl=private [55127] -> "-" [1]
+2012-11-21 17:39:10 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://autismdiva.blogspot.jp/2007/09/no-uniquer-than-that-even.html%26zx%3Dch3fpxz2mxyr&ltmpl=private [55128] -> "-" [1]
+2012-11-21 17:39:12 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://autismdiva.blogspot.jp/2007/09/brave-mavericks-of-autism.html%26zx%3D22p8m03who8&ltmpl=private [55124] -> "-" [1]
+2012-11-21 17:39:13 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://autismdiva.blogspot.jp/2007/08/they-are-born-that-way-sigh.html%26zx%3Dgahhpia1ngtl&ltmpl=private [55134] -> "-" [1]
+2012-11-21 17:39:14 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://autismdiva.blogspot.jp/2007/08/just-little-bit-different.html%26zx%3Dlgwxcaffvnac&ltmpl=private [55127] -> "-" [1]
+2012-11-21 17:39:14 URL:http://sciencepolitics.blogspot.jp/2007/07/exclusive-interview-with-senator-john.html [34917] -> "-" [1]
+2012-11-21 17:39:14 URL:http://sciencepolitics.blogspot.jp/2007/07/my-new-job.html [32450] -> "-" [1]
+2012-11-21 17:39:15 URL:https://accounts.google.com/ServiceLogin?service=blogger&hl=ja&passive=86400&continue=http://www.blogger.com/blogin.g?blogspotURL%3Dhttp://autismdiva.blogspot.jp/2007/08/dan-doctor-charged-in-chelation-death.html%26zx%3D2n9khc2e55b1&ltmpl=private [55164] -> "-" [1]
+2012-11-21 17:39:16 URL:http://saltosobrius.blogspot.jp/2006/12/eponym-blog-directory.html [19909] -> "-" [1]
+2012-11-21 17:39:17 URL:http://saltosobrius.blogspot.jp/2006/01/easing-swedish-metal-detecting.html [36468] -> "-" [1]
+2012-11-21 17:39:17 URL:http://saltosobrius.blogspot.jp/2007/04/continued-elsewhere.html [19990] -> "-" [1]
+2012-11-21 17:39:17 URL:http://saltosobrius.blogspot.jp/2006/12/scienceblogger.html [26828] -> "-" [1]
+2012-11-21 17:39:18 URL:http://saltosobrius.blogspot.jp/2006/12/early-medieval-thuringia.html [20479] -> "-" [1]
+2012-11-21 17:39:18 URL:http://saltosobrius.blogspot.jp/2006/12/erik-davis.html [20621] -> "-" [1]
+2012-11-21 17:39:18 URL:http://saltosobrius.blogspot.jp/2006/12/stinking-bishop.html [23951] -> "-" [1]
+2012-11-21 17:39:19 URL:http://saltosobrius.blogspot.jp/2006/12/christmas-soft-drink-wars.html [33934] -> "-" [1]
+2012-11-21 17:39:19 URL:http://saltosobrius.blogspot.jp/2006/12/tangled-bank-69-war-on-christmas.html [31675] -> "-" [1]
+http://www.acsh.org/healthissues/newsid.1443/healthissue_detail.asp:
+2012-11-21 17:39:20 ERROR 404: Not Found.
+http://www.acsh.org/healthissues/newsid.1426/healthissue_detail.asp:
+2012-11-21 17:39:21 ERROR 404: Not Found.
+http://www.acsh.org/healthissues/newsid.1354/healthissue_detail.asp:
+2012-11-21 17:39:21 ERROR 404: Not Found.
+http://www.acsh.org/healthissues/newsid.1251/healthissue_detail.asp:
+2012-11-21 17:39:22 ERROR 404: Not Found.
+http://www.acsh.org/healthissues/newsid.1253/healthissue_detail.asp:
+2012-11-21 17:39:22 ERROR 404: Not Found.
+http://www.acsh.org/healthissues/newsid.1229/healthissue_detail.asp:
+2012-11-21 17:39:23 ERROR 404: Not Found.
+2012-11-21 17:39:24 URL:http://sciencepolitics.blogspot.jp/2007/05/science-blogging-conference-08-and-open.html [35048] -> "-" [1]
+2012-11-21 17:39:24 URL:http://sciencepolitics.blogspot.jp/2007/04/one-stop-shopping-for-framing-science.html [77412] -> "-" [1]
+2012-11-21 17:39:24 URL:http://sciencepolitics.blogspot.jp/2007/03/elizabeth-edwards.html [32857] -> "-" [1]
+2012-11-21 17:39:25 URL:http://circadiana.blogspot.jp/2005/01/everything-you-always-wanted-to-know.html [87440] -> "-" [1]
+2012-11-21 17:39:25 URL:http://circadiana.blogspot.jp/2006/06/this-blog-has-finally-gone-to-seed.html [39611] -> "-" [1]
+2012-11-21 17:39:26 URL:http://circadiana.blogspot.jp/2006/06/jet-lagged-sports-teams.html [32641] -> "-" [1]
+2012-11-21 17:39:26 URL:http://circadiana.blogspot.jp/2006/06/sleep-news.html [30635] -> "-" [1]
+2012-11-21 17:39:26 URL:http://circadiana.blogspot.jp/2006/06/take-your-ipod-to-bed.html [31150] -> "-" [1]
+2012-11-21 17:39:27 URL:http://circadiana.blogspot.jp/2006/05/early-bird-gets-wormor-seed.html [36290] -> "-" [1]
+2012-11-21 17:39:27 URL:http://circadiana.blogspot.jp/2006/05/eight-hours-circadian-rhythm-do-not.html [39311] -> "-" [1]
+2012-11-21 17:39:27 URL:http://circadiana.blogspot.jp/2006/05/tangled-bank.html [29553] -> "-" [1]
+FINISHED --2012-11-21 17:39:27--
+Total wall clock time: 26m 33s
+Downloaded: 667 files, 54M in 7m 7s (131 KB/s)
+
+
