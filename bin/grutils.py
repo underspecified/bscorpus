@@ -176,8 +176,15 @@ def print_rlinks():
                        )
                 )
 		b = get_blogs(d)
-		print >>stdout, len(d), get_title(l), l, i, t, d, b,
+		print >>stdout, len(d)
+		print >>stdout, get_title(l)
+		print >>stdout, l
+		print >>stdout, '\t'.join(i)
+		print >>stdout, '\t'.join(t)
+		print >>stdout, '\t'.join(d)
+		print >>stdout, '\t'.join(b)
                 print >>stdout, has_many_blogs(b)
+		print >>stdout
 
 def pickle_data(f):
 	'''Pickle data and store it to file.'''
