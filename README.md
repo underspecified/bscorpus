@@ -25,7 +25,7 @@ There are Python scripts for accessing the Bad Science RSS feeds and updating th
 See `dependencies.md` and `python_deps.txt` for dependencies.
 
 ## License
-Please cite reference [\[1\]][link-pacling-2009] if you use the Bad Science Corpus. Otherwise, it may be used with restriction. All blog posts and other downloaded webpages are copyright their original authors and are being shared under the fair use. All code is copyright Eric Nichols and may be used, modified, and redistributed under the terms of the [GNU General Public License, version 2][link-gpl2]
+Please cite reference [\[1\]][link-pacling-2009] if you use the Bad Science Corpus. Otherwise, it may be used without restriction. All blog posts and other downloaded webpages are copyright their original authors and are being shared under the fair use. All code is copyright Eric Nichols and may be used, modified, and redistributed under the terms of the [GNU General Public License, version 2][link-gpl2].
 
 [link-gpl2]: http://www.gnu.org/licenses/gpl-2.0.html
 
