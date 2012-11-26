@@ -4,13 +4,13 @@ Author: Eric Nichols <eric@ecei.tohoku.ac.jp>, Tohoku University, Japan
 
 ## Project Goal
 
-This is a pre-release of the *Bad Science Corpus*, an automatically-constructed collection of posts on scientifically-contraversial topics gathered from blogs by scientists and skeptics. The goal of this project is to produce a self-expanding source of contraversial claims and their refutations by knowledgable parties to support research on analysis rhetorical and logical argumentation structues. See reference [\[1\]][link-pacling-2009] for more details.
+This is a pre-release of the *Bad Science Corpus*, an automatically-constructed collection of posts on scientifically-contraversial topics gathered from blogs by scientists and skeptics. The goal of this project is to produce a self-expanding source of controversial claims and their refutations by knowledgable parties to support research on analysis rhetorical and logical argumentation structures. See reference [\[1\]][link-pacling-2009] for more details.
 
 ## Resources
 
-* __RSS feed__: RSS feeds for several hundred science/skeptic blogs have been archived in a Google Reader account since 2008. Stored in `data/xml`.
-* __Blog posts__: downloads of the HTML for all blog posts in the blog feeds, stored in Web Archives. Stored in `data/warc`.
-* __Discussions__: lists of blog posts that link to the same external article. Stored in `data/disc`
+* __RSS feed__: a curated collection of RSS feeds for several hundred science/skeptic blogs aggregated in a Google Reader account. Stored in `data/xml`.
+* __Blog posts__: Web archives of all blog posts from July 2009 to November 2012. Stored in `data/warc`.
+* __Discussions__: Blog posts that refer to the same external link are grouped into _discussions_ representing a single topic to aid extraction of controversial opinions and rebuttals. Stored in `data/disc`
 
 ## Utilities
 
